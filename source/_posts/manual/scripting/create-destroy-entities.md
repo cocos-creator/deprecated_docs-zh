@@ -10,7 +10,7 @@ permalinks: manual/scripting/create-destroy-entities
 你只需要直接 new Entity() 就能在当前场景中添加一个空的 Entity：
 
 ```js
-    onStart: function () {
+    start: function () {
         for (var i = 0; i < 10; i++) {
             var name = 'Bullet ' + i;
             var newBulletEntity = new Entity(name);
@@ -34,7 +34,7 @@ var Comp = Fire.Class({
     },
 
     // use this for initialization
-    onStart: function () {
+    start: function () {
         for (var i = 0; i < 10; i++) {
             var newBulletEntity = Fire.instantiate(this.bulletPrefab);
         }
@@ -66,7 +66,7 @@ var Comp = Fire.Class({
 除了通过 Inspector 面板来添加 Component，你也可以在脚本动态进行：
 
 ```js
-    onStart: function () {
+    start: function () {
         for (var i = 0; i < 10; i++) {
             var name = 'Bullet ' + i;
             var newBulletEntity = new Entity(name);
@@ -80,7 +80,7 @@ var Comp = Fire.Class({
 你也可以直接将 Component 类型传入 addComponent：
 
 ```js
-    onStart: function () {
+    start: function () {
         // ...
         var bullet = newBulletEntity.addComponent(Fire.SpriteRenderer);
     }
@@ -91,7 +91,7 @@ var Comp = Fire.Class({
 使用脚本移除 Component 的方法，其实就是调用它的 destroy()，效果和在 Inspector 中点击移除按钮是一样的：
 
 ```js
-    onStart: function () {
+    start: function () {
         var bullet = this.getComponent("MyBullet");
         bullet.destroy();
     }

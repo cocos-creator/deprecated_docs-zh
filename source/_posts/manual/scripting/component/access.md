@@ -12,7 +12,7 @@ permalinks: manual/scripting/component/access
 获取 Component 所在的 Entity 是很常见的操作，只要在 Component 方法里访问 this.entity 变量：
 
 ```js
-    onStart: function () {
+    start: function () {
         var myName = this.entity.name;
         Fire.log('starting', myName);
     }
@@ -23,7 +23,7 @@ permalinks: manual/scripting/component/access
 访问同一个 Entity 上的其它 Component 是最简单最常用的操作。如前面所说，一个 Component 只是类的一个实例对象，因此你要做的第一件事就是获得这个对象的引用。你要调用的接口是 Component上的 **getComponent** ，它会返回 Component 所在的 Entity 的指定类型的 Component 实例，通常你会定义一个变量来保存这个引用。然后你就能通过这个变量直接访问 Component 里的任何属性了。
 
 ```js
-    onStart: function () {
+    start: function () {
         var sr = this.getComponent(Fire.SpriteRenderer);
 
         // Change the color of the sprite's renderer
@@ -34,7 +34,7 @@ permalinks: manual/scripting/component/access
 Fire.SpriteRenderer 是 Fireball 内置的 Component，你也可以为 getComponent 传入一个字符串形式的类名。
 
 ```js
-    onStart: function () {
+    start: function () {
         var sr = this.getComponent("Fire.SpriteRenderer");
 
         // ...
@@ -44,7 +44,7 @@ Fire.SpriteRenderer 是 Fireball 内置的 Component，你也可以为 getCompon
 你还能调用任意 Entity 上的 getComponent 的方法：
 
 ```js
-    onStart: function () {
+    start: function () {
         var transform = playerEntity.getComponent(Fire.Transform);
 
         // Rotate the transform around world position (10, 10)
@@ -55,7 +55,7 @@ Fire.SpriteRenderer 是 Fireball 内置的 Component，你也可以为 getCompon
 Transform 用来控制一个 Entity 在游戏场景中的方位和缩放，是最常用的一个 Component。你可以使用 Entity.transform 或 Component.transform 来快速获取 Transform。于是上面的代码还可以优化成：
 
 ```js
-    onStart: function () {
+    start: function () {
         playerEntity.transform.rotateAround(Fire.v2(10, 10), 90);
     }
 ```
@@ -104,7 +104,7 @@ var Comp = Fire.Class({
             type: Fire.Entity
         }
     },
-    onStart: function () {
+    start: function () {
         // 显示 player 的名字
         Fire.log(this.player.name);
     }
@@ -147,7 +147,7 @@ var Comp = Fire.Class({
         }
     },
 
-    onStart: function () {
+    start: function () {
         this.cannons = this.entity.getChildren();
     }
 });
@@ -172,7 +172,7 @@ var Comp = Fire.Class({
         this.player = null;
     },
 
-    onStart: function () {
+    start: function () {
         this.player = Fire.Entity.find('/Main Player');
     }
 });

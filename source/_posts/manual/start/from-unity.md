@@ -36,7 +36,7 @@ Assets | Project | 项目资源
 - Fireball 的 **Transform.position** 是相对父物体的本地坐标，不是世界坐标。同理，rotation 和 scale 也均是本地坐标。
 - Fireball 的 Transform 直接提供了 **transform.x**, transform.y 等属性，方便用户访问。
 - Fireball 的 Component 提供 **onLoad** 回调。（相当于 Unity 的 **Awake**。）
-- Fireball 的 Component 提供 **onStart** 回调。（相当于 Unity 的 **Start**。）
+- Fireball 的 Component 提供 **start** 回调。（相当于 Unity 的 **Start**。）
 - Fireball 的回调函数遵循 node.js 的风格，即回调的第一个参数是错误信息，第二个参数才是获取到的数据。
 - Fireball 的 Entity 可设置属性 dontDestroyOnLoad = true。（相当于 Unity 的 **DontDestroyOnLoad()**。）
 
