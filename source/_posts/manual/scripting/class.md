@@ -99,7 +99,7 @@ permalinks: manual/scripting/class
 
 ### 类变量和类方法
 
-静态的类变量或类方法请直接添加到定义好的 Class：
+静态的类变量或类方法可以直接添加到定义好的 Class：
 
 ```js
     var Sprite = Fire.Class({ ... });
@@ -112,7 +112,22 @@ permalinks: manual/scripting/class
     };
 ```
 
-完整代码如下：
+也可以在原型对象的 `statics` 中声明：
+
+```js
+    var Sprite = Fire.Class({
+        statics: {
+            // 声明类变量
+            count: 0,
+            // 声明类方法
+            getBounds: function (spriteList) {
+                // ...
+            }
+        }
+    });
+```
+
+**完整代码如下：**
 
 ```js
     var Sprite = Fire.Class({
@@ -185,6 +200,7 @@ permalinks: manual/scripting/class
 
 - 这里所说的“实例成员”(instance member)包含了“实例变量”(member variable)和“实例方法”(instance method)。
 - 这里所说的“类成员”(static member)包含了“类变量”(static variable)和“类方法”(static method)。
+- 类变量的继承实现方式是将父类的静态变量**浅拷贝**给子类实现的。
 
 ## 继承
 
