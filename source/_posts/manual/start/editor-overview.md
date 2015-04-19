@@ -188,6 +188,7 @@ Fireball Editor的主界面由若干个面板组成，每个面板都被设计�
   - ***Scale*** x=1, y=1
 * **Create Empty Child**: 在场景中选中的**Entity**下创建一个空白的**子级Entity**。
 若当前没有选中的**Entity**，将在场景的根级别创建一个新的空白**Entity**，此时行为与**Create Empty**相同。
+
 ## 新增**Entity**
 单击左上角的![add-button](http://docs-zh.fireball-x.com/manual/start/editor-overview/add-button.png)按钮将弹出场景中**Entity**的创建菜单：
 * Create Empty
@@ -199,6 +200,7 @@ Fireball Editor的主界面由若干个面板组成，每个面板都被设计�
 * Create Empty Child
 在场景中选中的**Entity**下创建一个空白的**子级Entity**。
 若当前没有选中的**Entity**，将在场景的根级别创建一个新的空白**Entity**，此时行为与**Create Empty**相同。
+
 ## 搜索**Entity**
 搜索框用于快速筛选和定位具有指定关键字的**Entity**。当场景中拥有大量**Entity**，或包含复杂的层级关系时，使用搜索框能够有效提高您的工作效率。
 
@@ -216,6 +218,7 @@ Fireball Editor的主界面由若干个面板组成，每个面板都被设计�
 * 场景
 
 Fireball Engine中，为不同类型的**Asset**提供了不同的控制行为，使其可以匹配不同类型的**Component**。更多详细信息请参见Fireball Engine的API开发文档。
+
 ## Asset列表
 游戏项目中的**Asset**按照目录关系进行组织，以*Assets*文件夹为根目录，因此Fireball Editor只会加载*Assets*目录下的**Assets**。
 对于一个完整的游戏来说，其项目中可能包含大量**Asset**，因此我们强烈建议按照**Asset**的类别组织目录以方便查找，例如所有脚本**Asset**均放置于*script*目录下，界面相关的**Asset**放置于*ui*目录下，以此类推。
