@@ -22,6 +22,10 @@
             </div>
         </div>
     </div>
+
+    <div class="footer">
+        {{ partial('partial/footer') }}
+    </div>
 </div>
 
 
