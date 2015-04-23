@@ -9,6 +9,8 @@
 
 body
   background-color #eee
+  line-height 1.6em
+  font-size: 15px
 
 #full-wrap
   position relative
@@ -33,6 +35,10 @@ body
   padding-bottom 10px
   padding-left 10px
 
+h1, .h1, h2, .h2, h3, .h3
+  margin-top 1em
+  margin-bottom 0.8em
+
 // -------------------- content --------------------
 
 .row
@@ -43,6 +49,12 @@ body
   margin-left 250px
   padding-bottom 60px
   background-color #FFF
+  p
+    margin-bottom 1.5em
+  li
+    margin-bottom 0.8em
+  li > ul > li
+      margin-bottom 0.5em
 
 .content-wrap img
   max-width 100%
@@ -73,6 +85,9 @@ table
 
 .highlight tbody>tr:nth-of-type(odd)
     background-color transparent
+
+figure.highlight
+  margin-bottom 1.5em
 // -------------------- navbar --------------------
 
 header

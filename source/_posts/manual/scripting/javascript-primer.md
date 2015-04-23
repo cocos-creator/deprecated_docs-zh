@@ -9,13 +9,9 @@ permalinks: manual/scripting/javascript-primer
 
 本文以介绍 JavaScript 为主，初学者掌握本文的内容后，将能够对 JavaScript 有大体了解，并且满足 Fireball 的开发需求。
 
-JavaScript是一门充满争议的编程语言：它以 Java 命名，但实际上和 Java 毫无关系。JavaScript 的创造[只用了10天时间](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)，但在20年时间里却发展成世界上最流行的 Web 开发语言。
+JavaScript是一门充满争议的编程语言：它以 Java 命名，但实际上和 Java 毫无关系。JavaScript 的创造[只用了10天时间](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)，但在20年时间里却发展成世界上最流行的 Web 开发语言。如果为 JavaScript 今日的地位和流行程度找一个原因，那毫无疑问是容易上手的语言特性。当然，精通 JavaScript 是一项艰巨的任务，但学会足够开发 Web 应用和游戏的知识却很简单，如果你已经有了一定编程基础，熟悉 JavaScript 语言特性不会花费你多长时间。
 
-如果为 JavaScript 今日的地位和流行程度找一个原因，那毫无疑问是容易上手的语言特性。当然，精通 JavaScript 是一项艰巨的任务，但学会足够开发 Web 应用和游戏的知识却很简单，如果你已经有了一定编程基础，熟悉 JavaScript 语言特性不会花费你多长时间。
-
-另外，在使用 Fireball 开发游戏时你大多数情况下都会重复使用一些固有的模式。根据帕雷托法则（也叫二八定律），掌握一门语言的20%就足够你应付80%以上的情况了。
-
-现在就让我们来花最短的时间学习足够的 JavaScript 知识，以便我们开始使用 Fireball 开发游戏。
+另外，在使用 Fireball 开发游戏时你大多数情况下都会重复使用一些固有的模式。根据帕雷托法则（也叫二八定律），掌握一门语言的20%就足够你应付80%以上的情况了。现在就让我们来花最短的时间学习足够的 JavaScript 知识，以便我们开始使用 Fireball 开发游戏。
 
 ## 边读边尝试
 
@@ -45,14 +41,7 @@ var a = 12;
 a = 12;
 ```
 
-JavaScript doesn’t seem to mind when you ommit the var keyword. So what is it good for?
-
-The var keyword makes our variable local. Inside a Fireball project, this means that prefixing a variable with var will restrict its scope to the function you’re declaring it in (or the file, if you declare it outside of any function).
-
-On the other hand, **omitting the var keyword will make your variable available to your whole Fireball project**. Sometimes that’s good, but in most case it’s better to try and avoid polluting the global scope.
-
-如果你在浏览器控制台中尝试，会发现 JavaScript 在面对省略 `var` 时的变量声明并不会报错，但在 Fireball 项目脚本中，声明变量时的 `var` 是不能省略的，否则编译器会报错。任何 Fireball 脚本中的变量都
-
+如果你在浏览器控制台中尝试，会发现 JavaScript 在面对省略 `var` 时的变量声明并不会报错，但在 Fireball 项目脚本中，声明变量时的 `var` 是不能省略的，否则编译器会报错。
 
 
 ## 函数
@@ -382,17 +371,17 @@ var Comp = Fire.Class({
 
 这段代码向引擎定义了一个新组件，这个组件具有一个 `target` 参数，在运行时会初始化为指定的对象，并且在运行的过程中每一帧都将自己设置成和 `target` 相同的坐标。
 
-Let’s break this down (I’ll highlight each syntax pattern as we go):
+让我们分别看下每一句的作用（我会高亮有用的语法模式）：
 
-`var Comp = Fire.Class({`: We’re diving into the `Fire` object, using **dot notation** to call the `Class()` function (which is itself a property of `Fire`) on an anonymous **JavaScript object** (`{}`) (chaining, JavaScript objects).
+`var Comp = Fire.Class({`：这里我们使用 `Fire` 这个对象，通过**点语法**来调用对象的`Class()`方法（该方法是`Fire`对象的一个属性），调用时传递的参数是一个匿名的**JavaScript 对象** （`{}`）。
 
-`target: { default: null, type: Fire.Entity }`: 这个键值对声明了一个名为 `target` 的属性，值是另一个 JavaScript 匿名对象。这个对象定义了 target 的默认值和值类型。
+`target: { default: null, type: Fire.Entity }`：这个键值对声明了一个名为 `target` 的属性，值是另一个 JavaScript 匿名对象。这个对象定义了 target 的默认值和值类型。
 
-`extends: Fire.Component`: 这个键值对声明这个 Class 的父类是 Fire.Component。Fire.Component 是 Fireball 的内置类型。
+`extends: Fire.Component`：这个键值对声明这个 Class 的父类是 Fire.Component。Fire.Component 是 Fireball 的内置类型。
 
-`onStart: function () {`: The key/value pair implement an instance method called onStart, the value is an **anonymous function**.
+`onStart: function () {`：这一对键值定义了一个成员方法，叫做`onStart`，他的值是一个匿名函数。
 
-`this.target = Fire.Entity.find('`: In this context, `this` corresponds to the component being created. 这里通过 `this.target` 来访问 `target` 属性。
+`this.target = Fire.Entity.find('`：在这一句的上下文中，`this`表示正在被创建的 Component 组件，这里通过 `this.target` 来访问 `target` 属性。
 
 ## 继续学习
 
