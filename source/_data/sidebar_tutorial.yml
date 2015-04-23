@@ -1,4 +1,8 @@
 新手教程:
-  Step1: #
-  Step2: #
-  Step3: #
+  1-准备开始: tutorial/duang-sheep/step1
+  2-创建背景: tutorial/duang-sheep/step2
+  3-创建障碍物: tutorial/duang-sheep/step3
+  4-创建绵羊角色: tutorial/duang-sheep/step4
+  5-实现游戏循环: tutorial/duang-sheep/step5
+  6-添加分数文字: tutorial/duang-sheep/step6
+  7-添加音效: tutorial/duang-sheep/step7
