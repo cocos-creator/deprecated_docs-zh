@@ -1,4 +1,4 @@
-<div class="title-header">
+<div class="title-header" id="top">
     <h1>{{ category_name() }}</h1>
 </div>
 <div>

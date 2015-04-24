@@ -91,7 +91,8 @@ var Player = Fire.Class({
 });
 ```
 
-这个脚本将会在 Inspector 中显示一个输入控件，控件标题是 "Player Name"。  
+这个脚本将会在 Inspector 中显示一个输入控件，在 Inspector 中显示属性时，会自动把脚本中驼峰法命
+名的属性名`playerName`转化为可读性更高的`Player Name`，请注意。  
 
 ![player-name-in-inspector](/manual/scripting/component/player-name-in-inspector.png)
 
