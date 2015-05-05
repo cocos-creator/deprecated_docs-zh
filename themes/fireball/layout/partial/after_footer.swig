@@ -10,6 +10,7 @@
 <!--bootstrap -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 {{ js("js/bootstrap.min.js") }}
 {% if page.layout !== 'index' and page.layout !== 'category' %}
@@ -17,6 +18,7 @@
 {% endif %}
 {{ js("js/anchor.min.js")}}
 <script type="text/javascript">
+  hljs.initHighlightingOnLoad();
   addAnchors('.content-wrap h1, .content-wrap h2, .content-wrap h3');
 </script>
 <!-- Swiftype -->

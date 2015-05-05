@@ -29,9 +29,11 @@
   <meta name="msapplication-TileImage" content="{{ url_for('icon/mstile-144x144.png') }}">
   <!-- CSS -->
   <!-- build:css build/css/navy.css -->
-  {{ css('css/style') }}
-  {{ css('css/highlight') }}
+
+  {# {{ css('css/highlight') }} #}
   {{ css('css/anchor')}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/tomorrow.min.css" type="text/css">
+  {{ css('css/style') }}
   <!-- endbuild -->
   <!-- RSS -->
   {{ feed_tag('atom.xml') }}
