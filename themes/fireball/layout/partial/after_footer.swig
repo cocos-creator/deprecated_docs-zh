@@ -15,6 +15,10 @@
 {% if page.layout !== 'index' and page.layout !== 'category' %}
     {{ js('js/toc') }}
 {% endif %}
+{{ js("js/anchor.min.js")}}
+<script type="text/javascript">
+  addAnchors('.content-wrap h1, .content-wrap h2, .content-wrap h3');
+</script>
 <!-- Swiftype -->
 {#<script type="text/javascript">#}
   {#(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){#}

@@ -30,7 +30,8 @@
   <!-- CSS -->
   <!-- build:css build/css/navy.css -->
   {{ css('css/style') }}
-    {{ css('css/highlight') }}
+  {{ css('css/highlight') }}
+  {{ css('css/anchor')}}
   <!-- endbuild -->
   <!-- RSS -->
   {{ feed_tag('atom.xml') }}
