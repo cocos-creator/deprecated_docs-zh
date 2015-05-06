@@ -41,7 +41,7 @@ permalinks: tutorial/duang-sheep/step2
 
 ### 创建卷屏脚本
 
-参考手册中[**创建和使用脚本**](http://docs.fireball-x.com/zh/scripting/component/)与[**类型定义**](http://docs.fireball-x.com/zh/scripting/class/)的方法，在`Assets`视图中的`assets/script`文件夹下创建一个叫`ScrollPicture`的脚本。
+参考手册中[**创建和使用脚本**](http://docs-zh.fireball-x.com/manual/scripting/component/)与[**类型定义**](http://docs-zh.fireball-x.com/manual/scripting/class/)的方法，在`Assets`视图中的`assets/script`文件夹下创建一个叫`ScrollPicture`的脚本。
 
 该脚本实现了根据主角运动速度让背景物体沿X轴向左偏移，只要超过我们设置的偏移极限值，就会让背景物体返回原始位置，从而实现无限卷屏循环。
 

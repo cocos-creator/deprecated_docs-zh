@@ -5,8 +5,8 @@ permalinks: manual/start/editor-overview
 
 > 本章节将介绍Fireball引擎编辑器的核心界面，使您能够快速熟悉Fireball Editor的各项功能，为后续的项目开发做好准备。
 > 在阅读本章节之前，请确认您已经完成了以下章节的学习：
-> - [获取Fireball](/zh/start/get-fireball/)
-> - [新建项目](/zh/start/new-project/)
+> - [获取Fireball](/manual/start/get-fireball/)
+> - [新建项目](/manual/start/new-project/)
 
 # 引言
 在您跃跃欲试，开始创造自己的游戏之前，请务必先花些时间阅读本章节来了解Fireball Editor提供的各项功能——这将使您在以后构建游戏的过程中更加得心应手。当对Editor中任何部分的功能有疑问时，本章节也是您寻找答案的好地方。
