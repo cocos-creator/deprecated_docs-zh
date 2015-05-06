@@ -25,7 +25,7 @@ hexo s
 ### 文档分类
 
 文档目前分为 tutorial，manual, api 三类，分别对应`source`目录下的不同文件夹。
-直接在github下的[source/_post]目录下建立表示分类的文件夹，并在里面新建md文件即可添加文档。
+直接在github下的[source/\_post]目录下建立表示分类的文件夹，并在里面新建md文件即可添加文档。
 
 ### Front-matter
 
@@ -62,7 +62,7 @@ permalinks: manual/group/my-doc-link
 ## Troubleshooting
 
 
- ### `[Error: Cannot find module './build/Release/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND'`
+### `[Error: Cannot find module './build/Release/DTraceProviderBindings'] code: 'MODULE_NOT_FOUND'`
 
  Unknown reason for causing this issue. Reinstall local hexo with `no-optional` param to fix it:
 
@@ -70,4 +70,4 @@ permalinks: manual/group/my-doc-link
  npm install hexo --no-optional
  ```
 
- 参考 https://github.com/hexojs/hexo/issues/1055
+参考 https://github.com/hexojs/hexo/issues/1055
