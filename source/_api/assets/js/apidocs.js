@@ -45,6 +45,12 @@ YUI().use(
                     callbacks: defaultRoute
                 },
 
+                // -- /enum/* ----------------------------------------------------------
+                {
+                    path: '/enums/:enum.html*',
+                    callbacks: [defaultRoute, 'handleClasses']
+                },
+
                 // -- /classes/* -------------------------------------------------------
                 {
                     path: '/classes/:class.html*',
@@ -111,7 +117,7 @@ YUI().use(
         };
 
         pjax.initRoot = function() {
-            var terminators = /^(?:classes|files|modules)$/,
+            var terminators = /^(?:enums|classes|files|modules)$/,
                 parts = pjax._getPathRoot().split('/'),
                 root = [],
                 i, len, part;
@@ -138,7 +144,8 @@ YUI().use(
         pjax.updateVisibility = function() {
             var container = pjax.get('container');
 
-            container.toggleClass('hide-inherited', !Y.one('#api-show-inherited').get('checked'));
+            // TODO(@yorkie): to be removed
+            // container.toggleClass('hide-inherited', !Y.one('#api-show-inherited').get('checked'));
 
             container.toggleClass('show-deprecated',
                 Y.one('#api-show-deprecated').get('checked'));

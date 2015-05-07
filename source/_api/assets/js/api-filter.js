@@ -1,5 +1,11 @@
 YUI.add('api-filter', function (Y) {
 
+var Types = {
+    '枚举': 'enums',
+    '类型': 'classes',
+    '模组': 'modules'
+};
+
 Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
     // -- Initializer ----------------------------------------------------------
     initializer: function () {
@@ -7,13 +13,11 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
         this._syncUIACBase();
     },
     getDisplayName: function(name) {
-
         Y.each(Y.YUIDoc.meta.allModules, function(i) {
             if (i.name === name && i.displayName) {
                 name = i.displayName;
             }
         });
-
         return name;
     }
 
@@ -24,23 +28,37 @@ Y.APIFilter = Y.Base.create('apiFilter', Y.Base, [Y.AutoCompleteBase], {
             value: 'phraseMatch'
         },
 
-        // May be set to "classes" or "modules".
+        // May be set to "enums", "classes" or "modules".
         queryType: {
-            value: 'classes'
+            value: '枚举'
         },
 
         source: {
             valueFn: function() {
                 var self = this;
                 return function(q) {
-                    var data = Y.YUIDoc.meta[self.get('queryType')],
-                        out = [];
-                    Y.each(data, function(v) {
-                        if (v.toLowerCase().indexOf(q.toLowerCase()) > -1) {
-                            out.push(v);
-                        }
+                    var type = Types[self.get('queryType')];
+                    var data = Y.YUIDoc.meta[type];
+                    var classifiedData = {};
+
+                    // optimize for empty array, directly returns []
+                    if (!data.length) return [];
+
+                    data.filter(function (item) {
+                        return (item.name.toLowerCase().indexOf(q.toLowerCase()) > -1)
+                    }).forEach(function (item) {
+                        // generate classifiedData via item.module
+                        if (!classifiedData[item.module])
+                            classifiedData[item.module] = [];
+                        classifiedData[item.module].push(item);
                     });
-                    return out;
+                    return Object.keys(classifiedData).sort(function (prev, next) {
+                        return prev > next;
+                    }).map(function (key) {
+                        return classifiedData[key];
+                    }).reduce(function (prev, next) {
+                        return prev.concat(next);
+                    });
                 };
             }
         }

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>utils/api/builtin/build-settings/editor/panel/build-settings.js - fireball-build</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
+                    <p class="description">Fireball is the game engine for the future.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1 class="file-heading">文件: utils/api/builtin/build-settings/editor/panel/build-settings.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Fire
+ */
+var Remote = require(&#x27;remote&#x27;);
+var Url = require(&#x27;fire-url&#x27;);
+var Fs = require(&#x27;fire-fs&#x27;);
+var Path = require(&#x27;fire-path&#x27;);
+var Shell = require(&#x27;shell&#x27;);
+
+Polymer({
+    platformList: [
+        { name: &#x27;Web Mobile&#x27;, value: &#x27;web-mobile&#x27; },
+        { name: &#x27;Web Desktop&#x27;, value: &#x27;web-desktop&#x27; },
+    ],
+
+    observe: {
+        &#x27;profiles.project.projectName&#x27;: &#x27;projectNameChanged&#x27;,
+        &#x27;profiles.project.defaultScene&#x27;: &#x27;defaultSceneChanged&#x27;,
+        &#x27;profiles.project.platform&#x27;: &#x27;platformChanged&#x27;,
+        &#x27;profiles.project.isDebug&#x27;: &#x27;isDebugChanged&#x27;,
+        &#x27;profiles.project.buildPath&#x27;: &#x27;buildPathChanged&#x27;,
+    },
+
+    isProjectNameValid: true,
+    isBuildPathValid: true,
+    hoverBuildButton: false,
+    finderOrExplorer: Fire.isDarwin ? &#x27;Finder&#x27;:&#x27;Explorer&#x27;,
+
+    domReady: function () {
+        Editor.sendToCore(&#x27;build-settings:query-scenes&#x27;);
+    },
+
+    &#x27;panel:open&#x27;: function () {
+        var projectPath = Remote.getGlobal(&#x27;Editor&#x27;).projectPath;
+        var projectName = Path.basename(projectPath);
+
+        var profile = this.profiles.project;
+        if ( profile.projectName === &#x27;&#x27; ) {
+            profile.projectName = projectName;
+        }
+        if ( profile.buildPath === &#x27;&#x27; ) {
+            profile.buildPath = Path.join(projectPath, &#x27;mobile-&#x27; + projectName);
+        }
+    },
+
+    &#x27;build-settings:query-scenes-results&#x27;: function ( detail ) {
+        var results = detail.results;
+
+        var profile = this.profiles.project;
+        profile.sceneList = results.map( function ( item ) {
+            return { name: item.url, value: item.uuid, checked: true };
+        });
+
+        if ( profile.sceneList.indexOf(profile.defaultScene) === -1 ) {
+            if (profile.sceneList.length === 0) {
+                this.$.tip.style.display = &quot;block&quot;;
+                this.$.tip.innerHTML = &#x27;Please create a new scene,then you can to build!&#x27;;
+                Fire.warn(&#x27;Please create a new scene,then you can to build!&#x27;);
+                return;
+            }
+
+            profile.defaultScene = profile.sceneList[0].value;
+        }
+        profile.save();
+    },
+
+    defaultSceneChanged: function () {
+        var profile = this.profiles.project;
+        for (var i = 0; i &lt; profile.sceneList.length; ++i) {
+            if (profile.sceneList[i].value === profile.defaultScene) {
+                profile.sceneList[i].checked = true;
+            }
+        }
+        profile.save();
+    },
+
+    buildPathChanged: function () {
+        var profile = this.profiles.project;
+        profile.save();
+        if ( profile.buildPath ) {
+            this.isBuildPathValid = true;
+            return;
+        }
+        this.isBuildPathValid = false;
+    },
+
+    projectNameChanged: function () {
+        var profile = this.profiles.project;
+        profile.save();
+        if ( profile.projectName ) {
+            this.isProjectNameValid = true;
+            return;
+        }
+
+        this.isProjectNameValid = false;
+    },
+
+    platformChanged: function () {
+        var profile = this.profiles.project;
+        var projectPath = Remote.getGlobal(&#x27;Editor&#x27;).projectPath;
+        if ( profile.platform === &quot;web-mobile&quot; ) {
+            profile.buildPath = Path.join(projectPath, &quot;/mobile-&quot; + profile.projectName);
+        }
+        else {
+            profile.buildPath = Path.join(projectPath, &quot;/desktop-&quot; + profile.projectName);
+        }
+        profile.save();
+    },
+
+    isDebugChanged: function () {
+        var profile = this.profiles.project;
+        profile.save();
+    },
+
+    chooseDistPath: function () {
+        var dialog = Remote.require(&#x27;dialog&#x27;);
+        var projectPath = Remote.getGlobal(&#x27;Editor&#x27;).projectPath;
+
+        dialog.showOpenDialog({ defaultPath: projectPath, properties: [&#x27;openDirectory&#x27;]},function (res) {
+            var profile = this.profiles.project;
+            if (res) {
+                if (profile.platform === &#x27;web-mobile&#x27;) {
+                    profile.buildPath = res + &#x27;/mobile-&#x27; + Path.basename(projectPath);
+                }
+                else {
+                    profile.buildPath = res + &#x27;/desktop-&#x27; + Path.basename(projectPath);
+                }
+            }
+        }.bind(this));
+    },
+
+    buildAction: function () {
+        if ( this.isProjectNameValid &amp;&amp; this.isBuildPathValid ) {
+            this.$.tip.style.display = &#x27;none&#x27;;
+
+            var profile = this.profiles.project;
+            var buildUuidList = profile.sceneList.filter( function (item) {
+                return item.checked;
+            }).map(function (item) {
+                return item.value;
+            });
+
+            // move default scene to first
+            var firstSceneIndex = buildUuidList.indexOf(profile.defaultScene);
+            var toSwap = buildUuidList[0];
+            buildUuidList[0] = buildUuidList[firstSceneIndex];
+            buildUuidList[firstSceneIndex] = toSwap;
+
+            Editor.sendToCore(&#x27;build-project&#x27;, profile.platform, profile.buildPath, buildUuidList, profile);
+            Editor.Metrics.trackBuild( profile.platform );
+        }
+        else {
+            this.$.tip.style.display = &#x27;block&#x27;;
+            this.$.tip.animate([
+                { color: &#x27;white&#x27; },
+                { color: &#x27;red&#x27; },
+                { color: &#x27;white&#x27; },
+                { color: &#x27;red&#x27; },
+            ], {
+                duration: 300
+            });
+        }
+    },
+
+    buildButtonHoverInAction: function (event) {
+        this.hoverBuildButton = true;
+    },
+
+    buildButtonHoverOutAction: function () {
+        this.hoverBuildButton = false;
+    },
+
+    previewAction: function () {
+        Shell.openExternal(&#x27;http://localhost:7456&#x27;);
+        Shell.beep();
+    },
+
+    showInFinder: function () {
+        var profile = this.profiles.project;
+        if (!Fs.existsSync(profile.buildPath)) {
+            Fire.warn( &#x27;%s not exists!&#x27;, profile.buildPath);
+            return;
+        }
+        Shell.showItemInFolder(Path.normalize(profile.buildPath));
+        Shell.beep();
+    },
+
+    closeAction: function () {
+        window.close();
+    },
+});
+
+    </pre>
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

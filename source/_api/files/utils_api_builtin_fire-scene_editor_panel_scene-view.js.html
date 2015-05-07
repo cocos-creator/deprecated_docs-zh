@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>utils/api/builtin/fire-scene/editor/panel/scene-view.js - fireball-build</title>
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="../assets/vendor/yui-min.js"></script>
+</head>
+<body>
+
+<div id="doc">
+    <header class="main-header">
+        <div class="content">
+            <div class="project-title">
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
+                    <p class="description">Fireball is the game engine for the future.</p>
+            </div>
+            <ul class="jump-links">
+                <li><a href="#index" class="index-jump-link">index</a></li>
+                <li><a href="#top" class="top-jump-link">top</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="bd" class="main-body">
+
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="docs-main" class="apidocs">
+            <div class="content container"><h1 class="file-heading">文件: utils/api/builtin/fire-scene/editor/panel/scene-view.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Fire
+ */
+Polymer({
+    created: function () {
+        this.renderContext = null;
+        this.grids = null;
+        this.svgGizmos = null;
+        this.view = { width: 0, height: 0 };
+        this.sceneCamera = {
+            position: {
+                x: 0.0,
+                y: 0.0,
+            },
+            scale: 1.0,
+        };
+
+        this._editTool = null;
+        this._editingEdityIds = [];
+    },
+
+    ready: function () {
+        this.tabIndex = EditorUI.getParentTabIndex(this)+1;
+
+        // init grids
+        this.grids = new Editor.Grids();
+
+        // init gizmos
+        this.svgGizmos = new Editor.SvgGizmos( this.$.gizmos );
+    },
+
+    init: function () {
+        var clientRect = this.getBoundingClientRect();
+        this.view = {
+            left: clientRect.left,
+            top: clientRect.top,
+            width: clientRect.width,
+            height: clientRect.height,
+        };
+
+        // init interaction context
+        this.interactionContext = Fire.Engine.createInteractionContext();
+
+        // init render context
+        this.renderContext = Fire.Engine.createSceneView( this.view.width,
+                                                          this.view.height,
+                                                          this.$.canvas );
+        if ( this.renderContext ) {
+            var graphics = new Fire._Runtime.RenderContext.Graphics(this.renderContext.getBackgroundNode(), this.renderContext);
+            this.grids.setGraphics(graphics);
+
+            // make sure we apply the size to all canvas
+            this.resize();
+        }
+    },
+
+    initSceneCamera: function () {
+        if ( !Fire.Engine._scene ) {
+            Fire.error( &quot;Failed to init camera, can not find current scene in Fire.Engine.&quot; );
+            return;
+        }
+
+        var camera = null;
+        var cameraEnt = Fire.Engine._scene.findEntityWithFlag(&#x27;/Scene Camera&#x27;, Fire._ObjectFlags.Hide | Fire._ObjectFlags.EditorOnly);
+
+        // create editor camera
+        if ( cameraEnt === null ) {
+            // TODO: add this code to EditorUtils
+            cameraEnt = new Fire.Entity(&#x27;Scene Camera&#x27;, {
+                flags: Fire._ObjectFlags.Hide | Fire._ObjectFlags.EditorOnly
+            });
+            camera = cameraEnt.addComponent(Fire.Camera);
+        }
+        else {
+            camera = cameraEnt.getComponent(Fire.Camera);
+            if ( camera === null ) {
+                Fire.error( &quot;Can not find camera component in Scene Camera.&quot; );
+                return;
+            }
+        }
+
+        //
+        camera.size = this.view.height;
+        camera.background = new Fire.Color().fromHEX(&#x27;#303030&#x27;);
+        this.renderContext.camera = camera;
+        this.renderContext.background = camera.background; // FIXME: ask @jare if it fix this line.
+        this.grids.setCamera(camera);
+        this.svgGizmos.setCamera(camera);
+
+        //
+        this.repaint();
+    },
+
+    resize: function () {
+        if ( this.renderContext ) {
+            var clientRect = this.getBoundingClientRect();
+            this.view = {
+                left: clientRect.left,
+                top: clientRect.top,
+                width: clientRect.width,
+                height: clientRect.height,
+            };
+            this.renderContext.size = new Fire.Vec2( this.view.width, this.view.height );
+            this.grids.resize( this.view.width, this.view.height );
+            this.svgGizmos.resize( this.view.width, this.view.height );
+
+            this.repaint();
+        }
+    },
+
+    repaint: function () {
+        this.updateCamera();
+        this.updateScene();
+        this.updateGizmos();
+    },
+
+    updateCamera: function () {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        this.renderContext.camera.size = this.view.height / this.sceneCamera.scale;
+        this.renderContext.camera.transform.position =
+            new Vec2 ( this.sceneCamera.position.x,
+                       this.sceneCamera.position.y );
+    },
+
+    updateScene: function () {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        this.grids.update();
+        Fire._Runtime.render(this.renderContext);
+        this.interactionContext.update(Fire.Engine._scene.entities);
+    },
+
+    updateGizmos: function () {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        this.svgGizmos.update();
+    },
+
+    rebuildGizmos: function () {
+        if ( this._editingEdityIds.length &gt; 0 ) {
+            if ( this._editTool ) {
+                this.svgGizmos.remove(null, this._editTool);
+            }
+            this.edit(this._editingEdityIds);
+        }
+    },
+
+    updateComponent: function ( compID, enabled ) {
+        var gizmo = null;
+
+        if ( enabled ) {
+            var comp = Editor.getInstanceById(compID);
+            if ( !comp ) {
+                return;     // 就算是enabled消息，由于是异步处理，也有可能已经销毁
+            }
+            if ( comp.entity._objFlags &amp; Fire._ObjectFlags.HideInEditor ) {
+                return;
+            }
+
+            var classname = Fire.JS.getClassName(comp);
+            var gizmosDef = Editor.gizmos[classname];
+            if ( gizmosDef ) {
+                gizmo = new gizmosDef( this.svgGizmos, comp );
+                gizmo.update();
+                this.svgGizmos.add (compID, gizmo);
+            }
+        }
+        else {
+            gizmo = this.svgGizmos.gizmosTable[compID];
+            if ( gizmo ) {
+                this.svgGizmos.remove (compID, gizmo);
+            }
+        }
+    },
+
+    updateComponentGizmos: function ( entity, options ) {
+        for (var c = 0; c &lt; entity._components.length; ++c) {
+            var component = entity._components[c];
+            if ( component.isValid ) {
+                var gizmo = this.svgGizmos.gizmosTable[component.id];
+                if ( gizmo ) {
+                    Fire.JS.mixin( gizmo, options );
+                    gizmo.update();
+                }
+            }
+        }
+    },
+
+    deleteSelection: function () {
+        Editor.sendToMainWindow(&#x27;engine:delete-entities&#x27;, {
+            &#x27;entity-id-list&#x27;: Editor.Selection.entities
+        });
+    },
+
+    hover: function ( entityID ) {
+        var entity = Editor.getInstanceById(entityID);
+        // NOTE: entity might be destroyed
+        if ( entity ) {
+            this.updateComponentGizmos( entity, {
+                hovering: true
+            });
+        }
+    },
+
+    hoverout: function ( entityID ) {
+        var entity = Editor.getInstanceById(entityID);
+        // NOTE: entity might be destroyed
+        if ( entity ) {
+            this.updateComponentGizmos( entity, {
+                hovering: false
+            });
+        }
+    },
+
+    select: function ( entityIds ) {
+        if ( this._editTool ) {
+            this.svgGizmos.remove(null, this._editTool);
+            this._editTool = null;
+        }
+
+        this._editingEdityIds = this._editingEdityIds.concat(entityIds);
+
+        if ( this._editingEdityIds.length &gt; 0 ) {
+            this.edit(this._editingEdityIds);
+        }
+    },
+
+    unselect: function ( entityIds ) {
+        for ( var i = 0; i &lt; entityIds.length; ++i ) {
+            var id = entityIds[i];
+
+            for ( var j = 0; j &lt; this._editingEdityIds.length; ++j ) {
+                if ( this._editingEdityIds[j] === id ) {
+                    this._editingEdityIds.splice(j,1);
+                    break;
+                }
+            }
+
+            var entity = Editor.getInstanceById(entityIds[i]);
+            // NOTE: entity might be destroyed
+            if ( entity ) {
+                this.updateComponentGizmos( entity, {
+                    selecting: false,
+                    editing: false,
+                });
+            }
+        }
+
+        if ( this._editTool ) {
+            this.svgGizmos.remove(null, this._editTool);
+            this._editTool = null;
+        }
+
+        if ( this._editingEdityIds.length &gt; 0 ) {
+            this.edit(this._editingEdityIds);
+        }
+    },
+
+    edit: function ( entityIds ) {
+        var i, gizmo, entities = [], entity = null;
+        for ( i = 0; i &lt; entityIds.length; ++i ) {
+            entity = Editor.getInstanceById(entityIds[i]);
+            if (entity) {
+                entities.push( entity );
+            }
+        }
+
+        if ( entities.length &lt;= 0 )
+            return;
+
+        switch ( Editor.mainWindow.settings.handle ) {
+            case &quot;move&quot;:
+                gizmo = new Editor.PositionGizmo( this.svgGizmos, entities );
+                break;
+
+            case &quot;rotate&quot;:
+                gizmo = new Editor.RotationGizmo( this.svgGizmos, entities );
+                break;
+
+            case &quot;scale&quot;:
+                gizmo = new Editor.ScaleGizmo( this.svgGizmos, entities );
+                break;
+        }
+
+        gizmo.hitTest = false;
+        gizmo.pivot = Editor.mainWindow.settings.pivot;
+        gizmo.coordinate = Editor.mainWindow.settings.coordinate;
+        gizmo.update();
+
+        this._editTool = gizmo;
+        this.svgGizmos.add( null, gizmo );
+
+        //
+        var c, component;
+        if ( entities.length === 1 ) {
+            entity = entities[0];
+            for (c = 0; c &lt; entity._components.length; ++c) {
+                component = entity._components[c];
+                if ( component.isValid ) {
+                    gizmo = this.svgGizmos.gizmosTable[component.id];
+                    if ( gizmo &amp;&amp; (gizmo.selecting === false || gizmo.editing === false) ) {
+                        gizmo.selecting = true;
+                        gizmo.editing = true;
+                        gizmo.update();
+                    }
+                }
+            }
+        }
+        else {
+            for ( i = 0; i &lt; entities.length; ++i ) {
+                entity = entities[i];
+                for (c = 0; c &lt; entity._components.length; ++c) {
+                    component = entity._components[c];
+                    if ( component.isValid ) {
+                        gizmo = this.svgGizmos.gizmosTable[component.id];
+                        if ( gizmo &amp;&amp; (gizmo.selecting === false || gizmo.editing === true) ) {
+                            gizmo.selecting = true;
+                            gizmo.editing = false;
+                            gizmo.update();
+                        }
+                    }
+                }
+
+            }
+        }
+    },
+
+    hitTest: function ( x, y ) {
+        // check if we hit gizmos
+        var gizmos = this.svgGizmos.hitTest ( x, y, 1, 1 );
+        if ( gizmos.length &gt; 0 ) {
+            return gizmos[0].entity;
+        }
+
+        var mousePos = new Fire.Vec2(x,y);
+        var worldMousePos = this.renderContext.camera.screenToWorld(mousePos);
+
+        // pick the nearest one, ignore z
+
+        var minDist = Number.MAX_VALUE;
+        var resultEntity = null;
+
+        for ( var i = 0, entities = this.interactionContext.entities; i &lt; entities.length; ++i ) {
+            var entity = entities[i];
+            var aabb = this.interactionContext.getAABB(entity);
+            if ( aabb.contains(worldMousePos) ) {
+                var dist = worldMousePos.sub(aabb.center).magSqr();
+                if ( dist &lt; minDist ) {
+                    var obb = this.interactionContext.getOBB(entity);
+                    var polygon = new Fire.Polygon(obb);
+                    if ( polygon.contains( worldMousePos ) ) {
+                        minDist = dist;
+                        resultEntity = entity;
+                    }
+                }
+            }
+        }
+
+        return resultEntity;
+    },
+
+    rectHitTest: function ( rect ) {
+        var v1 = this.renderContext.camera.screenToWorld(new Fire.Vec2(rect.x,rect.y));
+        var v2 = this.renderContext.camera.screenToWorld(new Fire.Vec2(rect.xMax,rect.yMax));
+        var worldRect = Fire.Rect.fromMinMax(v1,v2);
+
+        var result = [];
+        var i, entities;
+
+        for ( i = 0, entities = this.interactionContext.entities; i &lt; entities.length; ++i ) {
+            var entity = entities[i];
+            var aabb = this.interactionContext.getAABB(entity);
+            if ( aabb.intersects(worldRect) ) {
+                var obb = this.interactionContext.getOBB(entity);
+                var polygon = new Fire.Polygon(obb);
+                if ( Fire.Intersection.rectPolygon(worldRect, polygon) ) {
+                    result.push(entity);
+                }
+            }
+        }
+
+        // get hit test from gizmos
+        var gizmos = this.svgGizmos.hitTest ( rect.x, rect.y, rect.width, rect.height );
+        for ( i = 0; i &lt; gizmos.length; ++i ) {
+            result.push(gizmos[i].entity);
+        }
+
+        return result;
+    },
+
+    mousemoveAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        //
+        var hoverEntity = this.hitTest(event.offsetX, event.offsetY);
+        Editor.Selection.hoverEntity(hoverEntity &amp;&amp; hoverEntity.id);
+
+        event.stopPropagation();
+    },
+
+    mousedownAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        // process camera panning
+        if ( event.which === 1 &amp;&amp; event.shiftKey ) {
+            var mousemoveHandle = function(event) {
+                var dx = event.clientX - this._lastClientX;
+                var dy = event.clientY - this._lastClientY;
+
+                this.sceneCamera.position.x = this.sceneCamera.position.x - dx/this.sceneCamera.scale;
+                this.sceneCamera.position.y = this.sceneCamera.position.y + dy/this.sceneCamera.scale;
+
+                this._lastClientX = event.clientX;
+                this._lastClientY = event.clientY;
+
+                this.repaint();
+
+                event.stopPropagation();
+            }.bind(this);
+
+            var mouseupHandle = function(event) {
+                document.removeEventListener(&#x27;mousemove&#x27;, mousemoveHandle);
+                document.removeEventListener(&#x27;mouseup&#x27;, mouseupHandle);
+                document.removeEventListener(&#x27;keyup&#x27;, keyupHandle);
+
+                EditorUI.removeDragGhost();
+                event.stopPropagation();
+            }.bind(this);
+
+            var keyupHandle = function(event) {
+                // shift key
+                if ( event.keyCode === 16 ) {
+                    document.removeEventListener(&#x27;mousemove&#x27;, mousemoveHandle);
+                    document.removeEventListener(&#x27;mouseup&#x27;, mouseupHandle);
+                    document.removeEventListener(&#x27;keyup&#x27;, keyupHandle);
+
+                    EditorUI.removeDragGhost();
+                    event.stopPropagation();
+                }
+            }.bind(this);
+
+            //
+            this._lastClientX = event.clientX;
+            this._lastClientY = event.clientY;
+            EditorUI.addDragGhost(&quot;cell&quot;);
+            document.addEventListener ( &#x27;mousemove&#x27;, mousemoveHandle );
+            document.addEventListener ( &#x27;mouseup&#x27;, mouseupHandle );
+            document.addEventListener ( &#x27;keyup&#x27;, keyupHandle );
+
+            event.stopPropagation();
+            return;
+        }
+
+        // process rect-selection
+        if ( event.which === 1 ) {
+            var toggleMode = false;
+            var lastSelection = Editor.Selection.entities;
+            if ( event.metaKey || event.ctrlKey ) {
+                toggleMode = true;
+            }
+
+            //
+            var selectmoveHandle = function(event) {
+                var x = this._rectSelectStartX - this.view.left;
+                var y = this._rectSelectStartY - this.view.top;
+                var w = event.clientX - this._rectSelectStartX;
+                var h = event.clientY - this._rectSelectStartY;
+
+                var magSqr = w*w + h*h;
+                if ( magSqr &lt; 2.0 * 2.0 ) {
+                    return;
+                }
+
+                if ( w &lt; 0.0 ) {
+                    x += w;
+                    w = -w;
+                }
+                if ( h &lt; 0.0 ) {
+                    y += h;
+                    h = -h;
+                }
+
+                this.svgGizmos.updateSelection( x, y, w, h);
+                var i, ids;
+                var entities = this.rectHitTest( new Fire.Rect( x, y, w, h ) );
+
+                // toggle mode will always act added behaviour when we in rect-select-state
+                if ( toggleMode ) {
+                    ids = lastSelection.slice();
+
+                    for ( i = 0; i &lt; entities.length; ++i ) {
+                        if ( ids.indexOf(entities[i].id) === -1 )
+                            ids.push( entities[i].id );
+                    }
+                }
+                else {
+                    ids = [];
+
+                    for ( i = 0; i &lt; entities.length; ++i ) {
+                        ids.push( entities[i].id );
+                    }
+                }
+                Editor.Selection.selectEntity ( ids, true, false );
+
+                //
+                event.stopPropagation();
+            }.bind(this);
+
+            var selectexitHandle = function(event) {
+                document.removeEventListener(&#x27;mousemove&#x27;, selectmoveHandle);
+                document.removeEventListener(&#x27;mouseup&#x27;, selectexitHandle);
+
+                var x = this._rectSelectStartX - this.view.left;
+                var y = this._rectSelectStartY - this.view.top;
+                var w = event.clientX - this._rectSelectStartX;
+                var h = event.clientY - this._rectSelectStartY;
+
+                this.svgGizmos.fadeoutSelection();
+                EditorUI.removeDragGhost();
+                event.stopPropagation();
+
+                var magSqr = w*w + h*h;
+                if ( magSqr &gt;= 2.0 * 2.0 ) {
+                    Editor.Selection.confirm ();
+                }
+                else {
+                    var entity = this.hitTest( x, y );
+
+                    if ( toggleMode ) {
+                        if ( entity ) {
+                            if ( lastSelection.indexOf(entity.id) === -1 ) {
+                                Editor.Selection.selectEntity ( entity.id, false, true );
+                            }
+                            else {
+                                Editor.Selection.unselectEntity ( entity.id, true );
+                            }
+                        }
+                    }
+                    else {
+                        if ( entity ) {
+                            Editor.Selection.selectEntity ( entity.id, true, true );
+                        }
+                        else {
+                            Editor.Selection.clearEntity ();
+                        }
+                    }
+                }
+            }.bind(this);
+
+            //
+            this._rectSelectStartX = event.clientX;
+            this._rectSelectStartY = event.clientY;
+            EditorUI.addDragGhost(&quot;default&quot;);
+            document.addEventListener ( &#x27;mousemove&#x27;, selectmoveHandle );
+            document.addEventListener ( &#x27;mouseup&#x27;, selectexitHandle );
+
+            event.stopPropagation();
+            return;
+        }
+    },
+
+    mousewheelAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        var scale = this.sceneCamera.scale;
+        scale = Math.pow( 2, event.wheelDelta * 0.002) * scale;
+        scale = Math.max( 0.01, Math.min( scale, 1000 ) );
+        this.sceneCamera.scale = scale;
+
+        this.repaint();
+
+        event.stopPropagation();
+    },
+
+    mouseleaveAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        Editor.Selection.hoverEntity(null);
+        event.stopPropagation();
+    },
+
+    keydownAction: function (event) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        switch ( event.which ) {
+            // delete (Windows)
+            case 46:
+                this.deleteSelection();
+                event.stopPropagation();
+            break;
+
+            // command + delete (Mac)
+            case 8:
+                if ( event.metaKey ) {
+                    this.deleteSelection();
+                }
+                event.stopPropagation();
+            break;
+        }
+    },
+
+    gizmoshoverAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        var entity = event.detail.entity;
+        if ( entity )
+            Editor.Selection.hoverEntity(entity.id);
+        else
+            Editor.Selection.hoverEntity(null);
+
+        event.stopPropagation();
+    },
+
+    gizmosdirtyAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        Editor.sendToMainWindow( &#x27;gizmos:dirty&#x27; );
+        this.repaint();
+        event.stopPropagation();
+    },
+
+    dragoverAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        var dragType = EditorUI.DragDrop.type(event.dataTransfer);
+        if ( dragType !== &quot;asset&quot; ) {
+            EditorUI.DragDrop.allowDrop( event.dataTransfer, false );
+            return;
+        }
+
+        EditorUI.DragDrop.allowDrop( event.dataTransfer, true );
+        EditorUI.DragDrop.updateDropEffect(event.dataTransfer, &quot;copy&quot;);
+
+        event.preventDefault();
+        event.stopPropagation();
+    },
+
+    dropAction: function ( event ) {
+        if ( !this.renderContext || !this.renderContext.camera )
+            return;
+
+        var dragType = EditorUI.DragDrop.type(event.dataTransfer);
+
+        if ( dragType !== &#x27;asset&#x27; &amp;&amp; dragType !== &#x27;entity&#x27; )
+            return;
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        Editor.Selection.cancel();
+
+        var items = EditorUI.DragDrop.drop(event.dataTransfer);
+        var clientRect = this.getBoundingClientRect();
+
+        var onload = function ( err, asset ) {
+            if ( asset &amp;&amp; asset.createEntity ) {
+                asset.createEntity( function ( ent ) {
+                    var mousePos = new Fire.Vec2(event.clientX - clientRect.left, event.clientY - clientRect.top);
+                    var worldMousePos = this.renderContext.camera.screenToWorld(mousePos);
+                    ent.transform.worldPosition = worldMousePos;
+                    Editor.Selection.selectEntity( ent.id, true, true );
+                    Fire.AssetLibrary.cacheAsset( asset );
+                    this.repaint();
+                }.bind(this) );
+            }
+        }.bind(this);
+
+        if ( items.length &gt; 0 ) {
+            if ( dragType === &#x27;asset&#x27; ) {
+                for ( var i = 0; i &lt; items.length; ++i ) {
+                    Fire.AssetLibrary.loadAssetInEditor( items[i], onload );
+                }
+            }
+        }
+    },
+});
+
+    </pre>
+</div>
+</div>
+        </div>
+
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/vendor/jquery.min.js"></script>
+<script src="../assets/js/jquery-offscreen-trigger.js"></script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

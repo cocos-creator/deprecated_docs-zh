@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Transform - Fireball Engine API</title>
+    <title>Transform - fireball-build</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -14,8 +14,10 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                    <a href="http://docs-zh.fireball-x.com"><img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API"></a>
-                    <h1 class="project-name">Fireball Engine API</h1> <span class="project-version">0.2.0</span>
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
                     <p class="description">Fireball is the game engine for the future.</p>
             </div>
             <ul class="jump-links">
@@ -26,2198 +28,1479 @@
     </header>
     <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a></li>
-                            <li><a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a></li>
-                            <li><a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a></li>
-                            <li><a class="type" href="../classes/Asset.html">Asset</a></li>
-                            <li><a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a></li>
-                            <li><a class="type" href="../classes/AudioClip.html">AudioClip</a></li>
-                            <li><a class="type" href="../classes/AudioSource.html">AudioSource</a></li>
-                            <li><a class="type" href="../classes/BitmapFont.html">BitmapFont</a></li>
-                            <li><a class="type" href="../classes/BitmapText.html">BitmapText</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAlign.html">BitmapText.TextAlign</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAnchor.html">BitmapText.TextAnchor</a></li>
-                            <li><a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a></li>
-                            <li><a class="type" href="../classes/Camera.html">Camera</a></li>
-                            <li><a class="type" href="../classes/Color.html">Color</a></li>
-                            <li><a class="type" href="../classes/Component.html">Component</a></li>
-                            <li><a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a></li>
-                            <li><a class="type" href="../classes/Engine.html">Engine</a></li>
-                            <li><a class="type" href="../classes/Entity.html">Entity</a></li>
-                            <li><a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a></li>
-                            <li><a class="type" href="../classes/Event.html">Event</a></li>
-                            <li><a class="type" href="../classes/EventTarget.html">EventTarget</a></li>
-                            <li><a class="type" href="../classes/Fire.html">Fire</a></li>
-                            <li><a class="type" href="../classes/FixedHeight.html">FixedHeight</a></li>
-                            <li><a class="type" href="../classes/FObject.html">FObject</a></li>
-                            <li><a class="type" href="../classes/HashObject.html">HashObject</a></li>
-                            <li><a class="type" href="../classes/Input.html">Input</a></li>
-                            <li><a class="type" href="../classes/Intersection.html">Intersection</a></li>
-                            <li><a class="type" href="../classes/JS.html">JS</a></li>
-                            <li><a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a></li>
-                            <li><a class="type" href="../classes/LoadManager.html">LoadManager</a></li>
-                            <li><a class="type" href="../classes/Math.html">Math</a></li>
-                            <li><a class="type" href="../classes/Matrix23.html">Matrix23</a></li>
-                            <li><a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a></li>
-                            <li><a class="type" href="../classes/MouseEvent.html">MouseEvent</a></li>
-                            <li><a class="type" href="../classes/NoScale.html">NoScale</a></li>
-                            <li><a class="type" href="../classes/Path.html">Path</a></li>
-                            <li><a class="type" href="../classes/Rect.html">Rect</a></li>
-                            <li><a class="type" href="../classes/Renderer.html">Renderer</a></li>
-                            <li><a class="type" href="../classes/Screen.html">Screen</a></li>
-                            <li><a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a></li>
-                            <li><a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a></li>
-                            <li><a class="type" href="../classes/Sprite.html">Sprite</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a></li>
-                            <li><a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a></li>
-                            <li><a class="type" href="../classes/Texture.html">Texture</a></li>
-                            <li><a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a></li>
-                            <li><a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a></li>
-                            <li><a class="type" href="../classes/Time.html">Time</a></li>
-                            <li><a class="type" href="../classes/Transform.html">Transform</a></li>
-                            <li><a class="type" href="../classes/Vec2.html">Vec2</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Editor.html">Editor</a></li>
-                            <li><a class="module" href="../modules/Fire.html">Fire</a></li>
-                            <li><a class="module" href="../modules/Math.html">Math</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
         </div>
 
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
         <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Transform Class</h1>
-                <div class="box meta">
-                
-                        <div class="extends">
-                            Extends <a href="../classes/Component.html" class="crosslink">Component</a>
-                        </div>
-                
-                        <div class="foundat">
-                            Defined in: <a href="../files/utils_api_engine_transform.js.html#l7"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:7</code></a>
-                        </div>
-                
-                            Module: <a href="../modules/Fire.html">Fire</a>
-                
+            <div class="content container"><h1>Transform 类</h1>
+<div class="box meta">
+
+        <div class="extends">
+            继承 <a href="../classes/Component.html" class="crosslink">Component</a>
+        </div>
+
+        <div class="foundat">
+            于<a href="../files/utils_api_engine_transform.js.html#l6"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:6</code></a>定义
+        </div>
+
+            模组: <a href="../modules/Fire.html">Fire</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Defines position, rotation and scale of an entity.</p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property private">
+            <a href="#property__parent">_parent</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property__position;">_position;</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property__scale;">_scale;</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_position">position</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_right">right</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_rotation">rotation</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_scale">scale</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_scaleX">scaleX</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_scaleY">scaleY</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_up">up</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_worldPosition">worldPosition</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_worldRotation">worldRotation</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_worldScale">worldScale</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_worldX">worldX</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_worldY">worldY</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_x">x</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_y">y</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+        <li class="index-item method constructor">
+            <a href="#method_Transform">Transform</a>
+            <span class="flag constructor">constructor</span>
+        </li>
+
+        <li class="index-item method">
+            <a href="#method_getLocalMatrix">getLocalMatrix</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_getLocalToWorldMatrix">getLocalToWorldMatrix</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_getWorldToLocalMatrix">getWorldToLocalMatrix</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_rotateAround">rotateAround</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_translate">translate</a>
+        </li>
+    </ul>
+</div>
+
+
+    <div class="index-section inherits-members">
+        <h3>继承成员变量</h3>
+        
+        <h4>属性(Property)</h4>
+        <ul class="index-list properties">
+            <li class="index-item property">
+                <a href="Component.html#property_entity">entity</a>
+            </li>
+            <li class="index-item property private">
+                <a href="Component.html#property__enabled">_enabled</a>
+            </li>
+            <li class="index-item property">
+                <a href="Component.html#property_enabled">enabled</a>
+            </li>
+            <li class="index-item property">
+                <a href="Component.html#property_enabledInHierarchy">enabledInHierarchy</a>
+            </li>
+            <li class="index-item property">
+                <a href="Component.html#property_transform">transform</a>
+            </li>
+            <li class="index-item property">
+                <a href="Component.html#property_isOnLoadCalled">isOnLoadCalled</a>
+            </li>
+            <li class="index-item property private">
+                <a href="HashObject.html#property__hashCode">_hashCode</a>
+            </li>
+            <li class="index-item property private">
+                <a href="HashObject.html#property__id">_id</a>
+            </li>
+            <li class="index-item property">
+                <a href="HashObject.html#property_hashCode">hashCode</a>
+            </li>
+            <li class="index-item property">
+                <a href="HashObject.html#property_id">id</a>
+            </li>
+            <li class="index-item property private">
+                <a href="FObject.html#property__name">_name</a>
+            </li>
+            <li class="index-item property private">
+                <a href="FObject.html#property__objFlags">_objFlags</a>
+            </li>
+            <li class="index-item property">
+                <a href="FObject.html#property_name">name</a>
+            </li>
+            <li class="index-item property">
+                <a href="FObject.html#property_isValid">isValid</a>
+            </li>
+        </ul>
+        
+        <h4>属性(Attribute)</h4>
+        <ul class="index-list attrs">
+        </ul>
+
+        <h4>方法</h4>
+        <ul class="index-list methods">
+            <li class="index-item method">
+                <a href="Component.html#method_addComponent">addComponent</a>
+            </li>
+            <li class="index-item method">
+                <a href="Component.html#method_getComponent">getComponent</a>
+            </li>
+            <li class="index-item method">
+                <a href="Component.html#method_addComponentMenu">addComponentMenu</a>
+            </li>
+            <li class="index-item method">
+                <a href="Component.html#method_executeInEditMode">executeInEditMode</a>
+            </li>
+            <li class="index-item method">
+                <a href="FObject.html#method_destroy">destroy</a>
+            </li>
+            <li class="index-item method private">
+                <a href="FObject.html#method__destruct">_destruct</a>
+            </li>
+            <li class="index-item method private">
+                <a href="FObject.html#method__onPreDestroy">_onPreDestroy</a>
+            </li>
+            <li class="index-item method private">
+                <a href="FObject.html#method__serialize">_serialize</a>
+            </li>
+            <li class="index-item method private">
+                <a href="FObject.html#method__deserialize">_deserialize</a>
+            </li>
+            <li class="index-item method">
+                <a href="FObject.html#method_isValid">isValid</a>
+            </li>
+        </ul>
+
+        <h4>事件</h4>
+        <ul class="index-list events">
+            <li class="index-item event">
+                <a href="Component.html#event_update">update</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_lateUpdate">lateUpdate</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_onLoad">onLoad</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_start">start</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_onEnable">onEnable</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_onDisable">onDisable</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_onDestroy">onDestroy</a>
+            </li>
+            <li class="index-item event">
+                <a href="Component.html#event_onPreRender">onPreRender</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+<div class="class-detail">
+
+    <div class="properties-detail">
+        <h2>属性(Property)</h2>
+            <a name="property__parent" class="anchor-link"></a>
+            <div class="property item private">
+                <h3 class="name"><code>_parent</code>
+                <span class="type"><a href="../classes/Transform.html" class="crosslink">Transform</a></span>
+            
+            
+                    <span class="flag private">private</span>
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l31"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:31</code></a>
+                    </p>
+            
+            
                 </div>
-                
-                
-                <div class="box intro">
-                    <p>Defines position, rotation and scale of an entity.</p>
-                
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>the cached reference to parent transform</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">null</span></p>
+            
+            
                 </div>
-                
-                <!-- Class member index -->
-                
-                <a name="index" class="anchor-link"></a>
-                <div class="index">
-                <h2>Index</h2>
-                
-                    <div id="api-options">
-                        Show:
-                        <label for="api-show-inherited">
-                            <input type="checkbox" id="api-show-inherited">
-                            Inherited
-                        </label>
-                
-                        <label for="api-show-protected">
-                            <input type="checkbox" id="api-show-protected">
-                            Protected
-                        </label>
-                
-                        <label for="api-show-private">
-                            <input type="checkbox" id="api-show-private">
-                            Private
-                        </label>
-                        <label for="api-show-deprecated">
-                            <input type="checkbox" id="api-show-deprecated">
-                            Deprecated
-                        </label>
-                
-                    </div>
-                
-                
-                    <div class="index-section properties">
-                        <h3>Properties</h3>
-                
-                        <ul class="index-list properties extends">
-                                <li class="index-item property private inherited">
-                                    <a href="#property__enabled">_enabled</a>
-                
-                                </li>
-                                <li class="index-item property private inherited">
-                                    <a href="#property__hashCode">_hashCode</a>
-                
-                                </li>
-                                <li class="index-item property private inherited">
-                                    <a href="#property__id">_id</a>
-                
-                                </li>
-                                <li class="index-item property private inherited">
-                                    <a href="#property__name">_name</a>
-                
-                                </li>
-                                <li class="index-item property private inherited">
-                                    <a href="#property__objFlags">_objFlags</a>
-                
-                                </li>
-                                <li class="index-item property private">
-                                    <a href="#property__parent">_parent</a>
-                
-                                </li>
-                                <li class="index-item property private">
-                                    <a href="#property__position;">_position;</a>
-                
-                                </li>
-                                <li class="index-item property private">
-                                    <a href="#property__scale;">_scale;</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_enabled">enabled</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_enabledInHierarchy">enabledInHierarchy</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_entity">entity</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_hashCode">hashCode</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_id">id</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_isValid">isValid</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_name">name</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_position">position</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_right">right</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_rotation">rotation</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_scale">scale</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_scaleX">scaleX</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_scaleY">scaleY</a>
-                
-                                </li>
-                                <li class="index-item property inherited">
-                                    <a href="#property_transform">transform</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_up">up</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_worldPosition">worldPosition</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_worldRotation">worldRotation</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_worldScale">worldScale</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_worldX">worldX</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_worldY">worldY</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_x">x</a>
-                
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_y">y</a>
-                
-                                </li>
-                        </ul>
-                    </div>
-                
-                
-                
-                    <div class="index-section methods">
-                        <h3>Methods</h3>
-                
-                        <ul class="index-list methods extends">
-                
-                                <li class="index-item method constructor">
-                                    <a href="#method_Transform">Transform</a>
-                
-                                    <span class="flag constructor">constructor</span>
-                
-                                </li>
-                
-                                <li class="index-item method private inherited">
-                                    <a href="#method__destruct">_destruct</a>
-                
-                                </li>
-                                <li class="index-item method private inherited">
-                                    <a href="#method__onPreDestroy">_onPreDestroy</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_addComponent">addComponent</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_destroy">destroy</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_getComponent">getComponent</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_getLocalMatrix">getLocalMatrix</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_getLocalToWorldMatrix">getLocalToWorldMatrix</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_getWorldToLocalMatrix">getWorldToLocalMatrix</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_rotateAround">rotateAround</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_translate">translate</a>
-                
-                                </li>
-                        </ul>
-                    </div>
-                
-                        <div class="index-section events">
-                            <h3>Events</h3>
-                
-                            <ul class="index-list events extends">
-                                    <li class="index-item event inherited">
-                                        <a href="#event_lateUpdate">lateUpdate</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onDestroy">onDestroy</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onDisable">onDisable</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onEnable">onEnable</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onLoad">onLoad</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onPreRender">onPreRender</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_onStart">onStart</a>
-                
-                                    </li>
-                                    <li class="index-item event inherited">
-                                        <a href="#event_update">update</a>
-                
-                                    </li>
-                            </ul>
-                        </div>
-                </div>
-                
-                
-                <div class="class-detail">
-                
-                    <div class="properties-detail">
-                        <h2>Properties</h2>
-                
-                            <a name="property__enabled" class="anchor-link"></a>
-                            <div class="property item private inherited">
-                                <h3 class="name"><code>_enabled</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#property__enabled" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l77"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:77</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__hashCode" class="anchor-link"></a>
-                            <div class="property item private inherited">
-                                <h3 class="name"><code>_hashCode</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/HashObject.html#property__hashCode" class="type">HashObject</a>:
-                                    <a href="../files/utils_api_core_hash-object.js.html#l16"><code>utils&#x2F;api&#x2F;core&#x2F;hash-object.js:16</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__id" class="anchor-link"></a>
-                            <div class="property item private inherited">
-                                <h3 class="name"><code>_id</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/HashObject.html#property__id" class="type">HashObject</a>:
-                                    <a href="../files/utils_api_core_hash-object.js.html#l26"><code>utils&#x2F;api&#x2F;core&#x2F;hash-object.js:26</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__name" class="anchor-link"></a>
-                            <div class="property item private inherited">
-                                <h3 class="name"><code>_name</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#property__name" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l16"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:16</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__objFlags" class="anchor-link"></a>
-                            <div class="property item private inherited">
-                                <h3 class="name"><code>_objFlags</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#property__objFlags" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l23"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:23</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__parent" class="anchor-link"></a>
-                            <div class="property item private">
-                                <h3 class="name"><code>_parent</code>
-                                <span class="type"><a href="../classes/Transform.html" class="crosslink">Transform</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l32"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:32</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>the cached reference to parent transform</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">null</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__position;" class="anchor-link"></a>
-                            <div class="property item private">
-                                <h3 class="name"><code>_position;</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l15"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:15</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property__scale;" class="anchor-link"></a>
-                            <div class="property item private">
-                                <h3 class="name"><code>_scale;</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l22"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:22</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_enabled" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>enabled</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#property_enabled" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l86"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:86</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>indicates whether this component is enabled or not.</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">true</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_enabledInHierarchy" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>enabledInHierarchy</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#property_enabledInHierarchy" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l108"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:108</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>indicates whether this component is enabled and its entity is also active in the hierarchy.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_entity" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>entity</code>
-                                <span class="type"><a href="../classes/Entity.html" class="crosslink">Entity</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#property_entity" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l39"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:39</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The entity this component is attached to. A component is always attached to an entity.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_hashCode" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>hashCode</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/HashObject.html#property_hashCode" class="type">HashObject</a>:
-                                    <a href="../files/utils_api_core_hash-object.js.html#l42"><code>utils&#x2F;api&#x2F;core&#x2F;hash-object.js:42</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_id" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>id</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/HashObject.html#property_id" class="type">HashObject</a>:
-                                    <a href="../files/utils_api_core_hash-object.js.html#l53"><code>utils&#x2F;api&#x2F;core&#x2F;hash-object.js:53</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_isValid" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>isValid</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#property_isValid" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l75"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:75</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>Indicates whether the object is not yet destroyed</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">true</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_name" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>name</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#property_name" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l60"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:60</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The name of the object.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_position" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>position</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l54"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:54</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local position in its parent&#39;s coordinate system</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_right" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>right</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l552"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:552</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>right direction in world space, point to the x(red) axis</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_rotation" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>rotation</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l231"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:231</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The counterclockwise degrees of rotation relative to the parent</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_scale" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>scale</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l282"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:282</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local scale factor relative to the parent</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_scaleX" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>scaleX</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l306"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:306</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local x scale factor relative to the parent</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">1</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_scaleY" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>scaleY</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l330"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:330</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local y scale factor relative to the parent</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">1</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_transform" class="anchor-link"></a>
-                            <div class="property item inherited">
-                                <h3 class="name"><code>transform</code>
-                                <span class="type"><a href="../classes/Transform.html" class="crosslink">Transform</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#property_transform" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l120"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:120</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>Returns the {% crosslink Fire.Transform Transform %} attached to the entity.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_up" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>up</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l533"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:533</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>up direction in world space, point to the y(green) axis</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_worldPosition" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>worldPosition</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l126"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:126</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The position of the transform in world space</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_worldRotation" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>worldRotation</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l252"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:252</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The counterclockwise degrees of rotation in world space</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_worldScale" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>worldScale</code>
-                                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l354"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:354</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The lossy scale of the transform in world space (Read Only)</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_worldX" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>worldX</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l155"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:155</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The x position of the transform in world space</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_worldY" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>worldY</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l196"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:196</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The y position of the transform in world space</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_x" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>x</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l78"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:78</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local x position in its parent&#39;s coordinate system</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_y" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>y</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l102"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:102</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        <p>The local y position in its parent&#39;s coordinate system</p>
-                            
-                                    </div>
-                            
-                                        <p class="default"><strong>Default:</strong> <span class="default-value">0</span></p>
-                            
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                
-                    <div class="constructor">
-                        <h2>Constructor</h2>
-                        <a name="method_Transform" class="anchor-link"></a>
-                        <div class="method item">
-                            <h3 class="name"><code>Transform</code>
-                        
-                                <span class="paren">()</span>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                            </h3>
-                        
-                            <div class="meta">
-                                        <p>
-                                        Defined in
-                                <a href="../files/utils_api_engine_transform.js.html#l7"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:7</code></a>
-                                </p>
-                        
-                        
-                        
-                            </div>
-                        
-                            <div class="extended-detail">
-                        
-                                <div class="description">
-                                    
-                                </div>
-                        
-                        
-                        
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="methods-detail">
-                        <h2>Methods</h2>
-                
-                            <a name="method__destruct" class="anchor-link"></a>
-                            <div class="method item private inherited">
-                                <h3 class="name"><code>_destruct</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#method__destruct" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l108"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:108</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Clear all references in the instance.</p>
-                            <p>NOTE: this method will not clear the getter or setter functions which defined in the INSTANCE of FObject.
-                                  You can override the _destruct method if you need.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method__onPreDestroy" class="anchor-link"></a>
-                            <div class="method item private inherited">
-                                <h3 class="name"><code>_onPreDestroy</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                            
-                            
-                                    <span class="flag private">private</span>
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#method__onPreDestroy" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l139"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:139</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method_addComponent" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>addComponent</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>typeOrName</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Component.html" class="crosslink">Component</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#method_addComponent" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l184"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:184</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Adds a component class to the entity. You can also add component to entity by passing in the name of the script.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">typeOrName</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>the constructor or the class name of the component to add</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Component.html" class="crosslink">Component</a></span>:
-                                                    <ul>
-                            <li>the newly added component</li>
-                            </ul>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_destroy" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>destroy</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/FObject.html#method_destroy" class="type">FObject</a>:
-                                    <a href="../files/utils_api_core_object.js.html#l87"><code>utils&#x2F;api&#x2F;core&#x2F;object.js:87</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Destroy this FObject, and release all its own references to other resources.</p>
-                            <p>After destory, this FObject is not usable any more.
-                            You can use Fire.isValid(obj) (or obj.isValid if obj is non-nil) to check whether the object is destroyed before accessing it.</p>
-                            
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
-                                                    <p>whether it is the first time the destroy being called</p>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_getComponent" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>getComponent</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>typeOrName</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Component.html" class="crosslink">Component</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#method_getComponent" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l195"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:195</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Returns the component of supplied type if the entity has one attached, null if it doesn&#39;t. You can also get component in the entity by passing in the name of the script.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">typeOrName</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Component.html" class="crosslink">Component</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_getLocalMatrix" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>getLocalMatrix</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code class="optional">[out]</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l443"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:443</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Get the local matrix that transforms a point from local space into parents space.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name optional">[out]</code>
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>optional, the receiving vector</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_getLocalToWorldMatrix" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>getLocalToWorldMatrix</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code class="optional">[out]</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l483"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:483</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Get the world transform matrix that transforms a point from local space into world space.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name optional">[out]</code>
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>optional, the receiving vector</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_getWorldToLocalMatrix" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>getWorldToLocalMatrix</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code class="optional">[out]</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l500"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:500</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Get the inverse world transform matrix that transforms a point from world space into local space.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name optional">[out]</code>
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>optional, the receiving vector</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_rotateAround" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>rotateAround</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>point</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>angle</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l510"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:510</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Rotates this transform through point in world space by angle degrees.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">point</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>the world point rotates through</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">angle</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>degrees</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method_translate" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>translate</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>translation</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_engine_transform.js.html#l523"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:523</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Moves the transform in the direction and distance of translation. The movement is applied relative to the transform&#39;s local space.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">translation</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                    <div class="events-detail">
-                        <h2>Events</h2>
-                
-                            <a name="event_lateUpdate" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>lateUpdate</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_lateUpdate" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l140"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:140</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>LateUpdate is called every frame, if the Component is enabled.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onDestroy" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onDestroy</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onDestroy" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l171"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:171</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Called when this component will be destroyed.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onDisable" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onDisable</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onDisable" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l165"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:165</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Called when this component becomes disabled or its entity becomes inactive</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onEnable" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onEnable</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onEnable" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l159"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:159</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Called when this component becomes enabled and its entity becomes active</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onLoad" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onLoad</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onLoad" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l147"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:147</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>When attaching to an active entity or its entity first activated</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onPreRender" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onPreRender</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onPreRender" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l177"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:177</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Called when the engine starts rendering the scene.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_onStart" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>onStart</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_onStart" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l153"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:153</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Called before all scripts&#39; update if the Component is enabled</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="event_update" class="anchor-link"></a>
-                            <div class="events item inherited">
-                                <h3 class="name"><code>update</code></h3>
-                            
-                            
-                            
-                            
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Component.html#event_update" class="type">Component</a>:
-                                    <a href="../files/utils_api_engine_component.js.html#l134"><code>utils&#x2F;api&#x2F;engine&#x2F;component.js:134</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Update is called every frame, if the Component is enabled.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no events that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                </div>
-                
             </div>
+            <a name="property__position;" class="anchor-link"></a>
+            <div class="property item private">
+                <h3 class="name"><code>_position;</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+                    <span class="flag private">private</span>
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l14"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:14</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property__scale;" class="anchor-link"></a>
+            <div class="property item private">
+                <h3 class="name"><code>_scale;</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+                    <span class="flag private">private</span>
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l21"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:21</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_position" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>position</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l53"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:53</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local position in its parent's coordinate system</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_right" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>right</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l555"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:555</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>right direction in world space, point to the x(red) axis</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_rotation" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>rotation</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l230"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:230</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The counterclockwise degrees of rotation relative to the parent</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_scale" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>scale</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l281"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:281</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local scale factor relative to the parent</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_scaleX" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>scaleX</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l305"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:305</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local x scale factor relative to the parent</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">1</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_scaleY" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>scaleY</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l329"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:329</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local y scale factor relative to the parent</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">1</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_up" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>up</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l536"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:536</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>up direction in world space, point to the y(green) axis</p>
+            
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_worldPosition" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>worldPosition</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l125"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:125</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The position of the transform in world space</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(0, 0)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_worldRotation" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>worldRotation</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l251"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:251</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The counterclockwise degrees of rotation in world space</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_worldScale" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>worldScale</code>
+                <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l353"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:353</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The lossy scale of the transform in world space (Read Only)</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">new Vec2(1, 1)</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_worldX" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>worldX</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l154"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:154</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The x position of the transform in world space</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_worldY" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>worldY</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l195"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:195</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The y position of the transform in world space</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_x" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>x</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l77"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:77</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local x position in its parent's coordinate system</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+            <a name="property_y" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>y</code>
+                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+            
+            
+            
+            
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_engine_transform.js.html#l101"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:101</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        <p>The local y position in its parent's coordinate system</p>
+            
+                    </div>
+            
+                        <p class="default"><strong>默认值:</strong> <span class="default-value">0</span></p>
+            
+            
+                </div>
+            </div>
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+    <div class="constructor">
+        <h2>构造函数</h2><a name="method_Transform" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>Transform</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l6"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:6</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="methods-detail">
+        <h2>方法</h2>
+        <a name="method_getLocalMatrix" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>getLocalMatrix</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[out]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l445"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:445</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Get the local matrix that transforms a point from local space into parents space.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">out</code>
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            <p>optional, the receiving vector</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_getLocalToWorldMatrix" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>getLocalToWorldMatrix</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[out]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l485"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:485</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Get the world transform matrix that transforms a point from local space into world space.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">out</code>
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            <p>optional, the receiving vector</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_getWorldToLocalMatrix" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>getWorldToLocalMatrix</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[out]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l502"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:502</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Get the inverse world transform matrix that transforms a point from world space into local space.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">out</code>
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            <p>optional, the receiving vector</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Matrix23.html" class="crosslink">Matrix23</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_rotateAround" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>rotateAround</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>point</code>
+                </li>
+                <li class="arg">
+                        <code>angle</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l512"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:512</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Rotates this transform through point in world space by angle degrees.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">point</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                            <p>the world point rotates through</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">angle</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            <p>degrees</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_translate" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>translate</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>translation</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_transform.js.html#l525"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:525</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Moves the transform in the direction and distance of translation. The movement is applied relative to the
+transform's local space.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">translation</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
         </div>
 
     </div>

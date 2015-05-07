@@ -140,15 +140,15 @@ td {
     color: #fff;
     border: none;
     padding-right: 8px;
-    margin-left: 30px;
 }
 
 .main-header img.logo {
-    max-height: 30px;
-    /*vertical-align: top;*/
-    /*position: absolute;*/
+    height: 30px;
+    width: 92px;
+    vertical-align: top;
+    position: absolute;
     top: 0px;
-    left: 8px;
+    left: 0px;
     transition: top 0.4s ease 0.5s;
 }
 
@@ -160,7 +160,8 @@ td {
 .main-header .project-title {
     position: relative;
     top: 8px;
-    /*padding-left: 84px;*/
+    padding-left: 127px;
+    padding-top: 8px;
     transition: padding 0.5s, top 0.5s;
     transition-delay: 0.2s, 0s;
     float: left;
@@ -261,14 +262,14 @@ td {
 }
 
 #docs-sidebar {
-    width: 220px;
+    width: 250px;
     margin: 0 8px;
     padding-top: 36px;
     float: left;
 }
 
 #docs-main {
-    margin-left: 240px;
+    margin-left: 270px;
     margin-right: 10px;
 }
 
@@ -499,7 +500,7 @@ td {
 }
 
 .returns-inline:before {
-    content: "returns";
+    content: "返回";
     font-weight: normal;
     font-size: .8em;
     padding-right: 0.5ex;
@@ -540,6 +541,12 @@ ul.apis li {
     border-top: 1px solid #e5e5e5;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+ul.apis .api-list-item-module {
+    float: right;
+    color: #888;
+    font-size: 13px;
 }
 
 .apis .type {
@@ -636,6 +643,13 @@ ul.index-list {
     opacity: .7;
 }
 
+.index-section.inherits-members {
+    background: #fff;
+    padding: 5px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+}
+
 /*---- YUI component style overrides ----*/
 
 .tabs {
@@ -683,3 +697,4 @@ ul.index-list {
     border-bottom-color: #fafafa;
     bottom: -1px;
 }
+

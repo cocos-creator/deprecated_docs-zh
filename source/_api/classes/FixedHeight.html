@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>FixedHeight - Fireball Engine API</title>
+    <title>FixedHeight - fireball-build</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -14,8 +14,10 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                    <a href="http://docs-zh.fireball-x.com"><img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API"></a>
-                    <h1 class="project-name">Fireball Engine API</h1> <span class="project-version">0.2.0</span>
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
                     <p class="description">Fireball is the game engine for the future.</p>
             </div>
             <ul class="jump-links">
@@ -26,446 +28,435 @@
     </header>
     <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a></li>
-                            <li><a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a></li>
-                            <li><a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a></li>
-                            <li><a class="type" href="../classes/Asset.html">Asset</a></li>
-                            <li><a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a></li>
-                            <li><a class="type" href="../classes/AudioClip.html">AudioClip</a></li>
-                            <li><a class="type" href="../classes/AudioSource.html">AudioSource</a></li>
-                            <li><a class="type" href="../classes/BitmapFont.html">BitmapFont</a></li>
-                            <li><a class="type" href="../classes/BitmapText.html">BitmapText</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAlign.html">BitmapText.TextAlign</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAnchor.html">BitmapText.TextAnchor</a></li>
-                            <li><a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a></li>
-                            <li><a class="type" href="../classes/Camera.html">Camera</a></li>
-                            <li><a class="type" href="../classes/Color.html">Color</a></li>
-                            <li><a class="type" href="../classes/Component.html">Component</a></li>
-                            <li><a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a></li>
-                            <li><a class="type" href="../classes/Engine.html">Engine</a></li>
-                            <li><a class="type" href="../classes/Entity.html">Entity</a></li>
-                            <li><a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a></li>
-                            <li><a class="type" href="../classes/Event.html">Event</a></li>
-                            <li><a class="type" href="../classes/EventTarget.html">EventTarget</a></li>
-                            <li><a class="type" href="../classes/Fire.html">Fire</a></li>
-                            <li><a class="type" href="../classes/FixedHeight.html">FixedHeight</a></li>
-                            <li><a class="type" href="../classes/FObject.html">FObject</a></li>
-                            <li><a class="type" href="../classes/HashObject.html">HashObject</a></li>
-                            <li><a class="type" href="../classes/Input.html">Input</a></li>
-                            <li><a class="type" href="../classes/Intersection.html">Intersection</a></li>
-                            <li><a class="type" href="../classes/JS.html">JS</a></li>
-                            <li><a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a></li>
-                            <li><a class="type" href="../classes/LoadManager.html">LoadManager</a></li>
-                            <li><a class="type" href="../classes/Math.html">Math</a></li>
-                            <li><a class="type" href="../classes/Matrix23.html">Matrix23</a></li>
-                            <li><a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a></li>
-                            <li><a class="type" href="../classes/MouseEvent.html">MouseEvent</a></li>
-                            <li><a class="type" href="../classes/NoScale.html">NoScale</a></li>
-                            <li><a class="type" href="../classes/Path.html">Path</a></li>
-                            <li><a class="type" href="../classes/Rect.html">Rect</a></li>
-                            <li><a class="type" href="../classes/Renderer.html">Renderer</a></li>
-                            <li><a class="type" href="../classes/Screen.html">Screen</a></li>
-                            <li><a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a></li>
-                            <li><a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a></li>
-                            <li><a class="type" href="../classes/Sprite.html">Sprite</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a></li>
-                            <li><a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a></li>
-                            <li><a class="type" href="../classes/Texture.html">Texture</a></li>
-                            <li><a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a></li>
-                            <li><a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a></li>
-                            <li><a class="type" href="../classes/Time.html">Time</a></li>
-                            <li><a class="type" href="../classes/Transform.html">Transform</a></li>
-                            <li><a class="type" href="../classes/Vec2.html">Vec2</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Editor.html">Editor</a></li>
-                            <li><a class="module" href="../modules/Fire.html">Fire</a></li>
-                            <li><a class="module" href="../modules/Math.html">Math</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
         </div>
 
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
         <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>FixedHeight Class</h1>
-                <div class="box meta">
-                
-                        <div class="extends">
-                            Extends <a href="../classes/Screen.ContentStrategy.html" class="crosslink">Screen.ContentStrategy</a>
-                        </div>
-                
-                        <div class="foundat">
-                            Defined in: <a href="../files/utils_api_engine_screen–agnostic.js.html#l216"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:216</code></a>
-                        </div>
-                
-                            Module: <a href="../modules/Fire.html">Fire</a>
-                
-                </div>
-                
-                
-                <div class="box intro">
-                    <p>Strategy to scale the content&#39;s height to container&#39;s height and proportionally scale its width.</p>
-                
-                </div>
-                
-                <!-- Class member index -->
-                
-                <a name="index" class="anchor-link"></a>
-                <div class="index">
-                <h2>Index</h2>
-                
-                    <div id="api-options">
-                        Show:
-                        <label for="api-show-inherited">
-                            <input type="checkbox" id="api-show-inherited">
-                            Inherited
-                        </label>
-                
-                        <label for="api-show-protected">
-                            <input type="checkbox" id="api-show-protected">
-                            Protected
-                        </label>
-                
-                        <label for="api-show-private">
-                            <input type="checkbox" id="api-show-private">
-                            Private
-                        </label>
-                        <label for="api-show-deprecated">
-                            <input type="checkbox" id="api-show-deprecated">
-                            Deprecated
-                        </label>
-                
-                    </div>
-                
-                
-                
-                
-                
-                    <div class="index-section methods">
-                        <h3>Methods</h3>
-                
-                        <ul class="index-list methods extends">
-                
-                                <li class="index-item method constructor">
-                                    <a href="#method_FixedHeight">FixedHeight</a>
-                
-                                    <span class="flag constructor">constructor</span>
-                
-                                </li>
-                
-                                <li class="index-item method inherited">
-                                    <a href="#method_apply">apply</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_buildResult">buildResult</a>
-                
-                                </li>
-                                <li class="index-item method inherited">
-                                    <a href="#method_getContainerSize">getContainerSize</a>
-                
-                                </li>
-                        </ul>
-                    </div>
-                
-                </div>
-                
-                
-                <div class="class-detail">
-                
-                
-                
-                    <div class="constructor">
-                        <h2>Constructor</h2>
-                        <a name="method_FixedHeight" class="anchor-link"></a>
-                        <div class="method item">
-                            <h3 class="name"><code>FixedHeight</code>
-                        
-                                <span class="paren">()</span>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                            </h3>
-                        
-                            <div class="meta">
-                                        <p>
-                                        Defined in
-                                <a href="../files/utils_api_engine_screen–agnostic.js.html#l216"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:216</code></a>
-                                </p>
-                        
-                        
-                        
-                            </div>
-                        
-                            <div class="extended-detail">
-                        
-                                <div class="description">
-                                    
-                                </div>
-                        
-                        
-                        
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="methods-detail">
-                        <h2>Methods</h2>
-                
-                            <a name="method_apply" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>apply</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>designedResolution</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Screen.ContentStrategy.html#method_apply" class="type">Screen.ContentStrategy</a>:
-                                    <a href="../files/utils_api_engine_screen–agnostic.js.html#l112"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:112</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Function to apply this strategy</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">designedResolution</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
-                                                    <p>scaleAndViewportRect {scale: {Vec2}, viewport: {Rect}}</p>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_buildResult" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>buildResult</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>container</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>content</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>scale</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Screen.ContentStrategy.html#method_buildResult" class="type">Screen.ContentStrategy</a>:
-                                    <a href="../files/utils_api_engine_screen–agnostic.js.html#l121"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:121</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Helper function for apply.</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">container</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>size of container</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">content</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>size of content</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">scale</code>
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
-                                                    <p>scaleAndViewportRect {scale: *, viewport: Fire.Rect}</p>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_getContainerSize" class="anchor-link"></a>
-                            <div class="method item inherited">
-                                <h3 class="name"><code>getContainerSize</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>Inherited from
-                                            <a href="../classes/Screen.ContentStrategy.html#method_getContainerSize" class="type">Screen.ContentStrategy</a>:
-                                    <a href="../files/utils_api_engine_screen–agnostic.js.html#l156"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:156</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                
-                </div>
-                
-            </div>
+            <div class="content container"><h1>FixedHeight 类</h1>
+<div class="box meta">
+
+        <div class="extends">
+            继承 <a href="../classes/Screen.ContentStrategy.html" class="crosslink">Screen.ContentStrategy</a>
+        </div>
+
+        <div class="foundat">
+            于<a href="../files/utils_api_engine_screen–agnostic.js.html#l215"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:215</code></a>定义
+        </div>
+
+            模组: <a href="../modules/Fire.html">Fire</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Strategy to scale the content's height to container's height and proportionally scale its width.</p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+
+
+
+
+    <div class="index-section inherits-members">
+        <h3>继承成员变量</h3>
+        
+        <h4>属性(Property)</h4>
+        <ul class="index-list properties">
+        </ul>
+        
+        <h4>属性(Attribute)</h4>
+        <ul class="index-list attrs">
+        </ul>
+
+        <h4>方法</h4>
+        <ul class="index-list methods">
+            <li class="index-item method">
+                <a href="Screen.ContentStrategy.html#method_apply">apply</a>
+            </li>
+            <li class="index-item method">
+                <a href="Screen.ContentStrategy.html#method_buildResult">buildResult</a>
+            </li>
+            <li class="index-item method">
+                <a href="Screen.ContentStrategy.html#method_getContainerSize">getContainerSize</a>
+            </li>
+        </ul>
+
+        <h4>事件</h4>
+        <ul class="index-list events">
+        </ul>
+
+    </div>
+
+
+</div>
+<div class="class-detail">
+
+
+
+    <div class="constructor">
+        <h2>构造函数</h2><a name="method_FixedHeight" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>FixedHeight</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_engine_screen–agnostic.js.html#l215"><code>utils&#x2F;api&#x2F;engine&#x2F;screen–agnostic.js:215</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+
+
+    </div>
+</div>
+
+    </div>
+
+
+
+</div>
+
+</div>
         </div>
 
     </div>

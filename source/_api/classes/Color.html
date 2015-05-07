@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Color - Fireball Engine API</title>
+    <title>Color - fireball-build</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -14,8 +14,10 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                    <a href="http://docs-zh.fireball-x.com"><img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API"></a>
-                    <h1 class="project-name">Fireball Engine API</h1> <span class="project-version">0.2.0</span>
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
                     <p class="description">Fireball is the game engine for the future.</p>
             </div>
             <ul class="jump-links">
@@ -26,1406 +28,1670 @@
     </header>
     <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a></li>
-                            <li><a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a></li>
-                            <li><a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a></li>
-                            <li><a class="type" href="../classes/Asset.html">Asset</a></li>
-                            <li><a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a></li>
-                            <li><a class="type" href="../classes/AudioClip.html">AudioClip</a></li>
-                            <li><a class="type" href="../classes/AudioSource.html">AudioSource</a></li>
-                            <li><a class="type" href="../classes/BitmapFont.html">BitmapFont</a></li>
-                            <li><a class="type" href="../classes/BitmapText.html">BitmapText</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAlign.html">BitmapText.TextAlign</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAnchor.html">BitmapText.TextAnchor</a></li>
-                            <li><a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a></li>
-                            <li><a class="type" href="../classes/Camera.html">Camera</a></li>
-                            <li><a class="type" href="../classes/Color.html">Color</a></li>
-                            <li><a class="type" href="../classes/Component.html">Component</a></li>
-                            <li><a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a></li>
-                            <li><a class="type" href="../classes/Engine.html">Engine</a></li>
-                            <li><a class="type" href="../classes/Entity.html">Entity</a></li>
-                            <li><a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a></li>
-                            <li><a class="type" href="../classes/Event.html">Event</a></li>
-                            <li><a class="type" href="../classes/EventTarget.html">EventTarget</a></li>
-                            <li><a class="type" href="../classes/Fire.html">Fire</a></li>
-                            <li><a class="type" href="../classes/FixedHeight.html">FixedHeight</a></li>
-                            <li><a class="type" href="../classes/FObject.html">FObject</a></li>
-                            <li><a class="type" href="../classes/HashObject.html">HashObject</a></li>
-                            <li><a class="type" href="../classes/Input.html">Input</a></li>
-                            <li><a class="type" href="../classes/Intersection.html">Intersection</a></li>
-                            <li><a class="type" href="../classes/JS.html">JS</a></li>
-                            <li><a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a></li>
-                            <li><a class="type" href="../classes/LoadManager.html">LoadManager</a></li>
-                            <li><a class="type" href="../classes/Math.html">Math</a></li>
-                            <li><a class="type" href="../classes/Matrix23.html">Matrix23</a></li>
-                            <li><a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a></li>
-                            <li><a class="type" href="../classes/MouseEvent.html">MouseEvent</a></li>
-                            <li><a class="type" href="../classes/NoScale.html">NoScale</a></li>
-                            <li><a class="type" href="../classes/Path.html">Path</a></li>
-                            <li><a class="type" href="../classes/Rect.html">Rect</a></li>
-                            <li><a class="type" href="../classes/Renderer.html">Renderer</a></li>
-                            <li><a class="type" href="../classes/Screen.html">Screen</a></li>
-                            <li><a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a></li>
-                            <li><a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a></li>
-                            <li><a class="type" href="../classes/Sprite.html">Sprite</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a></li>
-                            <li><a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a></li>
-                            <li><a class="type" href="../classes/Texture.html">Texture</a></li>
-                            <li><a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a></li>
-                            <li><a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a></li>
-                            <li><a class="type" href="../classes/Time.html">Time</a></li>
-                            <li><a class="type" href="../classes/Transform.html">Transform</a></li>
-                            <li><a class="type" href="../classes/Vec2.html">Vec2</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Editor.html">Editor</a></li>
-                            <li><a class="module" href="../modules/Fire.html">Fire</a></li>
-                            <li><a class="module" href="../modules/Math.html">Math</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
         </div>
 
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
         <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Color Class</h1>
-                <div class="box meta">
-                
-                
-                        <div class="foundat">
-                            Defined in: <a href="../files/utils_api_core_color.js.html#l7"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:7</code></a>
-                        </div>
-                
-                            Module: <a href="../modules/Fire.html">Fire</a>
-                
+            <div class="content container"><h1>Color 类</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            于<a href="../files/utils_api_core_color.js.html#l6"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:6</code></a>定义
+        </div>
+
+            模组: <a href="../modules/Fire.html">Fire</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Representation of RGBA colors.</p>
+<p>Each color component is a floating point value with a range from 0 to 1.</p>
+<p>You can also use the convenience method &lt;% crosslink Fire.color Fire.color %&gt; to create a new Color.</p>
+
+</div>
+
+<!-- Class member index -->
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property">
+            <a href="#property_black">black</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_blue">blue</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_cyan">cyan</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_gray">gray</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_green">green</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_magenta">magenta</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_red">red</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_transparent">transparent</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_white">white</a>
+                <span class="flag static">静态</span>
+        </li>
+        <li class="index-item property">
+            <a href="#property_yellow">yellow</a>
+                <span class="flag static">静态</span>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+        <li class="index-item method constructor">
+            <a href="#method_Color">Color</a>
+            <span class="flag constructor">constructor</span>
+        </li>
+
+        <li class="index-item method">
+            <a href="#method_clamp">clamp</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_clone">clone</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_color">color</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_equals">equals</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_fromHEX">fromHEX</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_fromHSV">fromHSV</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_lerp">lerp</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_toCSS">toCSS</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_toHEX">toHEX</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_toHSV">toHSV</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_toRGBValue">toRGBValue</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_toString">toString</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+<div class="class-detail">
+
+    <div class="properties-detail">
+        <h2>属性(Property)</h2>
+            <a name="property_black" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>black</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l36"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:36</code></a>
+                    </p>
+            
+            
                 </div>
-                
-                
-                <div class="box intro">
-                    <p>Representation of RGBA colors.</p>
-                <p>Each color component is a floating point value with a range from 0 to 1.</p>
-                <p>You can also use the convenience method &lt;% crosslink Fire.color Fire.color %&gt; to create a new Color.</p>
-                
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
                 </div>
-                
-                <!-- Class member index -->
-                
-                <a name="index" class="anchor-link"></a>
-                <div class="index">
-                <h2>Index</h2>
-                
-                    <div id="api-options">
-                        Show:
-                        <label for="api-show-inherited">
-                            <input type="checkbox" id="api-show-inherited">
-                            Inherited
-                        </label>
-                
-                        <label for="api-show-protected">
-                            <input type="checkbox" id="api-show-protected">
-                            Protected
-                        </label>
-                
-                        <label for="api-show-private">
-                            <input type="checkbox" id="api-show-private">
-                            Private
-                        </label>
-                        <label for="api-show-deprecated">
-                            <input type="checkbox" id="api-show-deprecated">
-                            Deprecated
-                        </label>
-                
-                    </div>
-                
-                
-                    <div class="index-section properties">
-                        <h3>Properties</h3>
-                
-                        <ul class="index-list properties">
-                                <li class="index-item property">
-                                    <a href="#property_black">black</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_blue">blue</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_cyan">cyan</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_gray">gray</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_green">green</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_magenta">magenta</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_red">red</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_transparent">transparent</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_white">white</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                                <li class="index-item property">
-                                    <a href="#property_yellow">yellow</a>
-                
-                                        <span class="flag static">static</span>
-                                </li>
-                        </ul>
-                    </div>
-                
-                
-                
-                    <div class="index-section methods">
-                        <h3>Methods</h3>
-                
-                        <ul class="index-list methods">
-                
-                                <li class="index-item method constructor">
-                                    <a href="#method_Color">Color</a>
-                
-                                    <span class="flag constructor">constructor</span>
-                
-                                </li>
-                
-                                <li class="index-item method">
-                                    <a href="#method_clamp">clamp</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_clone">clone</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_color">color</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_equals">equals</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_fromHEX">fromHEX</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_fromHSV">fromHSV</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_toCSS">toCSS</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_toHEX">toHEX</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_toHSV">toHSV</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_toRGBValue">toRGBValue</a>
-                
-                                </li>
-                                <li class="index-item method">
-                                    <a href="#method_toString">toString</a>
-                
-                                </li>
-                        </ul>
-                    </div>
-                
-                </div>
-                
-                
-                <div class="class-detail">
-                
-                    <div class="properties-detail">
-                        <h2>Properties</h2>
-                
-                            <a name="property_black" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>black</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l37"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:37</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_blue" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>blue</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l67"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:67</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_cyan" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>cyan</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l79"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:79</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_gray" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>gray</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l49"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:49</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_green" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>green</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l61"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:61</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_magenta" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>magenta</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l85"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:85</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_red" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>red</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l55"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:55</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_transparent" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>transparent</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l43"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:43</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_white" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>white</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l31"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:31</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="property_yellow" class="anchor-link"></a>
-                            <div class="property item">
-                                <h3 class="name"><code>yellow</code>
-                                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                            
-                            
-                                    <span class="flag static">static</span>
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l73"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:73</code></a>
-                                    </p>
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                
-                    <div class="constructor">
-                        <h2>Constructor</h2>
-                        <a name="method_Color" class="anchor-link"></a>
-                        <div class="method item">
-                            <h3 class="name"><code>Color</code>
-                        
-                                <div class="args">
-                                    <span class="paren">(</span><ul class="args-list inline commas">
-                                        <li class="arg">
-                                                <code class="optional">[r=0]</code>
-                                        </li>
-                                        <li class="arg">
-                                                <code class="optional">[g=0]</code>
-                                        </li>
-                                        <li class="arg">
-                                                <code class="optional">[b=0]</code>
-                                        </li>
-                                        <li class="arg">
-                                                <code class="optional">[a=1]</code>
-                                        </li>
-                                    </ul><span class="paren">)</span>
-                                </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                            </h3>
-                        
-                            <div class="meta">
-                                        <p>
-                                        Defined in
-                                <a href="../files/utils_api_core_color.js.html#l7"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:7</code></a>
-                                </p>
-                        
-                        
-                        
-                            </div>
-                        
-                            <div class="extended-detail">
-                        
-                                <div class="description">
-                                    
-                                </div>
-                        
-                                    <div class="params">
-                                        <h4>Parameters:</h4>
-                        
-                                        <ul class="params-list">
-                                            <li class="param">
-                                                    <code class="param-name optional">[r=0]</code>
-                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                        
-                        
-                                                <div class="param-description">
-                                                    <ul>
-                        <li>red component of the color</li>
-                        </ul>
-                        
-                                                </div>
-                        
-                                            </li>
-                                            <li class="param">
-                                                    <code class="param-name optional">[g=0]</code>
-                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                        
-                        
-                                                <div class="param-description">
-                                                    <ul>
-                        <li>green component of the color</li>
-                        </ul>
-                        
-                                                </div>
-                        
-                                            </li>
-                                            <li class="param">
-                                                    <code class="param-name optional">[b=0]</code>
-                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                        
-                        
-                                                <div class="param-description">
-                                                    <ul>
-                        <li>blue component of the color</li>
-                        </ul>
-                        
-                                                </div>
-                        
-                                            </li>
-                                            <li class="param">
-                                                    <code class="param-name optional">[a=1]</code>
-                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                        
-                        
-                                                <div class="param-description">
-                                                    <ul>
-                        <li>alpha component of the color</li>
-                        </ul>
-                        
-                                                </div>
-                        
-                                            </li>
-                                        </ul>
-                                    </div>
-                        
-                        
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="methods-detail">
-                        <h2>Methods</h2>
-                
-                            <a name="method_clamp" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>clamp</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l161"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:161</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Clamp this color to make all components between 0 to 1.</p>
-                            
-                                    </div>
-                            
-                            
-                            
-                                </div>
-                            </div>
-                            <a name="method_clone" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>clone</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l101"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:101</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Clone a new color from the current color.</p>
-                            
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
-                                                    <p>Newly created color.</p>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_color" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>color</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code class="optional">[r=0]</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code class="optional">[g=0]</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code class="optional">[b=0]</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code class="optional">[a=1]</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l255"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:255</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>The convenience method to create a new &lt;% crosslink Fire.Color Color %&gt;</p>
-                            
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name optional">[r=0]</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name optional">[g=0]</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name optional">[b=0]</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name optional">[a=1]</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_equals" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>equals</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>other</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l110"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:110</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">other</code>
-                                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_fromHEX" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>fromHEX</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>hexString</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag chainable">chainable</span>
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l172"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:172</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">hexString</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_fromHSV" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>fromHSV</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>h</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>s</code>
-                                            </li>
-                                            <li class="arg">
-                                                    <code>v</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                                    <span class="flag chainable">chainable</span>
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l226"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:226</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">h</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">s</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                                <li class="param">
-                                                        <code class="param-name">v</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                         
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_toCSS" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>toCSS</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>opt</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l135"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:135</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">opt</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>&quot;rgba&quot;, &quot;rgb&quot;, &quot;#rgb&quot; or &quot;#rrggbb&quot;</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_toHEX" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>toHEX</code>
-                            
-                                    <div class="args">
-                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                            <li class="arg">
-                                                    <code>fmt</code>
-                                            </li>
-                                        </ul><span class="paren">)</span>
-                                    </div>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l186"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:186</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                                        <div class="params">
-                                            <h4>Parameters:</h4>
-                            
-                                            <ul class="params-list">
-                                                <li class="param">
-                                                        <code class="param-name">fmt</code>
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                            
-                            
-                                                    <div class="param-description">
-                                                        <ul>
-                            <li>&quot;#rgb&quot; or &quot;#rrggbb&quot;</li>
-                            </ul>
-                            
-                                                    </div>
-                            
-                                                </li>
-                                            </ul>
-                                        </div>
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_toHSV" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>toHSV</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l242"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:242</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
-                                                    <ul>
-                            <li>{h: number, s: number, v: number}</li>
-                            </ul>
-                            
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_toRGBValue" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>toRGBValue</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l215"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:215</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        <p>Convert to 24bit rgb value</p>
-                            
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                            <a name="method_toString" class="anchor-link"></a>
-                            <div class="method item">
-                                <h3 class="name"><code>toString</code>
-                            
-                                    <span class="paren">()</span>
-                            
-                                    <span class="returns-inline">
-                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                    </span>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                </h3>
-                            
-                                <div class="meta">
-                                            <p>
-                                            Defined in
-                                    <a href="../files/utils_api_core_color.js.html#l122"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:122</code></a>
-                                    </p>
-                            
-                            
-                            
-                                </div>
-                            
-                                <div class="extended-detail">
-                            
-                                    <div class="description">
-                                        
-                                    </div>
-                            
-                            
-                                        <div class="returns">
-                                            <h4>Returns:</h4>
-                            
-                                            <div class="returns-description">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
-                                            </div>
-                                        </div>
-                            
-                                </div>
-                            </div>
-                
-                        <div class="no-visible-items-message">
-                            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
-                        </div>
-                
-                    </div>
-                
-                
-                </div>
-                
             </div>
+            <a name="property_blue" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>blue</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l66"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:66</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_cyan" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>cyan</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l78"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:78</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_gray" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>gray</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l48"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:48</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_green" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>green</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l60"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:60</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_magenta" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>magenta</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l84"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:84</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_red" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>red</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l54"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:54</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_transparent" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>transparent</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l42"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:42</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_white" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>white</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l30"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:30</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <a name="property_yellow" class="anchor-link"></a>
+            <div class="property item">
+                <h3 class="name"><code>yellow</code>
+                <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+            
+            
+            
+            
+                    <span class="flag static">静态</span>
+            
+                </h3>
+            
+                <div class="meta">
+                            <p>
+                            定义于
+                    <a href="../files/utils_api_core_color.js.html#l72"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:72</code></a>
+                    </p>
+            
+            
+                </div>
+            
+                <div class="extended-detail">
+                    <div class="description">
+                        
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+        <div class="no-visible-items-message">
+            <p>There are no properties that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+    <div class="constructor">
+        <h2>构造函数</h2><a name="method_Color" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>Color</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[r=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[g=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[b=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[a=1]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l6"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:6</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">r</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                            <p>red component of the color</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">g</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                            <p>green component of the color</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">b</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                            <p>blue component of the color</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">a</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：1</span>
+
+
+                        <div class="param-description">
+                            <p>alpha component of the color</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+    </div>
+
+    <div class="methods-detail">
+        <h2>方法</h2>
+        <a name="method_clamp" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>clamp</code>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l181"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:181</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Clamp this color to make all components between 0 to 1.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="method_clone" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>clone</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l100"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:100</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Clone a new color from the current color.</p>
+
+        </div>
+
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
+                        <p>Newly created color.</p>
+
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_color" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>color</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[r=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[g=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[b=0]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[a=1]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l275"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:275</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>The convenience method to create a new &lt;% crosslink Fire.Color Color %&gt;</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">r</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">g</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">b</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：0</span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">a</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+                                <span>，默认值：1</span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_equals" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>equals</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>other</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l109"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:109</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">other</code>
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_fromHEX" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>fromHEX</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>hexString</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+        </span>
+
+
+
+
+
+        <span class="flag chainable">chainable</span>
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l192"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:192</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">hexString</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_fromHSV" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>fromHSV</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>h</code>
+                </li>
+                <li class="arg">
+                        <code>s</code>
+                </li>
+                <li class="arg">
+                        <code>v</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+        </span>
+
+
+
+
+
+        <span class="flag chainable">chainable</span>
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l246"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:246</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">h</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">s</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">v</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_lerp" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>lerp</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>to</code>
+                </li>
+                <li class="arg">
+                        <code>ratio</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[out]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l122"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:122</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">to</code>
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+
+
+                        <div class="param-description">
+                             
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">ratio</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            <p>the interpolation coefficient</p>
+
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">out</code>
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            <p>optional, the receiving vector</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_toCSS" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>toCSS</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>opt</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l155"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:155</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">opt</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>&quot;rgba&quot;, &quot;rgb&quot;, &quot;#rgb&quot; or &quot;#rrggbb&quot;</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_toHEX" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>toHEX</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>fmt</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l206"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:206</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">fmt</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            <p>&quot;#rgb&quot; or &quot;#rrggbb&quot;</p>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_toHSV" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>toHSV</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l262"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:262</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        <ul>
+<li>{h: number, s: number, v: number}</li>
+</ul>
+
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_toRGBValue" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>toRGBValue</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l235"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:235</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Convert to 24bit rgb value</p>
+
+        </div>
+
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_toString" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>toString</code>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="../files/utils_api_core_color.js.html#l142"><code>utils&#x2F;api&#x2F;core&#x2F;color.js:142</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+
+        <div class="no-visible-items-message">
+            <p>There are no methods that match your current filter settings. You can change your filter settings in the index section on this page. <a href="#index" class="index-jump-link">index</a></p>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
         </div>
 
     </div>

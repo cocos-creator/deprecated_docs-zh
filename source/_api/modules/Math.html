@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Math - Fireball Engine API</title>
+    <title>Math - fireball-build</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -14,8 +14,10 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                    <a href="http://docs-zh.fireball-x.com"><img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API"></a>
-                    <h1 class="project-name">Fireball Engine API</h1> <span class="project-version">0.2.0</span>
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
                     <p class="description">Fireball is the game engine for the future.</p>
             </div>
             <ul class="jump-links">
@@ -26,123 +28,1523 @@
     </header>
     <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a></li>
-                            <li><a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a></li>
-                            <li><a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a></li>
-                            <li><a class="type" href="../classes/Asset.html">Asset</a></li>
-                            <li><a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a></li>
-                            <li><a class="type" href="../classes/AudioClip.html">AudioClip</a></li>
-                            <li><a class="type" href="../classes/AudioSource.html">AudioSource</a></li>
-                            <li><a class="type" href="../classes/BitmapFont.html">BitmapFont</a></li>
-                            <li><a class="type" href="../classes/BitmapText.html">BitmapText</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAlign.html">BitmapText.TextAlign</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAnchor.html">BitmapText.TextAnchor</a></li>
-                            <li><a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a></li>
-                            <li><a class="type" href="../classes/Camera.html">Camera</a></li>
-                            <li><a class="type" href="../classes/Color.html">Color</a></li>
-                            <li><a class="type" href="../classes/Component.html">Component</a></li>
-                            <li><a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a></li>
-                            <li><a class="type" href="../classes/Engine.html">Engine</a></li>
-                            <li><a class="type" href="../classes/Entity.html">Entity</a></li>
-                            <li><a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a></li>
-                            <li><a class="type" href="../classes/Event.html">Event</a></li>
-                            <li><a class="type" href="../classes/EventTarget.html">EventTarget</a></li>
-                            <li><a class="type" href="../classes/Fire.html">Fire</a></li>
-                            <li><a class="type" href="../classes/FixedHeight.html">FixedHeight</a></li>
-                            <li><a class="type" href="../classes/FObject.html">FObject</a></li>
-                            <li><a class="type" href="../classes/HashObject.html">HashObject</a></li>
-                            <li><a class="type" href="../classes/Input.html">Input</a></li>
-                            <li><a class="type" href="../classes/Intersection.html">Intersection</a></li>
-                            <li><a class="type" href="../classes/JS.html">JS</a></li>
-                            <li><a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a></li>
-                            <li><a class="type" href="../classes/LoadManager.html">LoadManager</a></li>
-                            <li><a class="type" href="../classes/Math.html">Math</a></li>
-                            <li><a class="type" href="../classes/Matrix23.html">Matrix23</a></li>
-                            <li><a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a></li>
-                            <li><a class="type" href="../classes/MouseEvent.html">MouseEvent</a></li>
-                            <li><a class="type" href="../classes/NoScale.html">NoScale</a></li>
-                            <li><a class="type" href="../classes/Path.html">Path</a></li>
-                            <li><a class="type" href="../classes/Rect.html">Rect</a></li>
-                            <li><a class="type" href="../classes/Renderer.html">Renderer</a></li>
-                            <li><a class="type" href="../classes/Screen.html">Screen</a></li>
-                            <li><a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a></li>
-                            <li><a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a></li>
-                            <li><a class="type" href="../classes/Sprite.html">Sprite</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a></li>
-                            <li><a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a></li>
-                            <li><a class="type" href="../classes/Texture.html">Texture</a></li>
-                            <li><a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a></li>
-                            <li><a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a></li>
-                            <li><a class="type" href="../classes/Time.html">Time</a></li>
-                            <li><a class="type" href="../classes/Transform.html">Transform</a></li>
-                            <li><a class="type" href="../classes/Vec2.html">Vec2</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Editor.html">Editor</a></li>
-                            <li><a class="module" href="../modules/Fire.html">Fire</a></li>
-                            <li><a class="module" href="../modules/Math.html">Math</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
         </div>
 
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
         <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Math Module</h1>
-                <div class="box clearfix meta">
-                
-                
-                        <div class="foundat">
-                            Defined in: <a href="../files/utils_api_core_math.js.html#l9"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:9</code></a>
+            <div class="content container"><h1>Math 模组</h1>
+<div class="box clearfix meta">
+
+
+        <div class="foundat">
+            于<a href="../files/utils_api_core_math.js.html#l8"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:8</code></a>定义
+        </div>
+
+</div>
+
+
+<div class="box intro">
+    <p>!#en
+Extends the JavaScript built-in object that has properties and methods for mathematical constants and functions.
+See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Global_Objects/Math on MDN</a>
+!#zh 扩展 JavaScript 内建的数学计算属性和方法。
+请参考<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">MDN上的Global_Objects/Math</a></p>
+
+</div>
+
+
+<!-- Class member index -->
+
+
+<h3>直属成员(Direct Members)</h3>
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property">
+            <a href="#property_TWO_PI">TWO_PI</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_HALF_PI">HALF_PI</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_D2R">D2R</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_R2D">R2D</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_deg2rad">deg2rad</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_rad2deg">rad2deg</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_rad180">rad180</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_rad360">rad360</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_deg180">deg180</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_deg360">deg360</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_randomRange">randomRange</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_randomRangeInt">randomRangeInt</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_clamp">clamp</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_clamp01">clamp01</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_calculateMaxRect">calculateMaxRect</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_lerp">lerp</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+<div class="yui3-g">
+
+        <div class="yui3-u-1-2">
+            <h3>属性(property)：</h3>
+            <a name="property_TWO_PI" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>TWO_PI</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:18</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_HALF_PI" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>HALF_PI</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:24</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_D2R" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>D2R</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:30</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>degree to radius</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_R2D" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>R2D</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:37</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>radius to degree</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+        </div>
+
+    
+        <div class="yui3-u-1-2">
+            <h3>方法(method)：</h3>
+            <a name="method_deg2rad" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>deg2rad</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>degree</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:44</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>degree to radius</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">degree</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
                         </div>
-                
-                </div>
-                
-                
-                <div class="box intro">
-                    <p>Extends the JavaScript built-in object that has properties and methods for mathematical constants and functions.
-                See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math</a></p>
-                
-                </div>
-                
-                
-                <div class="yui3-g">
-                    <div class="yui3-u-1-2">
-                            <p>This module provides the following classes:</p>
-                
-                            <ul class="module-classes">
-                                <li class="module-class">
-                                    <a href="../classes/Math.html">
-                                        Math
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                
-                    <div class="yui3-u-1-2">
-                    </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        radius
                 </div>
             </div>
+
+    </div>
+</div>
+<a name="method_rad2deg" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>rad2deg</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>radius</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:54</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>radius to degree</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">radius</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        degree
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_rad180" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>rad180</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>radius</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:64</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>let radius in -pi to pi</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">radius</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        clamped radius
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_rad360" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>rad360</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>radius</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:77</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>let radius in 0 to 2pi</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">radius</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        clamped radius
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_deg180" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>deg180</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>degree</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:91</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>let degree in -180 to 180</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">degree</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        clamped degree
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_deg360" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>deg360</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>degree</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:105</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>let degree in 0 to 360</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">degree</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        clamped degree
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_randomRange" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>randomRange</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>min</code>
+                </li>
+                <li class="arg">
+                        <code>max</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:119</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Returns a floating-point random number between min (inclusive) and max (exclusive).</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">min</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">max</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        the random number
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_randomRangeInt" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>randomRangeInt</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>min</code>
+                </li>
+                <li class="arg">
+                        <code>max</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:130</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Returns a random integer between min (inclusive) and max (exclusive).</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">min</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">max</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        the random integer
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_clamp" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>clamp</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>val</code>
+                </li>
+                <li class="arg">
+                        <code>min</code>
+                </li>
+                <li class="arg">
+                        <code>max</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:141</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Clamps a value between a minimum float and maximum float value.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">val</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">min</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">max</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_clamp01" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>clamp01</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>val</code>
+                </li>
+                <li class="arg">
+                        <code>min</code>
+                </li>
+                <li class="arg">
+                        <code>max</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:165</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Clamps a value between 0 and 1.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">val</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">min</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">max</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_calculateMaxRect" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>calculateMaxRect</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>out</code>
+                </li>
+                <li class="arg">
+                        <code>p0</code>
+                </li>
+                <li class="arg">
+                        <code>p1</code>
+                </li>
+                <li class="arg">
+                        <code>p2</code>
+                </li>
+                <li class="arg">
+                        <code>p3</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Rect.html" class="crosslink">Rect</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:177</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">out</code>
+                            <span class="type"><a href="../classes/Rect.html" class="crosslink">Rect</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">p0</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">p1</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">p2</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">p3</code>
+                            <span class="type"><a href="../classes/Vec2.html" class="crosslink">Vec2</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="../classes/Rect.html" class="crosslink">Rect</a></span>:
+                        just the out rect itself
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_lerp" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>lerp</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>from</code>
+                </li>
+                <li class="arg">
+                        <code>to</code>
+                </li>
+                <li class="arg">
+                        <code>ratio</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;math.js:198</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">from</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">to</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">ratio</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            the interpolation coefficient
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+
+        </div>
+
+
+</div>
+</div>
         </div>
 
     </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fire - Fireball Engine API</title>
+    <title>Fire - fireball-build</title>
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
@@ -14,8 +14,10 @@
     <header class="main-header">
         <div class="content">
             <div class="project-title">
-                    <a href="http://docs-zh.fireball-x.com"><img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="Fireball Engine API"></a>
-                    <h1 class="project-name">Fireball Engine API</h1> <span class="project-version">0.2.0</span>
+                <a href="http://docs-zh.fireball-x.com">
+                        <img class="logo" src="http://docs-zh.fireball-x.com/images/logo.png" title="fireball-build">
+                </a>
+                    <h1 class="project-name">fireball-build</h1> <span class="project-version">0.3.0</span>
                     <p class="description">Fireball is the game engine for the future.</p>
             </div>
             <ul class="jump-links">
@@ -26,383 +28,4166 @@
     </header>
     <div id="bd" class="main-body">
 
-        <div id="docs-sidebar" class="sidebar apidocs">
-            <div id="api-list">
-                <div id="api-tabview" class="tabview">
-                    <ul class="tabs">
-                        <li><a href="#api-classes">Classes</a></li>
-                        <li><a href="#api-modules">Modules</a></li>
-                    </ul>
-            
-                    <div id="api-tabview-filter">
-                        <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                    </div>
-            
-                    <div id="api-tabview-panel">
-                        <ul id="api-classes" class="apis classes">
-                            <li><a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a></li>
-                            <li><a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a></li>
-                            <li><a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a></li>
-                            <li><a class="type" href="../classes/Asset.html">Asset</a></li>
-                            <li><a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a></li>
-                            <li><a class="type" href="../classes/AudioClip.html">AudioClip</a></li>
-                            <li><a class="type" href="../classes/AudioSource.html">AudioSource</a></li>
-                            <li><a class="type" href="../classes/BitmapFont.html">BitmapFont</a></li>
-                            <li><a class="type" href="../classes/BitmapText.html">BitmapText</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAlign.html">BitmapText.TextAlign</a></li>
-                            <li><a class="type" href="../classes/BitmapText.TextAnchor.html">BitmapText.TextAnchor</a></li>
-                            <li><a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a></li>
-                            <li><a class="type" href="../classes/Camera.html">Camera</a></li>
-                            <li><a class="type" href="../classes/Color.html">Color</a></li>
-                            <li><a class="type" href="../classes/Component.html">Component</a></li>
-                            <li><a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a></li>
-                            <li><a class="type" href="../classes/Engine.html">Engine</a></li>
-                            <li><a class="type" href="../classes/Entity.html">Entity</a></li>
-                            <li><a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a></li>
-                            <li><a class="type" href="../classes/Event.html">Event</a></li>
-                            <li><a class="type" href="../classes/EventTarget.html">EventTarget</a></li>
-                            <li><a class="type" href="../classes/Fire.html">Fire</a></li>
-                            <li><a class="type" href="../classes/FixedHeight.html">FixedHeight</a></li>
-                            <li><a class="type" href="../classes/FObject.html">FObject</a></li>
-                            <li><a class="type" href="../classes/HashObject.html">HashObject</a></li>
-                            <li><a class="type" href="../classes/Input.html">Input</a></li>
-                            <li><a class="type" href="../classes/Intersection.html">Intersection</a></li>
-                            <li><a class="type" href="../classes/JS.html">JS</a></li>
-                            <li><a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a></li>
-                            <li><a class="type" href="../classes/LoadManager.html">LoadManager</a></li>
-                            <li><a class="type" href="../classes/Math.html">Math</a></li>
-                            <li><a class="type" href="../classes/Matrix23.html">Matrix23</a></li>
-                            <li><a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a></li>
-                            <li><a class="type" href="../classes/MouseEvent.html">MouseEvent</a></li>
-                            <li><a class="type" href="../classes/NoScale.html">NoScale</a></li>
-                            <li><a class="type" href="../classes/Path.html">Path</a></li>
-                            <li><a class="type" href="../classes/Rect.html">Rect</a></li>
-                            <li><a class="type" href="../classes/Renderer.html">Renderer</a></li>
-                            <li><a class="type" href="../classes/Screen.html">Screen</a></li>
-                            <li><a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a></li>
-                            <li><a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a></li>
-                            <li><a class="type" href="../classes/Sprite.html">Sprite</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a></li>
-                            <li><a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a></li>
-                            <li><a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a></li>
-                            <li><a class="type" href="../classes/Texture.html">Texture</a></li>
-                            <li><a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a></li>
-                            <li><a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a></li>
-                            <li><a class="type" href="../classes/Time.html">Time</a></li>
-                            <li><a class="type" href="../classes/Transform.html">Transform</a></li>
-                            <li><a class="type" href="../classes/Vec2.html">Vec2</a></li>
-                        </ul>
-            
-                        <ul id="api-modules" class="apis modules">
-                            <li><a class="module" href="../modules/Editor.html">Editor</a></li>
-                            <li><a class="module" href="../modules/Fire.html">Fire</a></li>
-                            <li><a class="module" href="../modules/Math.html">Math</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="docs-sidebar" class="sidebar apidocs"><div id="api-list">
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-enums">枚举</a></li>
+            <li><a href="#api-classes">类型</a></li>
+            <li><a href="#api-modules">模组</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="输入关键词，过滤API">
         </div>
 
+        <div id="api-tabview-panel">
+            <ul id="api-enums" class="apis enums">
+                <li>
+                    <a href="../enums/FontType.html">FontType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAlign.html">TextAlign</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a href="../enums/TextAnchor.html">TextAnchor</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-classes" class="apis classes">
+                <li>
+                    <a class="type" href="../classes/_CallbacksHandler.html">_CallbacksHandler</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_DeserializeInfo.html">_DeserializeInfo</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_ObjectFlags.html">_ObjectFlags</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/_Runtime.RenderContext.html">_Runtime.RenderContext</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimationNode.html">AnimationNode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AnimCurve.html">AnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Asset.html">Asset</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetBundleBase.html">AssetBundleBase</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AssetLibrary.html">AssetLibrary</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AtlasAsset.html">AtlasAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioClip.html">AudioClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/AudioSource.html">AudioSource</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapFont.html">BitmapFont</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/BitmapText.html">BitmapText</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/CallbacksInvoker.html">CallbacksInvoker</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Camera.html">Camera</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Color.html">Color</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Component.html">Component</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ContentStrategyType.html">ContentStrategyType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/DynamicAnimCurve.html">DynamicAnimCurve</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Engine.html">Engine</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Entity.html">Entity</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EqualToFrame.html">EqualToFrame</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Event.html">Event</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/EventTarget.html">EventTarget</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FixedHeight.html">FixedHeight</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FObject.html">FObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/FontFlagType.html">FontFlagType</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/HashObject.html">HashObject</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Input.html">Input</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/InputField.html">InputField</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Intersection.html">Intersection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/KeyboardEvent.html">KeyboardEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/LoadManager.html">LoadManager</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Matrix23.html">Matrix23</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ModifierKeyStates.html">ModifierKeyStates</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/MouseEvent.html">MouseEvent</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/NoScale.html">NoScale</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Path.html">Path</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Playable.html">Playable</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/PlaybackDirection.html">PlaybackDirection</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Rect.html">Rect</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Renderer.html">Renderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Resources.html">Resources</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/ResourcesBundle.html">ResourcesBundle</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.html">Screen</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContainerStrategy.html">Screen.ContainerStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Screen.ContentStrategy.html">Screen.ContentStrategy</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Skeleton.html">Skeleton</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonDataAsset.html">SkeletonDataAsset</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SkeletonRenderer.html">SkeletonRenderer</a>
+                    <a href="../modules/Fire.Spine.html" class="api-list-item-module">@Fire.Spine</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Sprite.html">Sprite</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimation.html">SpriteAnimation</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.html">SpriteAnimationClip</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.StopAction.html">SpriteAnimationClip.StopAction</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationClip.WrapMode.html">SpriteAnimationClip.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteAnimationState.html">SpriteAnimationState</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/SpriteRenderer.html">SpriteRenderer</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.html">Texture</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.FilterMode.html">Texture.FilterMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Texture.WrapMode.html">Texture.WrapMode</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Time.html">Time</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Transform.html">Transform</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+                <li>
+                    <a class="type" href="../classes/Vec2.html">Vec2</a>
+                    <a href="../modules/Fire.html" class="api-list-item-module">@Fire</a>
+                </li>
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+                <li><a class="module" href="../modules/Editor.html">Editor</a></li>
+                <li><a class="module" href="../modules/Fire.html">Fire</a></li>
+                <li><a class="module" href="../modules/Fire.JS.html">Fire.JS</a></li>
+                <li><a class="module" href="../modules/Fire.Spine.html">Fire.Spine</a></li>
+                <li><a class="module" href="../modules/Math.html">Math</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
         <div id="docs-main" class="apidocs">
-            <div class="content container">
-                <h1>Fire Module</h1>
-                <div class="box clearfix meta">
-                
-                
-                        <div class="foundat">
-                            Defined in: <a href="../files/utils_api_engine_transform.js.html#l7"><code>utils&#x2F;api&#x2F;engine&#x2F;transform.js:7</code></a>
+            <div class="content container"><h1>Fire 模组</h1>
+<div class="box clearfix meta">
+
+
+        <div class="foundat">
+            于<a href="../files/utils_api_core___intro.js.html#l6"><code>utils&#x2F;api&#x2F;core&#x2F;__intro.js:6</code></a>定义
+        </div>
+
+</div>
+
+
+<div class="box intro">
+    <p>!#en
+Global object with runtime classes, properties and methods you can access from anywhere.
+Submodules:</p>
+<ul>
+<li><a href="./Fire.JS.html">JS</a></li>
+<li><a href="./Fire.Spine.html">Spine</a></li>
+</ul>
+<p>!#zh
+可全局访问的公共方法和属性，也会包括一些组件和类的静态方法
+包含的子模块:</p>
+<ul>
+<li><a href="./Fire.JS.html">JS</a></li>
+<li><a href="./Fire.Spine.html">Spine</a></li>
+</ul>
+
+</div>
+
+
+<!-- Class member index -->
+<div class="index-section properties">
+    <h3>类(Class)</h3>
+    <ul class="index-list properties">
+        <li class="index-item">
+            <a href="../classes/_CallbacksHandler.html">
+                _CallbacksHandler
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/_DeserializeInfo.html">
+                _DeserializeInfo
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/_ObjectFlags.html">
+                _ObjectFlags
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/_Runtime.RenderContext.html">
+                _Runtime.RenderContext
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AnimationNode.html">
+                AnimationNode
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AnimCurve.html">
+                AnimCurve
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Asset.html">
+                Asset
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AssetBundleBase.html">
+                AssetBundleBase
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AssetLibrary.html">
+                AssetLibrary
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AudioClip.html">
+                AudioClip
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/AudioSource.html">
+                AudioSource
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/BitmapFont.html">
+                BitmapFont
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/BitmapText.html">
+                BitmapText
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/CallbacksInvoker.html">
+                CallbacksInvoker
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Camera.html">
+                Camera
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Color.html">
+                Color
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Component.html">
+                Component
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/ContentStrategyType.html">
+                ContentStrategyType
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/DynamicAnimCurve.html">
+                DynamicAnimCurve
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Engine.html">
+                Engine
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Entity.html">
+                Entity
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/EqualToFrame.html">
+                EqualToFrame
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Event.html">
+                Event
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/EventTarget.html">
+                EventTarget
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/FixedHeight.html">
+                FixedHeight
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/FObject.html">
+                FObject
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/FontFlagType.html">
+                FontFlagType
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/HashObject.html">
+                HashObject
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Input.html">
+                Input
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/InputField.html">
+                InputField
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Intersection.html">
+                Intersection
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/KeyboardEvent.html">
+                KeyboardEvent
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/LoadManager.html">
+                LoadManager
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Matrix23.html">
+                Matrix23
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/ModifierKeyStates.html">
+                ModifierKeyStates
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/MouseEvent.html">
+                MouseEvent
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/NoScale.html">
+                NoScale
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Path.html">
+                Path
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Playable.html">
+                Playable
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/PlaybackDirection.html">
+                PlaybackDirection
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Rect.html">
+                Rect
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Renderer.html">
+                Renderer
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Resources.html">
+                Resources
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/ResourcesBundle.html">
+                ResourcesBundle
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Screen.html">
+                Screen
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Screen.ContainerStrategy.html">
+                Screen.ContainerStrategy
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Screen.ContentStrategy.html">
+                Screen.ContentStrategy
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Sprite.html">
+                Sprite
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteAnimation.html">
+                SpriteAnimation
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteAnimationClip.html">
+                SpriteAnimationClip
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteAnimationClip.StopAction.html">
+                SpriteAnimationClip.StopAction
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteAnimationClip.WrapMode.html">
+                SpriteAnimationClip.WrapMode
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteAnimationState.html">
+                SpriteAnimationState
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/SpriteRenderer.html">
+                SpriteRenderer
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Texture.html">
+                Texture
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Texture.FilterMode.html">
+                Texture.FilterMode
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Texture.WrapMode.html">
+                Texture.WrapMode
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Time.html">
+                Time
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Transform.html">
+                Transform
+            </a>
+        </li>
+        <li class="index-item">
+            <a href="../classes/Vec2.html">
+                Vec2
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<h3>直属成员(Direct Members)</h3>
+
+
+<a name="index" class="anchor-link"></a>
+<div class="index">
+    <h2>索引</h2>
+    <div id="api-options">
+        显示:
+    
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            保护(Protected)
+        </label>
+    
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            私有(Private)
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            废弃(Deprecated)
+        </label>
+    
+    </div>
+
+<div class="index-section properties">
+    <h3>属性(Property)</h3>
+    <ul class="index-list properties">
+        <li class="index-item property private">
+            <a href="#property_NonSerialized">NonSerialized</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_EditorOnly">EditorOnly</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_Integer">Integer</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_Float">Float</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_Boolean">Boolean</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_String">String</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_HideInInspector">HideInInspector</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property_ReadOnly">ReadOnly</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isNode">isNode</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isPureWeb">isPureWeb</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isEditor">isEditor</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isWeb">isWeb</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isEditorCore">isEditorCore</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isDarwin">isDarwin</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isWin32">isWin32</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isMobile">isMobile</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isIOS">isIOS</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isAndroid">isAndroid</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isRetina">isRetina</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_isRetinaEnabled">isRetinaEnabled</a>
+        </li>
+        <li class="index-item property private">
+            <a href="#property__isCloning">_isCloning</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_JS">JS</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_Spine">Spine</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_entities">entities</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_camera">camera</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_fontType">fontType</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_customFontType">customFontType</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_text">text</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_size">size</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_color">color</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_align">align</a>
+        </li>
+        <li class="index-item property">
+            <a href="#property_anchor">anchor</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="index-section methods">
+    <h3>方法</h3>
+    <ul class="index-list methods">
+
+        <li class="index-item method">
+            <a href="#method_attr">attr</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_ObjectType">ObjectType</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Enum">Enum</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_RawType">RawType</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Custom">Custom</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Fire.DisplayName">Fire.DisplayName</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Tooltip">Tooltip</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Nullable">Nullable</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Watch">Watch</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_Range">Range</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_Class">Class</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_log">log</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_info">info</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_warn">warn</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_error">error</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_defineEnum">defineEnum</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_deserialize">deserialize</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_instantiate">instantiate</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_addCustomAssetMenu">addCustomAssetMenu</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_padLeft">padLeft</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_fitRatio">fitRatio</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_fitSize">fitSize</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_getEnumList">getEnumList</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method_getVarFrom">getVarFrom</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_rgb2hsv">rgb2hsv</a>
+        </li>
+        <li class="index-item method">
+            <a href="#method_binarySearch">binarySearch</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method__JsonLoader">_JsonLoader</a>
+        </li>
+        <li class="index-item method private">
+            <a href="#method__throw">_throw</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+<div class="yui3-g">
+
+        <div class="yui3-u-1-2">
+            <h3>属性(property)：</h3>
+            <a name="property_NonSerialized" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>NonSerialized</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:105</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>By default, all properties declared by &quot;Class.prop&quot; is serializable.
+The NonSerialized attribute marks a variable to not be serialized,
+so you can keep a property show in the Editor and Fireball will not attempt to serialize it.
+See {% crosslink EditorOnly Fire.EditorOnly %} for more details.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_EditorOnly" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>EditorOnly</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:120</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The EditorOnly attribute marks a variable to be serialized in editor project, but non-serialized
+in exported products.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_Integer" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>Integer</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:133</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>Specify that the input value must be integer in Inspector.
+Also used to indicates that the type of elements in array or the type of value in dictionary is integer.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_Float" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>Float</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:143</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>Indicates that the type of elements in array or the type of value in dictionary is double.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_Boolean" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>Boolean</code>
+    <span class="type"></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:199</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>Indicates that the type of elements in array or the type of value in dictionary is boolean.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_String" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>String</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:213</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>Indicates that the type of elements in array or the type of value in dictionary is string.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_HideInInspector" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>HideInInspector</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:370</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>Makes a property not show up in the Inspector but be serialized.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_ReadOnly" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>ReadOnly</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:390</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The ReadOnly attribute indicates that the property field is disabled in Inspector.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isNode" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isNode</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:6</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>是否在 nodejs 运行环境下</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isPureWeb" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isPureWeb</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:14</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in common web browser</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isEditor" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isEditor</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:21</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in Fireball editor</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isWeb" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isWeb</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:28</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in common web browser, or editor's window process(atom-shell's renderer context)</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isEditorCore" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isEditorCore</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:40</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in editor's core process(atom-shell's browser context)</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isDarwin" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isDarwin</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:48</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in OSX</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isWin32" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isWin32</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:55</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in Windows</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isMobile" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isMobile</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:73</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in mobile device</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isIOS" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isIOS</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:79</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in iOS</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isAndroid" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isAndroid</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:85</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>indicates whether executes in Android</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isRetina" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isRetina</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:96</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>判断窗口是否显示在 Retina 显示器下。这个属性会随着窗口所在的显示器变化而变化</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_isRetinaEnabled" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>isRetinaEnabled</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;definition.js:108</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>判断当前是否启用 retina 渲染模式。Fire.isRetina 只是表示系统的支持状态，而最终是否启用 retina 则取决于 Fire.isRetinaEnabled。由于安卓太卡，这里默认禁用 retina。</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property__isCloning" class="anchor-link"></a>
+<div class="property item private">
+    <h3 class="name"><code>_isCloning</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;instantiate.js:190</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_JS" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>JS</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;js.js:374</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>JS utilities accessible globally, see <a href="./Fire.JS.html">JS module</a>.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_Spine" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>Spine</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;atlas-asset.js:5</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The <a href="./Fire.Spine.html">Spine module</a>.</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_entities" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>entities</code>
+    <span class="type"><a href="../classes/Entity.html" class="crosslink">Entity[]</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;scene.js:11</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>root entities</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_camera" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>camera</code>
+    <span class="type"><a href="../classes/Camera.html" class="crosslink">Camera</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;scene.js:18</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>the active camera</p>
+
+        </div>
+
+
+
+    </div>
+</div>
+<a name="property_fontType" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>fontType</code>
+    <span class="type"><a href="../classes/FontType.html" class="crosslink">FontType</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:24</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The font type of the text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">FontType.Arial</span></p>
+
+
+    </div>
+</div>
+<a name="property_customFontType" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>customFontType</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:41</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The custom font type of the text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">&quot;Arial&quot;</span></p>
+
+
+    </div>
+</div>
+<a name="property_text" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>text</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:63</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The text of text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">&quot;Enter text...&quot;</span></p>
+
+
+    </div>
+</div>
+<a name="property_size" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>size</code>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:81</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The size of text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">30</span></p>
+
+
+    </div>
+</div>
+<a name="property_color" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>color</code>
+    <span class="type"><a href="../classes/Color.html" class="crosslink">Color</a></span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:100</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The color of text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">Fire.Color.white</span></p>
+
+
+    </div>
+</div>
+<a name="property_align" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>align</code>
+    <span class="type">Fire.TextAlign</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:117</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>How lines of text are aligned (left, right, center).</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">Fire.TextAlign.left</span></p>
+
+
+    </div>
+</div>
+<a name="property_anchor" class="anchor-link"></a>
+<div class="property item">
+    <h3 class="name"><code>anchor</code>
+    <span class="type">Fire.TextAnchor</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;text.js:135</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+        <div class="description">
+            <p>The anchor point of the text.</p>
+
+        </div>
+
+            <p class="default"><strong>默认值:</strong> <span class="default-value">Fire.TextAnchor.midCenter</span></p>
+
+
+    </div>
+</div>
+
+        </div>
+
+    
+        <div class="yui3-u-1-2">
+            <h3>方法(method)：</h3>
+            <a name="method_attr" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>attr</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>constructor</code>
+                </li>
+                <li class="arg">
+                        <code>propertyName</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[attributes]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> | Undefined</span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:4</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Tag the class with any meta attributes, then return all current attributes assigned to it.
+This function holds only the attributes, not their implementations.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">constructor</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            the class or instance. If instance, the attribute will be dynamic and only available for the specified instance.
                         </div>
-                
-                </div>
-                
-                
-                <div class="box intro">
-                    <p>Global object with classes, properties and methods you can access from anywhere.</p>
-                <p>See <a href="../classes/Fire.html">methods and properties</a>.</p>
-                
-                </div>
-                
-                
-                <div class="yui3-g">
-                    <div class="yui3-u-1-2">
-                            <p>This module provides the following classes:</p>
-                
-                            <ul class="module-classes">
-                                <li class="module-class">
-                                    <a href="../classes/_CallbacksHandler.html">
-                                        _CallbacksHandler
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/_DeserializeInfo.html">
-                                        _DeserializeInfo
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/_ObjectFlags.html">
-                                        _ObjectFlags
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Asset.html">
-                                        Asset
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/AssetLibrary.html">
-                                        AssetLibrary
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/AudioClip.html">
-                                        AudioClip
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/AudioSource.html">
-                                        AudioSource
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/BitmapFont.html">
-                                        BitmapFont
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/BitmapText.html">
-                                        BitmapText
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/BitmapText.TextAlign.html">
-                                        BitmapText.TextAlign
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/BitmapText.TextAnchor.html">
-                                        BitmapText.TextAnchor
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/CallbacksInvoker.html">
-                                        CallbacksInvoker
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Camera.html">
-                                        Camera
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Color.html">
-                                        Color
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Component.html">
-                                        Component
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/ContentStrategyType.html">
-                                        ContentStrategyType
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Engine.html">
-                                        Engine
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Entity.html">
-                                        Entity
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/EqualToFrame.html">
-                                        EqualToFrame
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Event.html">
-                                        Event
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/EventTarget.html">
-                                        EventTarget
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Fire.html">
-                                        Fire
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/FixedHeight.html">
-                                        FixedHeight
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/FObject.html">
-                                        FObject
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/HashObject.html">
-                                        HashObject
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Input.html">
-                                        Input
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Intersection.html">
-                                        Intersection
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/JS.html">
-                                        JS
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/KeyboardEvent.html">
-                                        KeyboardEvent
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/LoadManager.html">
-                                        LoadManager
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Matrix23.html">
-                                        Matrix23
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/ModifierKeyStates.html">
-                                        ModifierKeyStates
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/MouseEvent.html">
-                                        MouseEvent
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/NoScale.html">
-                                        NoScale
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Path.html">
-                                        Path
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Rect.html">
-                                        Rect
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Renderer.html">
-                                        Renderer
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Screen.html">
-                                        Screen
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Screen.ContainerStrategy.html">
-                                        Screen.ContainerStrategy
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Screen.ContentStrategy.html">
-                                        Screen.ContentStrategy
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Sprite.html">
-                                        Sprite
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteAnimation.html">
-                                        SpriteAnimation
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteAnimationClip.html">
-                                        SpriteAnimationClip
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteAnimationClip.StopAction.html">
-                                        SpriteAnimationClip.StopAction
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteAnimationClip.WrapMode.html">
-                                        SpriteAnimationClip.WrapMode
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteAnimationState.html">
-                                        SpriteAnimationState
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/SpriteRenderer.html">
-                                        SpriteRenderer
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Texture.html">
-                                        Texture
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Texture.FilterMode.html">
-                                        Texture.FilterMode
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Texture.WrapMode.html">
-                                        Texture.WrapMode
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Time.html">
-                                        Time
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Transform.html">
-                                        Transform
-                                    </a>
-                                </li>
-                                <li class="module-class">
-                                    <a href="../classes/Vec2.html">
-                                        Vec2
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                
-                    <div class="yui3-u-1-2">
-                    </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">propertyName</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            the name of property or function, used to retrieve the attributes
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">attributes</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            the attribute table to mark, new attributes will merged with existed attributes. Attribute whose key starts with '_' will be ignored.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> | Undefined</span>:
+                        return all attributes associated with the property. if none undefined will be returned
                 </div>
             </div>
+
+            <div class="example">
+                <h4>例子:</h4>
+                <div class="example-content">
+   var klass = function () { this.value = 0.5 };
+   Fire.attr(klass, 'value');              // return undefined
+   Fire.attr(klass, 'value', {}).min = 0;  // assign new attribute table associated with 'value', and set its min = 0
+   Fire.attr(klass, 'value', {             // set values max and default
+      max: 1,
+      default: 0.5,
+   });
+   Fire.attr(klass, 'value');              // return { default: 0.5, min: 0, max: 1 }</div>
+            </div>
+    </div>
+</div>
+<a name="method_ObjectType" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>ObjectType</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>typeCtor</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:236</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Makes a property only accept the supplied object type in Inspector.
+If the type is derived from Fire.Asset, it will be serialized to uuid.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">typeCtor</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            the special type you want
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Enum" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Enum</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>enumType</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:284</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Makes a property show up as a enum in Inspector.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">enumType</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the enum attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_RawType" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>RawType</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[typename]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:296</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Makes a property referenced to a javascript host object which needs to load before deserialzation.
+The property will not be serialized but will be referenced to the loaded host object while deserialzation.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name optional">typename</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Custom" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Custom</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:358</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Makes a custom property</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">name</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Fire.DisplayName" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Fire.DisplayName</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:378</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Set a custom property name for display in the editor</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">name</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Tooltip" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Tooltip</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>tooltip</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:400</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Specify a tooltip for a property</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">tooltip</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Nullable" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Nullable</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>boolPropName</code>
+                </li>
+                <li class="arg">
+                        <code>hasValueByDefault</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:412</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">boolPropName</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">hasValueByDefault</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Watch" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Watch</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>names</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:438</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">names</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            the name of target property to watch, array is also acceptable.
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            the callback function to invoke when target property(s) is changed.
+                        </div>
+
+                            <ul class="params-list">
+                                <li class="param">
+                                        <code class="param-name">param</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+                                    <div class="param-description">
+                                        object - the instance object which contains watching property(s).
+                                    </div>
+
+                                </li>
+                                <li class="param">
+                                        <code class="param-name">param</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+                                    <div class="param-description">
+                                        element - the property element which displays watching property(s).
+                                    </div>
+
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Range" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>Range</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>min:</code>
+                </li>
+                <li class="arg">
+                        <code>max:</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;attribute.js:454</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">min:</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            null mins infinite
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">max:</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            null mins infinite
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the attribute
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_Class" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>Class</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;class-new.js:4</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>定义一个 FireClass，传入参数必须是一个包含类型参数的字面量对象，具体用法请查阅<a href="/zh/scripting/class/">类型定义</a>。</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">options</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>:
+                        - the created class
+                </div>
+            </div>
+
+            <div class="example">
+                <h4>例子:</h4>
+                <div class="example-content">
+   // define base class
+   var Node = Fire.Class();
+
+   // define sub class
+   var Sprite = Fire.Class({
+       name: 'Sprite',
+       extends: Node,
+       constructor: function () {
+           this.url = "";
+           this.id = 0;
+       },
+
+       properties {
+           width: {
+               default: 128,
+               type: 'Integer',
+               tooltip: 'The width of sprite'
+           },
+           height: 128,
+           size: {
+               get: function () {
+                   return Fire.v2(this.width, this.height);
+               }
+           }
+       },
+
+       load: function () {
+           // load this.url
+       };
+   });
+
+   // instantiate
+
+   var obj = new Sprite();
+   obj.url = 'sprite.png';
+   obj.load();
+
+   // define static member
+
+   Sprite.count = 0;
+   Sprite.getBounds = function (spriteList) {
+       // ...
+   };</div>
+            </div>
+    </div>
+</div>
+<a name="method_log" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>log</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>subst</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;core.js:7</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>向 Fireball 编辑器控制台或浏览器控制台输出信息。</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type">Any | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+ 包含一个或多个替代 string
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">subst</code>
+                            <span class="type">Any</span>
+
+                            <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                        <div class="param-description">
+                            JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_info" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>info</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>subst</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;core.js:18</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Outputs an informational message to the Fireball Console (editor) or Web Console (runtime).</p>
+<ul>
+<li>In Fireball, info is blue.</li>
+<li>In Firefox and Chrome, a small &quot;i&quot; icon is displayed next to these items in the Web Console's log.</li>
+</ul>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type">Any | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            A JavaScript string containing zero or more substitution strings.
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">subst</code>
+                            <span class="type">Any</span>
+
+                            <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                        <div class="param-description">
+                            JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_warn" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>warn</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>subst</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;core.js:30</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Outputs a warning message to the Fireball Console (editor) or Web Console (runtime).</p>
+<ul>
+<li>In Fireball, warning is yellow.</li>
+<li>In Chrome, warning have a yellow warning icon with the message text.</li>
+</ul>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type">Any | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            A JavaScript string containing zero or more substitution strings.
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">subst</code>
+                            <span class="type">Any</span>
+
+                            <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                        <div class="param-description">
+                            JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_error" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>error</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>subst</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;core.js:42</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Outputs an error message to the Fireball Console (editor) or Web Console (runtime).</p>
+<ul>
+<li>In Fireball, error is red.</li>
+<li>In Chrome, error have a red icon along with red message text.</li>
+</ul>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type">Any | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            A JavaScript string containing zero or more substitution strings.
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">subst</code>
+                            <span class="type">Any</span>
+
+                            <span class="flag multiple" title="This argument may occur one or more times.">multiple</span>
+
+                        <div class="param-description">
+                            JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_defineEnum" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>defineEnum</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;core.js:62</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Define an enum type.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            a JavaScript literal object containing enum names and values
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the defined enum type
+                </div>
+            </div>
+
+            <div class="example">
+                <h4>例子:</h4>
+                <div class="example-content">
+Texture.WrapMode = Fire.defineEnum({
+   Repeat: -1,
+   Clamp: -1
+});
+// Texture.WrapMode.Repeat == 0
+// Texture.WrapMode.Clamp == 1
+// Texture.WrapMode[0] == "Repeat"
+// Texture.WrapMode[1] == "Clamp"
+
+var FlagType = Fire.defineEnum({
+   Flag1: 1,
+   Flag2: 2,
+   Flag3: 4,
+   Flag4: 8,
+});
+var AtlasSizeList = Fire.defineEnum({
+   128: 128,
+   256: 256,
+   512: 512,
+   1024: 1024,
+});</div>
+            </div>
+    </div>
+</div>
+<a name="method_deserialize" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>deserialize</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>data</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[result]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[options]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;deserialize.js:355</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>将 JSON 反序列化为对象实例。</p>
+<p>当指定了 target 选项时，如果 target 引用的其它 asset 的 uuid 不变，则不会改变 target 对 asset 的引用，
+也不会将 uuid 保存到 result 对象中。</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">data</code>
+                            <span class="type">(string | Object)</span>
+
+
+                        <div class="param-description">
+                            the serialized Fire.Asset json string or json object.
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">result</code>
+                            <span class="type"><a href="../classes/_DeserializeInfo.html" class="crosslink">_DeserializeInfo</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            additional loading result
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">options</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the main data(asset)
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_instantiate" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>instantiate</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>original</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;instantiate.js:4</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>复制给定的对象</p>
+<p>详细用法可参考<a href="/zh/scripting/create-destroy-entities/#instantiate">复制已有Entity</a></p>
+<p>Instantiate 时，对于不可序列化的字段(包含function和dom)，直接设为 null。
+对可以被序列化的字段则统一进行拷贝，不考虑引用是否该和现有场景共享，但能保证实例化后的对象间能共享一份引用。
+对于 Asset 永远只拷贝引用。对于 Entity / Component 等 Scene Object，如果对方也会被一起 Instantiate，则重定向到新的引用，否则设置为原来的引用。</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">original</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            An existing object that you want to make a copy of.
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        the newly instantiated object
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_addCustomAssetMenu" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>addCustomAssetMenu</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>constructor</code>
+                </li>
+                <li class="arg">
+                        <code>menuPath</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[priority]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;pre-define.js:8</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Register a Custom Asset to the &quot;Asset&quot; menu.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">constructor</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            the class you want to register, must inherit from Custom Asset
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">menuPath</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            the menu path name. Eg. "Rendering/Camera"
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name optional">priority</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                            <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                        <div class="param-description">
+                            the order which the menu item are displayed
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method_padLeft" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>padLeft</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>text</code>
+                </li>
+                <li class="arg">
+                        <code>width</code>
+                </li>
+                <li class="arg">
+                        <code>ch</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:4</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">text</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">width</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">ch</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            the character used to pad
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_fitRatio" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>fitRatio</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ratio</code>
+                </li>
+                <li class="arg">
+                        <code>destWidth</code>
+                </li>
+                <li class="arg">
+                        <code>destHeight</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:20</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">ratio</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            width / height
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">destWidth</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">destHeight</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_fitSize" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>fitSize</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>srcWidth</code>
+                </li>
+                <li class="arg">
+                        <code>srcHeight</code>
+                </li>
+                <li class="arg">
+                        <code>destWidth</code>
+                </li>
+                <li class="arg">
+                        <code>destHeight</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number[]</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:40</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">srcWidth</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">srcHeight</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">destWidth</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">destHeight</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number[]</a></span>:
+                        - [width, height]
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_getEnumList" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>getEnumList</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>enumDef</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object[]</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:77</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">enumDef</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            the enum type defined from Fire.defineEnum
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object[]</a></span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_getVarFrom" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>getVarFrom</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>obj</code>
+                </li>
+                <li class="arg">
+                        <code>text</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Any</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:103</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">obj</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">text</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type">Any</span>:
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_rgb2hsv" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>rgb2hsv</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>r</code>
+                </li>
+                <li class="arg">
+                        <code>g</code>
+                </li>
+                <li class="arg">
+                        <code>b</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:122</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">r</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            red, must be [0.0, 1.0]
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">g</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            red, must be [0.0, 1.0]
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">b</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            red, must be [0.0, 1.0]
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                        - {h: number, s: number, v: number}
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method_binarySearch" class="anchor-link"></a>
+<div class="method item">
+    <h3 class="name"><code>binarySearch</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>array</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+        </span>
+
+
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;core&#x2F;utils.js:216</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>Searches the entire sorted Array for an element and returns the zero-based index of the element.</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">array</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number[]</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">value</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="returns">
+                <h4>返回值:</h4>
+
+                <div class="returns-description">
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>:
+                        The zero-based index of item in the sorted Array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than item or, if there is no larger element, the bitwise complement of array's length.
+                </div>
+            </div>
+
+    </div>
+</div>
+<a name="method__JsonLoader" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>_JsonLoader</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>url</code>
+                </li>
+                <li class="arg">
+                        <code>callback</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+        <span class="flag async">异步(async)</span>
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;loaders.js:127</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">url</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                    <li class="param">
+                            <code class="param-name">callback</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                            <ul class="params-list">
+                                <li class="param">
+                                        <code class="param-name">param</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+                                    <div class="param-description">
+                                        error - null or the error info
+                                    </div>
+
+                                </li>
+                                <li class="param">
+                                        <code class="param-name">param</code>
+                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+                                    <div class="param-description">
+                                        data - the loaded json object or null
+                                    </div>
+
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+<a name="method__throw" class="anchor-link"></a>
+<div class="method item private">
+    <h3 class="name"><code>_throw</code>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>error</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    </h3>
+
+    <div class="meta">
+                <p>
+                定义于
+        <a href="[object Object]"><code>utils&#x2F;api&#x2F;engine&#x2F;misc.js:4</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="extended-detail">
+
+        <div class="description">
+            <p>show error stacks in unit tests</p>
+
+        </div>
+
+            <div class="params">
+                <h4>参数列表:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                            <code class="param-name">error</code>
+                            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error" class="crosslink external" target="_blank">Error</a></span>
+
+
+                        <div class="param-description">
+                            
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+    </div>
+</div>
+
+        </div>
+
+
+</div>
+</div>
         </div>
 
     </div>
