@@ -2,11 +2,11 @@ YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
         {
-            "displayName": "KeyboardEvent",
-            "name": "KeyboardEvent",
+            "displayName": "Intersection",
+            "name": "Intersection",
             "namespace": "",
             "module": "Fire",
-            "description": "KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed.\nThis class is just an alias to the Web [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)",
+            "description": "",
             "access": "public"
         },
         {
@@ -34,19 +34,43 @@ YUI.add("yuidoc-meta", function(Y) {
             "access": "private"
         },
         {
+            "displayName": "Animation",
+            "name": "Animation",
+            "namespace": "",
+            "module": "Fire",
+            "description": "",
+            "access": "public"
+        },
+        {
             "displayName": "AnimationNode",
             "name": "AnimationNode",
             "namespace": "",
             "module": "Fire",
-            "description": "The collection and instance of AnimClips.",
+            "description": "The collection and instance of playing animations created by entity.animate.",
             "access": "public"
         },
         {
-            "displayName": "AnimCurve",
-            "name": "AnimCurve",
+            "displayName": "AnimationNodeBase",
+            "name": "AnimationNodeBase",
             "namespace": "",
             "module": "Fire",
-            "description": "动画数据类，相当于 AnimationClip。\n虽然叫做 AnimCurve，但除了曲线，可以保存任何类型的值。",
+            "description": "The abstract interface for all playing animation.",
+            "access": "public"
+        },
+        {
+            "displayName": "AnimationState",
+            "name": "AnimationState",
+            "namespace": "",
+            "module": "Fire",
+            "description": "The AnimationState gives full control over animation playback process.\nIn most cases the Animation Component is sufficient and easier to use. Use the AnimationState if you need full control.",
+            "access": "public"
+        },
+        {
+            "displayName": "Array",
+            "name": "Array",
+            "namespace": "",
+            "module": "Fire",
+            "description": "",
             "access": "public"
         },
         {
@@ -142,7 +166,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "Component",
             "namespace": "",
             "module": "Fire",
-            "description": "Base class for everything attached to Entity.\n\nNOTE: Not allowed to use construction parameters for Component's subclasses,\n        because Component is created by the engine.",
+            "description": "Base class for everything attached to Entity.\n\nNOTE: Not allowed to use construction parameters for Component's subclasses,\n      because Component is created by the engine.",
             "access": "public"
         },
         {
@@ -150,15 +174,15 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "ContentStrategyType",
             "namespace": "",
             "module": "Fire",
-            "description": "\n 内容适配策略负责缩放摄像机画面以适应画布(Canvas)。",
+            "description": "内容适配策略负责缩放摄像机画面以适应画布(Canvas)。",
             "access": "public"
         },
         {
-            "displayName": "DynamicAnimCurve",
-            "name": "DynamicAnimCurve",
+            "displayName": "EmitterMode",
+            "name": "EmitterMode",
             "namespace": "",
             "module": "Fire",
-            "description": "区别于 SampledAnimCurve。",
+            "description": "",
             "access": "public"
         },
         {
@@ -166,7 +190,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "Engine",
             "namespace": "",
             "module": "Fire",
-            "description": "\n 这个静态模块提供引擎运行时的一些全局接口和状态状态。\n",
+            "description": "这个静态模块提供引擎运行时的一些全局接口和状态状态。",
             "access": "public"
         },
         {
@@ -230,7 +254,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "HashObject",
             "namespace": "",
             "module": "Fire",
-            "description": "\n 提供获取对象ID的功能，该ID全局唯一但不会被序列化，可用于索引对象。\n\n如果你将对象索引起来，必须记住清除索引，否则对象将永远不会被销毁。",
+            "description": "提供获取对象ID的功能，该ID全局唯一但不会被序列化，可用于索引对象。\n\n如果你将对象索引起来，必须记住清除索引，否则对象将永远不会被销毁。",
             "access": "public"
         },
         {
@@ -250,19 +274,19 @@ YUI.add("yuidoc-meta", function(Y) {
             "access": "public"
         },
         {
-            "displayName": "Intersection",
-            "name": "Intersection",
-            "namespace": "",
-            "module": "Fire",
-            "description": "",
-            "access": "public"
-        },
-        {
             "displayName": "_DeserializeInfo",
             "name": "_DeserializeInfo",
             "namespace": "",
             "module": "Fire",
-            "description": "\n 包含反序列化时的一些信息",
+            "description": "包含反序列化时的一些信息",
+            "access": "public"
+        },
+        {
+            "displayName": "KeyboardEvent",
+            "name": "KeyboardEvent",
+            "namespace": "",
+            "module": "Fire",
+            "description": "KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed.\nThis class is just an alias to the Web [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)",
             "access": "public"
         },
         {
@@ -306,6 +330,14 @@ YUI.add("yuidoc-meta", function(Y) {
             "access": "public"
         },
         {
+            "displayName": "ParticleSystem",
+            "name": "ParticleSystem",
+            "namespace": "",
+            "module": "Fire",
+            "description": "粒子系统组件",
+            "access": "public"
+        },
+        {
             "displayName": "Path",
             "name": "Path",
             "namespace": "",
@@ -322,8 +354,8 @@ YUI.add("yuidoc-meta", function(Y) {
             "access": "public"
         },
         {
-            "displayName": "PlaybackDirection",
-            "name": "PlaybackDirection",
+            "displayName": "PositionType",
+            "name": "PositionType",
             "namespace": "",
             "module": "Fire",
             "description": "",
@@ -390,7 +422,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "Skeleton",
             "namespace": "",
             "module": "Fire.Spine",
-            "description": "",
+            "description": "The skeleton animation of spine.",
             "access": "public"
         },
         {
@@ -406,7 +438,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "SkeletonRenderer",
             "namespace": "",
             "module": "Fire.Spine",
-            "description": "",
+            "description": "The base class of Skeleton.",
             "access": "public"
         },
         {
@@ -428,25 +460,9 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "SpriteAnimationClip",
             "name": "SpriteAnimationClip",
-            "namespace": "SpriteAnimationClip",
+            "namespace": "",
             "module": "Fire",
             "description": "The sprite animation clip.",
-            "access": "public"
-        },
-        {
-            "displayName": "SpriteAnimationClip.StopAction",
-            "name": "SpriteAnimationClip.StopAction",
-            "namespace": "SpriteAnimationClip",
-            "module": "Fire",
-            "description": "",
-            "access": "public"
-        },
-        {
-            "displayName": "SpriteAnimationClip.WrapMode",
-            "name": "SpriteAnimationClip.WrapMode",
-            "namespace": "SpriteAnimationClip",
-            "module": "Fire",
-            "description": "",
             "access": "public"
         },
         {
@@ -466,11 +482,11 @@ YUI.add("yuidoc-meta", function(Y) {
             "access": "public"
         },
         {
-            "displayName": "Texture",
-            "name": "Texture",
+            "displayName": "Text",
+            "name": "Text",
             "namespace": "",
             "module": "Fire",
-            "description": "Class for texture handling.\nUse this to create textures on the fly or to modify existing texture assets.",
+            "description": "The text renderer component.",
             "access": "public"
         },
         {
@@ -479,6 +495,14 @@ YUI.add("yuidoc-meta", function(Y) {
             "namespace": "Texture",
             "module": "Fire",
             "description": "",
+            "access": "public"
+        },
+        {
+            "displayName": "Texture.Texture",
+            "name": "Texture.Texture",
+            "namespace": "Texture",
+            "module": "Fire",
+            "description": "Class for texture handling.\nUse this to create textures on the fly or to modify existing texture assets.",
             "access": "public"
         },
         {
@@ -494,7 +518,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "Time",
             "namespace": "",
             "module": "Fire",
-            "description": "\n Time 模块用于获得游戏里的时间和帧率相关信息。直接使用 Fire.Time.*** 访问即可。\n\n请参考教程[计时和帧率](/zh/scripting/time/)",
+            "description": "Time 模块用于获得游戏里的时间和帧率相关信息。直接使用 Fire.Time.*** 访问即可。\n\n请参考教程[计时和帧率](/zh/scripting/time/)",
             "access": "public"
         },
         {
@@ -503,6 +527,14 @@ YUI.add("yuidoc-meta", function(Y) {
             "namespace": "",
             "module": "Fire",
             "description": "Defines position, rotation and scale of an entity.",
+            "access": "public"
+        },
+        {
+            "displayName": "ValueType",
+            "name": "ValueType",
+            "namespace": "",
+            "module": "Fire",
+            "description": "The base class of all value types.",
             "access": "public"
         },
         {
@@ -516,8 +548,40 @@ YUI.add("yuidoc-meta", function(Y) {
     ],
     "enums": [
         {
+            "displayName": "Fire.KeyCode",
+            "name": "Fire.KeyCode",
+            "namespace": "",
+            "module": "Fire",
+            "description": "Key codes returned by Event.keyCode. These map directly to a physical key on the keyboard.",
+            "access": "public"
+        },
+        {
             "displayName": "FontType",
             "name": "FontType",
+            "namespace": "",
+            "module": "Fire",
+            "description": "",
+            "access": "public"
+        },
+        {
+            "displayName": "ImageType",
+            "name": "ImageType",
+            "namespace": "",
+            "module": "Fire",
+            "description": "",
+            "access": "public"
+        },
+        {
+            "displayName": "SpriteAnimationClip.StopAction",
+            "name": "SpriteAnimationClip.StopAction",
+            "namespace": "",
+            "module": "Fire",
+            "description": "",
+            "access": "public"
+        },
+        {
+            "displayName": "SpriteAnimationClip.WrapMode",
+            "name": "SpriteAnimationClip.WrapMode",
             "namespace": "",
             "module": "Fire",
             "description": "",
@@ -528,7 +592,7 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "TextAlign",
             "namespace": "",
             "module": "Fire",
-            "description": "\n 文字对齐方式",
+            "description": "文字对齐方式",
             "access": "public"
         },
         {
@@ -537,6 +601,14 @@ YUI.add("yuidoc-meta", function(Y) {
             "namespace": "",
             "module": "Fire",
             "description": "",
+            "access": "public"
+        },
+        {
+            "displayName": "WrapMode",
+            "name": "WrapMode",
+            "namespace": "",
+            "module": "Fire",
+            "description": "Specifies how time is treated when it is outside of the keyframe range of an Animation.",
             "access": "public"
         }
     ],
@@ -570,12 +642,13 @@ YUI.add("yuidoc-meta", function(Y) {
     "allModules": [
         {
             "displayName": "Editor",
-            "name": "Editor"
+            "name": "Editor",
+            "description": "Global object with classes, properties and methods you can access from anywhere."
         },
         {
             "displayName": "Fire",
             "name": "Fire",
-            "description": "!#en\nGlobal object with runtime classes, properties and methods you can access from anywhere.\nSubmodules:\n- [JS](./Fire.JS.html)\n- [Spine](./Fire.Spine.html)\n\n!#zh\n可全局访问的公共方法和属性，也会包括一些组件和类的静态方法\n包含的子模块:\n- [JS](./Fire.JS.html)\n- [Spine](./Fire.Spine.html)"
+            "description": "可全局访问的公共方法和属性，也会包括一些组件和类的静态方法\n包含的子模块:\n- [JS](./Fire.JS.html)\n- [Spine](./Fire.Spine.html)"
         },
         {
             "displayName": "Fire.JS",
@@ -590,7 +663,7 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "Math",
             "name": "Math",
-            "description": "!#en\nExtends the JavaScript built-in object that has properties and methods for mathematical constants and functions.\nSee [Global_Objects/Math on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)\n!#zh 扩展 JavaScript 内建的数学计算属性和方法。\n请参考[MDN上的Global_Objects/Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)"
+            "description": "扩展 JavaScript 内建的数学计算属性和方法。\n请参考[MDN上的Global_Objects/Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)"
         }
     ]
 } };
