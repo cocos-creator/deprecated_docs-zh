@@ -1,6 +1,6 @@
 # Fireball中文文档
 
-这里是Fireball游戏引擎的中文文档资源站。当前 Fireball 版本为 v0.4.0
+这里是Fireball游戏引擎的中文文档资源站。当前 Fireball 版本为 v0.4.0.
 
 ## Requirements
 
