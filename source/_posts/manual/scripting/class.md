@@ -464,29 +464,6 @@ permalinks: manual/scripting/class
         }
     ```
 
-### 属性快捷定义
-
-如果属性不带任何参数，则可以直接写成：
-
-```js
-    // 完整形式
-    properties: {                   // 快捷形式
-        width: {            =>      properties: {
-            default: 128    =>          width: 128
-        }                   =>      }
-    }
-```
-
-但**默认值不能是对象类型**，如果默认值是对象，还是只能用完整的写法：
-
-```js
-    properties: {
-        position: {
-            default: new Fire.Vec2()
-        }
-    }
-```
-
 **备注**
 
 - 属性都能被子类继承，但子类和父类的属性不能重名。

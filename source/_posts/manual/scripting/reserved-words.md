@@ -11,6 +11,9 @@ permalinks: manual/scripting/reserved-words
 - `Editor`
 - `FireEditor`
 - `PIXI`
+- `cc`
+- `sp`
+- `spine`
 - `require`
 
 ### 可能定义在任意对象上的变量
