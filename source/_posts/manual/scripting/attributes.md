@@ -5,7 +5,7 @@ permalinks: manual/scripting/attributes
 
 ## Inspector 相关属性
 
-这些属性允许用于 get 方法
+这些属性也允许用于 get 方法
 
 参数名 | 说明 | 类型 | 默认值
 --- | --- |:---:|:---:
@@ -31,3 +31,9 @@ range | 以滑动条的形式限定数值的最大最小值 | [min, max] | undef
 [serializable](/manual/scripting/class#serializable) | 序列化该属性 | boolean | true
 editorOnly | 在导出项目前剔除该属性 | boolean | false
 rawType | 该属性的类型是宿主平台上的原生对象 | string | undefined
+
+## 其它属性
+
+参数名 | 说明 | 类型 | 备注 
+--- | --- |:---:|:---:
+notify | 当属性修改时触发指定方法 | function (oldValue) {} | 需要已定义 default
