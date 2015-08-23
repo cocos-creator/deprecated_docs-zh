@@ -19,7 +19,7 @@
                     {% endfor %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/fireball-x/docs-zh/edit/master/source/{{ page.source }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+                    <li><a href="{{ edit_link() }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
 

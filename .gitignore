@@ -5,10 +5,15 @@ debug.log
 node_modules/
 public/
 .deploy/
-.deploy_git/
 .idea/
 .exvim.*/
 *.exvim
 *.swo
 *.swp
 *~
+
+# project files
+
+source/_posts/editor
+source/_posts/fireball
+.deploy_git

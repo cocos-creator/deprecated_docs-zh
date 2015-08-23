@@ -1,5 +1,6 @@
 Home: /
-新手教程: tutorial
-用户手册: manual
+Manual: manual/index
+Extending Editor: editor/index
 API: api
-Fireball官网: http://fireball-x.com
+Fireball: http://fireball-x.com/en
+中文: http://docs-zh.fireball-x.com

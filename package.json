@@ -1,20 +1,24 @@
 {
   "name": "fireball-docs",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "hexo": {
     "version": "3.0.1"
   },
   "dependencies": {
-    "gulp": "^3.8.11",
-    "hexo": "^3.0.0",
+    "gulp": "3.8.11",
+    "hexo": "3.0.1",
     "hexo-deployer-git": "0.0.4",
     "hexo-generator-category": "^0.1.0",
-    "hexo-generator-feed": "^1.0.1",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-renderer-stylus": "^0.2.0",
-    "hexo-server": "^0.1.2",
-    "lodash": "^3.6.0"
+    "hexo-generator-feed": "1.0.1",
+    "hexo-renderer-ejs": "0.1.0",
+    "hexo-renderer-marked": "0.2.5",
+    "hexo-renderer-stylus": "0.2.3",
+    "hexo-server": "0.1.2",
+    "lodash": "3.8.0"
+  },
+  "devDependencies": {
+    "del": "1.2.0",
+    "download": "4.1.2"
   }
 }

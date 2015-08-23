@@ -5,14 +5,14 @@
 # Site
 title: Fireball Docs
 subtitle:
-description: Hackable Game Editor for mobile and HTML5 games.
+description: Html5 Game Engine for the Future.
 author: Fireball Developers
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://docs-zh.fireball-x.com
+url: http://docs.fireball-x.com
 root: /
 permalink: :permalinks/
 permalink_defaults:
@@ -75,6 +75,6 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:fireball-x/docs-zh.git
+  repo: git@github.com:fireball-x/docs-en.git
   branch: gh-pages
   message: "Updated site [ci skip]"

@@ -9,7 +9,7 @@
 
 body
   background-color #eee
-  line-height 1.6em
+  line-height 1.7
   font-size: 15px
 
 #full-wrap
@@ -39,6 +39,9 @@ body
   padding-bottom 10px
   padding-left 10px
 
+blockquote
+    font-size 15px
+    color: #66595c
 
 // -------------------- content --------------------
 
@@ -60,6 +63,8 @@ body
       width: 0;
       height: 4em;
       margin-top: -4em
+  h2, .h2
+    border-bottom 1px solid #eee
   p
     margin-bottom 1.5em
   ul
@@ -188,8 +193,16 @@ button.navbar-toggle.collapsed
   margin-top 30px
 
 .nav li.sidebar-title
-    margin-top 1.5em
+    margin-top 1em
 
+.nav-pills.nav-stacked li
+    font-size 0.95em
+    line-height 1.6
+    a
+        padding 2px 15px
+        border-radius 0px
+    &.active a
+        background-color #777
 
 
 @media (max-width: 768px)
@@ -254,7 +267,7 @@ ol, ul
 //-----------------index-----------------
 
 .index
-  margin-top 70px
+  margin-top 110px
   .row
     margin-top 30px
   .nav-stacked li

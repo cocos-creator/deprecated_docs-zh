@@ -9,7 +9,7 @@
             </div>
             <div>
                 <ol class="breadcrumb">
-                    <li><a href="/docs-zh">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="{{ url_for(category_link()) }}">{{ category_name() }}</a></li>
                     <li class="active">{{ page.title }}</li>
                 </ol>
@@ -17,7 +17,7 @@
             {{ page.content }}
             <div>
                 <hr>
-                <a href="https://github.com/fireball-x/docs-zh/edit/master/source/{{ page.source }}">Edit This Page</a>
+                <a href="{{ edit_link() }}">Edit This Page</a>
             </div>
             <div id="discourse-comments"></div>
             <div class="footer">
@@ -27,7 +27,7 @@
         <div class="col-lg-1 col-md-2 hidden-sm hidden-xs">
             <aside id="article-toc" role="navigation" class="fixed">
                 <div id="article-toc-inner">
-                    <strong class="sidebar-title">内容索引</strong>
+                    <strong class="sidebar-title">TOC</strong>
                     {{ toc(page.content, {list_number: false}) }}
                     <a href="#top" id="article-toc-top">back to top</a>
                 </div>

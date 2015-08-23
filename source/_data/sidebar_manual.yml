@@ -1,20 +1,14 @@
-开始使用:
-  获取Fireball: manual/start/get-fireball
-  新建项目: manual/start/new-project
-  认识Editor: manual/start/editor-overview
-  Unity开发者上手: manual/start/from-unity
-脚本编写:
-  JavaScript入门指南: manual/scripting/javascript-primer
-  创建和使用脚本: manual/scripting/component
-  对象访问: manual/scripting/component/access
-  Component回调: manual/scripting/component/callbacks
-  创建和销毁对象: manual/scripting/create-destroy-entities
-  计时和帧率: manual/scripting/time
-  类型定义: manual/scripting/class
-  属性参数: manual/scripting/attributes
-  玩家输入: manual/scripting/input
-  模块化: manual/scripting/module
-  附录：输入事件: manual/scripting/input-events
-  附录：保留字: manual/scripting/reserved-words
-插件开发:
-  插件设置: manual/plugin/config-package-json
+Get Started:
+    What's Fireball: manual/introduction
+    Dashboard: manual/dashboard
+    Editor Overview: manual/editor-overview
+Scripting:
+    JavaScript Primer: manual/scripting/javascript-primer
+    Nodes in Scene: manual/scripting/nodes-in-scene
+    Behavior (Attachable Script): manual/scripting/attachable-script
+    Script Accessibility: manual/scripting/access-script
+    Mixin Mechanic: manual/scripting/mixin-mechanic
+    Advanced FireClass: manual/scripting/class
+    Attributes: manual/scripting/attributes
+    Module: manual/scripting/module
+    Cocos2d-js Scripting Guide: manual/scripting/runtimes/cocos2d-js

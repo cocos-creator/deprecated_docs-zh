@@ -3,26 +3,27 @@
 </div>
 
 <div class="index">
-    <div class="row">
+    {{ page.content }}
+    {# <div class="row">
         <div class="col-lg-9">
             {{ page.content }}
             <div class="row">
                 <div class="col-lg-4">
-                    <h2>新手教程</h2>
+                    <h2>Tutorial</h2>
                     {{ category_content('tutorial') }}
                 </div>
                 <div class="col-lg-4">
-                    <h2>用户手册</h2>
+                    <h2>User Manual</h2>
                     {{ category_content('manual') }}
                 </div>
                 <div class="col-lg-4">
-                    <h2>API文档</h2>
+                    <h2>API</h2>
                     <br>
-                    <a href="/api">API文档</a>
+                    <a href="/api">API Reference</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> #}
 
     <div class="footer">
         {{ partial('partial/footer') }}

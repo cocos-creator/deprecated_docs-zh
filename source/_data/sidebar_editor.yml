@@ -1,0 +1,9 @@
+Extending Editor:
+    Editor Module: editor/editor-module
+    Ipc Channel: editor/ipc-channel
+Packages:
+    Create Your Package: editor/packages/create-package
+    Create Panels: editor/packages/create-panels
+    Create Widgets: editor/packages/create-widgets
+    Register Shortcuts: editor/packages/register-shortcuts
+    Load And Rebuild: editor/packages/load-and-build
