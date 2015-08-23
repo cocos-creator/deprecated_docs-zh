@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Fireball Docs
+title: Fireball火球知识库
 subtitle:
-description: Html5 Game Engine for the Future.
-author: Fireball Developers
+description: Html5游戏编辑器
+author: Fireball开发团队
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://docs.fireball-x.com
+url: http://docs-zh.fireball-x.com
 root: /
 permalink: :permalinks/
 permalink_defaults:
@@ -45,7 +45,7 @@ highlight:
 
 # Category & Tag
 default_category: manual
-category_map: manual,tutorial,developer,api
+category_map: manual,editor,tutorial,developer,api
 exclude_generators: index
 
 # Date / Time format
@@ -75,6 +75,6 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:fireball-x/docs-en.git
+  repo: git@github.com:fireball-x/docs-zh.git
   branch: gh-pages
   message: "Updated site [ci skip]"
