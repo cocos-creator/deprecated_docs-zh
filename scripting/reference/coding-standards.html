@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>推荐编码规范</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../../index.html"><img src="../../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-">推荐编码规范</h1>
+<p>下面是 Cocos Creator 开发团队使用的编码规范，收录在手册里以供游戏开发者和工具开发者参考。</p>
+<h2 id="--1">内容索引</h2>
+<ol class="list">
+<li><a href="#命名规范">命名规范</a></li>
+<li><a href="#语法规范">语法规范</a></li>
+<li><a href="#书写规范">书写规范</a></li>
+</ol>
+<h2 id="--2">命名规范</h2>
+<ul class="list">
+<li><p>当我们为变量, 函数和实例命名时, 使用 camelCase 命名法.</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> FOOBar = {};
+<span class="hljs-keyword">var</span> foo_bar = {};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">FOOBar</span> (<span class="hljs-params"></span>) </span>{}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> fooBar = {};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fooBar</span> (<span class="hljs-params"></span>) </span>{}</code></pre></li>
+<li><p>当我们为类或者模块命名时, 使用 PascalCase 命名法.</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> foobar = cc.Class({
+    foo: <span class="hljs-string">'foo'</span>,
+    bar: <span class="hljs-string">'bar'</span>,
+});
+<span class="hljs-keyword">var</span> foobar = <span class="hljs-built_in">require</span>(<span class="hljs-string">'foo-bar'</span>);
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> FooBar = cc.Class({
+    foo: <span class="hljs-string">'foo'</span>,
+    bar: <span class="hljs-string">'bar'</span>,
+});
+<span class="hljs-keyword">var</span> FooBar = <span class="hljs-built_in">require</span>(<span class="hljs-string">'foo-bar'</span>);</code></pre></li>
+<li><p>使用前置下划线 <code>_</code> 当我们为私有属性命名</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">this</span>.__firstName__ = <span class="hljs-string">'foobar'</span>;
+<span class="hljs-keyword">this</span>.firstName_ = <span class="hljs-string">'foobar'</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">this</span>._firstName = <span class="hljs-string">'foobar'</span>;</code></pre></li>
+<li><p>文件名我们采用 dash 命名法</p>
+<pre class="hljs"><code>// bad
+fooBar.js
+FooBar.js
+
+// good
+foo-bar.js</code></pre></li>
+</ul>
+<h2 id="--3">语法规范</h2>
+<ul class="list">
+<li><p>使用 <code>{}</code> 创建一个 object</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Object</span>();
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> obj = {};</code></pre></li>
+<li><p>使用 <code>[]</code> 创建一个 array</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> array = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>();
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> array = [];</code></pre></li>
+<li><p>尽可能在 js 代码中使用单引号 <code>&#39;&#39;</code> 来定义 string</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">"Hello World"</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">'Hello World'</span>;</code></pre></li>
+<li><p>多行 string 定义时, 尽可能使用 <code>+</code> 定义</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+ <span class="hljs-keyword">const</span> errorMessage = <span class="hljs-string">'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.'</span>;
+
+ <span class="hljs-comment">// bad</span>
+ <span class="hljs-keyword">const</span> errorMessage = <span class="hljs-string">'This is a super long error that was thrown because \
+ of Batman. When you stop to think about how Batman had anything to do \
+ with this, you would get nowhere \
+ fast.'</span>;
+
+ <span class="hljs-comment">// good</span>
+ <span class="hljs-keyword">const</span> errorMessage = <span class="hljs-string">'This is a super long error that was thrown because '</span> +
+   <span class="hljs-string">'of Batman. When you stop to think about how Batman had anything to do '</span> +
+   <span class="hljs-string">'with this, you would get nowhere fast.'</span>;</code></pre></li>
+<li><p>使用 <code>===</code> 和 <code>!==</code> 而不是 <code>==</code> 和 <code>!=</code>.</p>
+</li>
+</ul>
+<h2 id="--4">书写规范</h2>
+<ul class="list">
+<li><p>根据个人习惯, 和原代码作者格式, 选择 4 个空格或者 2 个空格作为缩进</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+∙<span class="hljs-keyword">var</span> name;
+}
+
+<span class="hljs-comment">// very bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+∙∙&lt;tab&gt;∙∙<span class="hljs-keyword">var</span> name;
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+∙∙<span class="hljs-keyword">var</span> name;
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+∙∙∙∙<span class="hljs-keyword">var</span> name;
+}</code></pre></li>
+<li><p>尽可能将 <code>{</code> 和表达式放在同一行</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> ( isFoobar )
+{
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> ( isFoobar ) {
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foobar</span>(<span class="hljs-params"></span>)
+</span>{
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foobar</span>(<span class="hljs-params"></span>) </span>{
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> obj =
+{
+    foo: <span class="hljs-string">'foo'</span>,
+    bar: <span class="hljs-string">'bar'</span>,
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> obj = {
+    foo: <span class="hljs-string">'foo'</span>,
+    bar: <span class="hljs-string">'bar'</span>,
+}</code></pre></li>
+<li><p>在 <code>{</code> 前请空一格</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'test'</span>);
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'test'</span>);
+}
+
+<span class="hljs-comment">// bad</span>
+dog.set(<span class="hljs-string">'attr'</span>,{
+    age: <span class="hljs-string">'1 year'</span>,
+    breed: <span class="hljs-string">'Bernese Mountain Dog'</span>,
+});
+
+<span class="hljs-comment">// good</span>
+dog.set(<span class="hljs-string">'attr'</span>, {
+    age: <span class="hljs-string">'1 year'</span>,
+    breed: <span class="hljs-string">'Bernese Mountain Dog'</span>,
+});</code></pre></li>
+<li><p>在逻辑状态表达式 ( <code>if</code>, <code>while</code> ) 的 <code>(</code> 前请空一格</p>
+<pre class="hljs"><code> <span class="hljs-comment">// bad</span>
+ <span class="hljs-keyword">if</span>(isJedi) {
+     fight ();
+ }
+
+ <span class="hljs-comment">// good</span>
+ <span class="hljs-keyword">if</span> (isJedi) {
+     fight();
+ }</code></pre></li>
+<li><p>operator 之间请空一格</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> x=y+<span class="hljs-number">5</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> x = y + <span class="hljs-number">5</span>;</code></pre></li>
+<li><p>在 Block 定义之间请空一行</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (foo) {
+    <span class="hljs-keyword">return</span> bar;
+}
+<span class="hljs-keyword">return</span> baz;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (foo) {
+    <span class="hljs-keyword">return</span> bar;
+}
+
+<span class="hljs-keyword">return</span> baz;
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> obj = {
+    foo() {
+    },
+    bar() {
+    },
+};
+<span class="hljs-keyword">return</span> obj;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> obj = {
+    foo() {
+    },
+
+    bar() {
+    },
+};
+
+<span class="hljs-keyword">return</span> obj;
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> arr = [
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+    },
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{
+    },
+];
+<span class="hljs-keyword">return</span> arr;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> arr = [
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+    },
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{
+    },
+];
+
+<span class="hljs-keyword">return</span> arr;</code></pre></li>
+<li><p>不要使用前置逗号定义</p>
+<pre class="hljs"><code><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> story = [
+      once
+    , upon
+    , aTime
+];
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> story = [
+    once,
+    upon,
+    aTime,
+];
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> hero = {
+      firstName: <span class="hljs-string">'Ada'</span>
+    , lastName: <span class="hljs-string">'Lovelace'</span>
+    , birthYear: <span class="hljs-number">1815</span>
+    , superPower: <span class="hljs-string">'computers'</span>
+};
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> hero = {
+    firstName: <span class="hljs-string">'Ada'</span>,
+    lastName: <span class="hljs-string">'Lovelace'</span>,
+    birthYear: <span class="hljs-number">1815</span>,
+    superPower: <span class="hljs-string">'computers'</span>,
+};</code></pre></li>
+</ul>
+<h2 id="--5">参考</h2>
+<p><a href="https://github.com/airbnb/javascript/tree/master/es5">airbnb/es5</a></p>
+      </article>
+    </div>
+  </div>
+  <script src="../../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

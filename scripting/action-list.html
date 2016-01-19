@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>动作列表</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="actions.html">使用动作系统</a></li>
+          <li class="active sidebar-header-3"><a href="action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-">动作列表</h1>
+<h2 id="--1">基础动作类型</h2>
+<ul class="list">
+<li><a href="http://fireball-x.com/api/classes/Action.html">Action</a>：所有动作类型的基类。</li>
+<li><a href="http://fireball-x.com/api/classes/FiniteTimeAction.html">FiniteTimeAction</a>：有限时间动作，这种动作拥有时长 <code>duration</code> 属性。</li>
+<li><a href="http://fireball-x.com/api/classes/ActionInstant.html">ActionInstant</a>：即时动作，这种动作立即就会执行，继承自 <code>FiniteTimeAction</code>。</li>
+<li><a href="http://fireball-x.com/api/classes/ActionInterval.html">ActionInterval</a>：时间间隔动作，这种动作在已定时间内完成，继承自 <code>FiniteTimeAction</code>。</li>
+<li><a href="http://fireball-x.com/api/classes/ActionEase.html">ActionEase</a>：所有缓动动作基类，用于修饰 <code>ActionInterval</code>。</li>
+<li><a href="http://fireball-x.com/api/classes/EaseRateAction.html">EaseRateAction</a>：拥有速率属性的缓动动作基类。</li>
+<li><a href="http://fireball-x.com/api/classes/EaseElastic.html">EaseElastic</a>：弹性缓动动作基类。</li>
+<li><a href="http://fireball-x.com/api/classes/EaseBounce.html">EaseBounce</a>：反弹缓动动作基类。</li>
+</ul>
+<p>在这些动作类型的文档中，开发者可以了解到各个动作类型的基本 API。</p>
+<h2 id="--2">容器动作</h2>
+<table>
+<thead>
+<tr>
+<th>动作名称</th>
+<th style="text-align:center">简介</th>
+<th style="text-align:center">文档链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.sequence</td>
+<td style="text-align:center">顺序执行动作</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_sequence">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.spawn</td>
+<td style="text-align:center">同步执行动作</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_spawn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.repeat</td>
+<td style="text-align:center">重复执行动作</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_repeat">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.repeatForever</td>
+<td style="text-align:center">永远重复动作</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_repeatForever">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.speed</td>
+<td style="text-align:center">修改动作速率</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_speed">API 描述</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="--3">即时动作</h2>
+<table>
+<thead>
+<tr>
+<th>动作名称</th>
+<th style="text-align:center">简介</th>
+<th style="text-align:center">文档链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.show</td>
+<td style="text-align:center">立即显示</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_show">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.hide</td>
+<td style="text-align:center">立即隐藏</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_hide">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.toggleVisibility</td>
+<td style="text-align:center">显隐状态切换</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_toggleVisibility">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.removeSelf</td>
+<td style="text-align:center">从父节点移除自身</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_removeSelf">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.flipX</td>
+<td style="text-align:center">X轴翻转</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_flipX">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.flipY</td>
+<td style="text-align:center">Y轴翻转</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_flipY">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.place</td>
+<td style="text-align:center">放置在目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_place">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.callFunc</td>
+<td style="text-align:center">执行回调函数</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_callFunc">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.targetedAction</td>
+<td style="text-align:center">用已有动作和一个新的目标节点创建动作</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_targetedAction">API 描述</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="--4">时间间隔动作</h2>
+<table>
+<thead>
+<tr>
+<th>动作名称</th>
+<th style="text-align:center">简介</th>
+<th style="text-align:center">文档链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.moveTo</td>
+<td style="text-align:center">移动到目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_moveTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.moveBy</td>
+<td style="text-align:center">移动指定的距离</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_moveBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.rotateTo</td>
+<td style="text-align:center">旋转到目标角度</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_rotateTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.rotateBy</td>
+<td style="text-align:center">旋转指定的角度</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_rotateBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.scaleTo</td>
+<td style="text-align:center">将节点大小缩放到指定的倍数</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_scaleTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.scaleBy</td>
+<td style="text-align:center">按指定的倍数缩放节点大小</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_scaleBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.skewTo</td>
+<td style="text-align:center">偏斜到目标角度</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_skewTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.skewBy</td>
+<td style="text-align:center">偏斜指定的角度</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_skewBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.jumpBy</td>
+<td style="text-align:center">用跳跃的方式移动指定的距离</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_jumpBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.jumpTo</td>
+<td style="text-align:center">用跳跃的方式移动到目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_jumpTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.follow</td>
+<td style="text-align:center">追踪目标节点的位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_follow">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.bezierTo</td>
+<td style="text-align:center">按贝赛尔曲线轨迹移动到目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_bezierTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.bezierBy</td>
+<td style="text-align:center">按贝赛尔曲线轨迹移动指定的距离</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_bezierBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.blink</td>
+<td style="text-align:center">闪烁（基于透明度）</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_blink">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.fadeTo</td>
+<td style="text-align:center">修改透明度到指定值</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.fadeIn</td>
+<td style="text-align:center">渐显</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.fadeOut</td>
+<td style="text-align:center">渐隐</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_fadeOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.tintTo</td>
+<td style="text-align:center">修改颜色到指定值</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_tintTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.tintBy</td>
+<td style="text-align:center">按照指定的增量修改颜色</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_tintBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.delayTime</td>
+<td style="text-align:center">延迟指定的时间量</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_delayTime">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.reverseTime</td>
+<td style="text-align:center">反转目标动作的时间轴</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_reverseTime">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.cardinalSplineTo</td>
+<td style="text-align:center">按基数样条曲线轨迹移动到目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_cardinalSplineTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.cardinalSplineBy</td>
+<td style="text-align:center">按基数样条曲线轨迹移动指定的距离</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_cardinalSplineBy">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.catmullRomTo</td>
+<td style="text-align:center">按 Catmull Rom 样条曲线轨迹移动到目标位置</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_catmullRomTo">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.catmullRomBy</td>
+<td style="text-align:center">按 Catmull Rom 样条曲线轨迹移动指定的距离</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_catmullRomBy">API 描述</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="--5">缓动动作</h2>
+<table>
+<thead>
+<tr>
+<th>动作名称</th>
+<th style="text-align:center">文档链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cc.easeIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeExponentialInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeExponentialInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeSineIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeSineOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeSineInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeSineInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeElasticInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeElasticInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBounceInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBounceInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBackIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBackOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBackInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBackInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeBezierAction</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeBezierAction">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuadraticActionInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuadraticActionInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuarticActionInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuarticActionInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeQuinticActionInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeQuinticActionInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCircleActionInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCircleActionInOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionIn</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionIn">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionOut">API 描述</a></td>
+</tr>
+<tr>
+<td>cc.easeCubicActionInOut</td>
+<td style="text-align:center"><a href="http://fireball-x.com/api/modules/cc.html#method_easeCubicActionInOut">API 描述</a></td>
+</tr>
+</tbody>
+</table>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

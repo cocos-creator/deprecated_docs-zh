@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>使用 Sliced Sprite 制作 UI 图像</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="index.html">UI 系统</a></h3></li>
+          <li class="active sidebar-header-3"><a href="sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../scripting/index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../scripting/use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../scripting/reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-sliced-sprite-ui-">使用 Sliced Sprite 制作 UI 图像</h1>
+<p>在开发 UI 界面时，我们通常会使用九宫格格式的图像来显示尺寸可能会根据适配屏幕分辨率的需要动态修改的 UI 元素。这样即使使用很小的原始图片也能生成覆盖整个屏幕的背景图像，一方面节约游戏包体空间，另一方面能够灵活适配不同的排版需要。</p>
+<p class="img-container"><img src="sliced-sprite/compare.png" alt="compare"></p>
+<p>上图右边为原始贴图大小的显示，左边是选择 Sliced 模式并放大 <code>size</code> 属性后的显示效果。</p>
+<h2 id="-">编辑图像资源的九宫格切分</h2>
+<p>要使用可以无限放大的九宫格图像效果，我们需要先对图像资源进行九宫格切分。有两种方式可以打开 <strong>Sprite 编辑器</strong>来编辑图像资源：</p>
+<ul class="list">
+<li>在<strong>资源管理器</strong>中选中图像资源，然后点击<strong>属性检查器</strong>最下面的<strong>编辑</strong>按钮。如果您的窗口高度不够，可能需要向下滚动<strong>属性检查器</strong>才能看到下面的按钮。</li>
+<li>在<strong>场景编辑器</strong>中选中想要九宫格化的图像节点，然后在<strong>属性检查器</strong>的 Sprite 组件里，找到并按下<code>Sprite Frame</code>属性右侧的<strong>编辑</strong>按钮。</li>
+</ul>
+<p>打开<strong>Sprite 编辑器</strong>以后，可以看到图像周围有一圈绿色的线条，表示当前九宫格分割线的位置。将鼠标移动到分割线上，可以看到光标形状改变了，这时候就可以按下并拖拽鼠标来更改分割线的位置。</p>
+<p>我们分别拖动上下左右四条分割线，将图像切分成九宫格，九个区域在 Sprite 尺寸（<code>size</code>）变化时会应用不同的缩放策略，见下图：</p>
+<p class="img-container"><img src="sliced-sprite/editing.png" alt="sliced"></p>
+<p>而下图中描述了不同区域缩放时的示意（图片来自<a href="http://yannickloriot.com/2011/12/create-buttons-in-cocos2d-by-using-cccontrolbutton/">Yannick Loriot的博客</a>）：</p>
+<p class="img-container"><img src="sliced-sprite/scaling.png" alt="scaling"></p>
+<p>完成切分后别忘记点击<strong>Sprite 编辑器</strong>右上角的绿色对勾来保存对资源的修改。</p>
+<h2 id="-sprite-sliced-">设置 Sprite 组件使用 Sliced 模式</h2>
+<p>准备好九宫格切分的资源后，就可以修改 Sprite 的显示模式并通过修改<code>size</code>来制作可任意指定尺寸的 UI 元素了。</p>
+<ol class="list">
+<li>首先选中场景中的 Sprite 节点，将 Sprite 的<code>Type</code>属性设为<code>Sliced</code>。</li>
+<li>然后通过<a href="../basics/editor-panels/scene.html#--12">矩形变换工具</a>拖拽控制点使节点的<code>size</code>属性变大。您也可以直接在<strong>属性检查器</strong>中输入数值来修改<code>size</code>属性。如果图像资源是用九宫格的形式生产的，那么不管 Sprite 如何放大，都不会产生模糊或变形。</li>
+</ol>
+<h2 id="--1">注意事项</h2>
+<p>在使用<strong>矩形变换工具</strong>或直接修改 Sliced Sprite 的<code>size</code>属性时，注意<code>size</code>属性值不能为负数，否则不能以 Sliced 模式正常显示。</p>
+<hr>
+<p>我们现在掌握了生产可以任意指定尺寸的图像的方法，接下来请继续前往 <a href="./multi-resolution.html">多分辨率适配和元素对齐设置</a> 说明文档来学习如何利用可变尺寸的图像实现多分辨率适配和各种对齐排版效果。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

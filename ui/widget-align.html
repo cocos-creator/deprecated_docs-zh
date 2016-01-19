@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>对齐策略</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="multi-resolution.html">多分辨率适配方案</a></li>
+          <li class="active sidebar-header-3"><a href="widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../scripting/index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../scripting/use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../scripting/reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-">对齐策略</h1>
+<p>要实现完美的多分辨率适配效果，UI 元素按照设计分辨率中规定的位置呈现是不够的，当屏幕宽度和高度发生变化时，UI 元素要能够智能感知屏幕边界的位置，才能保证出现在屏幕可见范围内，并且分布在合适的位置。我们通过 <strong>Widget（对齐挂件）</strong> 来实现这种效果。</p>
+<p>下面我们根据要对齐元素的类别来划分不同的对齐工作流：</p>
+<h2 id="--1">需要贴边对齐的按钮和小元素</h2>
+<p>对于暂停菜单、游戏金币这一类面积较小的元素，通常只需要贴着屏幕边对齐就可以了。这时只要几个简单的步骤：</p>
+<ol class="list">
+<li>把这些元素在 <strong>层级管理器</strong> 中设为 Canvas 节点的子节点</li>
+<li>在元素节点上添加 Widget 组件</li>
+<li>以对齐左下角为例，开启 <code>Left</code> 和 <code>Bottom</code> 的对齐。</li>
+<li>然后设置好节点和屏幕边缘的距离，下图中左边距设为 50px，右边距设为 30px。</li>
+</ol>
+<p class="img-container"><img src="widget-align/align-basic.png" alt="align left bottom"></p>
+<p>这样设置好 Widget 组件后，不管实际屏幕分辨率是多少，这个节点元素都会保持在屏幕左下角，而且节点约束框左边和屏幕左边距离保持 50px，节点约束框下边和屏幕下边距离保持 30px。</p>
+<p>注意 Widget 组件提供的对齐距离是参照子节点和父节点相同方向的约束框边界的。比如上面例子里勾选了 <code>Left</code> 对齐左边，那么子节点约束框左边和父节点（也就是 Canvas 节点，约束框永远等于屏幕大小）约束框左边的距离就是我们设置的 50px。</p>
+<h2 id="--2">嵌套对齐元素</h2>
+<p>上面介绍了对齐屏幕边缘的做法，由于 Widget 默认的对齐参照物是父节点，所以我们也可以添加不同的节点层级，并且让每一级节点都使用自动对齐的功能。</p>
+<p>我们下面用一个简单的例子来说明，假设我们有这样的节点层级关系：</p>
+<p class="img-container"><img src="widget-align/hierarchy.png" alt="nested nodes"></p>
+<p>其中 <code>parent</code> 是一个面板，<code>button</code> 是一个按钮。我们可以分别为这两个节点添加 Widget 组件，并且分别设置对齐距离。</p>
+<p>对于 <code>parent</code> 节点来说，对齐 <code>Canvas</code> 节点的左上角，距离都是 80px：</p>
+<p class="img-container"><img src="widget-align/nested-outer.png" alt="nested outer element"></p>
+<p>对于 <code>button</code> 节点来说，对齐 <code>parent</code> 节点的左上角，距离都是 50px：</p>
+<p class="img-container"><img src="widget-align/nested-inner.png" alt="nested inner element"></p>
+<p>依照这样的工作流程，就可以将 UI 元素按照显示区域或功能进行分组，并且不同级别的元素都可以按照设计进行对齐。</p>
+<h2 id="--3">根据对齐需要自动缩放节点尺寸</h2>
+<p>以上我们展示的例子里，并没有同时对齐在同一轴向相反方向的两个边，如果我们要做一个占满整个屏幕宽度的面板，就可以同时勾选 <code>Left</code> 和 <code>Right</code> 对齐开关：</p>
+<p class="img-container"><img src="widget-align/stretch.png" alt="stretch"></p>
+<p>当同时勾选相反的两个方向的对齐开关时，Widget 就获得了根据对齐需要修改节点尺寸（<code>Size</code>） 的能力，上图中我们勾选了左右两个方向并设置了边距，Widget 就会根据父节点的宽度来动态设置节点的 <code>Width</code> 属性，表现出来就是不管在多宽的屏幕上，我们的面板距离屏幕左右两边的距离永远保持 100px。</p>
+<h3 id="--4">制作和屏幕大小保持一致的节点</h3>
+<p>利用自动缩放节点的特性，我们可以通过设置节点的 Widget 组件，使节点的尺寸和屏幕大小保持一致，这样我们就不需要把所有需要对齐屏幕边缘的 UI 元素都放在 Canvas 节点下，而是可以根据功能和逻辑的需要结组。</p>
+<p>要制作这样的节点，首先要保证该节点的父节点尺寸能够保持和屏幕大小一致，Canvas 节点就是一个最好的选择。接下来按照下图的方式设置该节点的 Widget 组件：</p>
+<p class="img-container"><img src="widget-align/full-screen.png" alt="full screen node"></p>
+<p>就可以在运行时时刻保持该节点和 Canvas 节点的尺寸完全一致，也就是和屏幕大小一致。经过这样设置的节点，其子节点也可以使用同样的设置来传递屏幕实际尺寸。</p>
+<p>注意，由于 Canvas 节点本身就有保持和屏幕大小一致的功能，因此不需要在 Canvas 上添加 Widget 组件。</p>
+<h2 id="--5">设置百分比对齐距离</h2>
+<p>Widget 组件上开启某个方向的对齐之后，除了指定以像素为单位的边距以外，我们还可以输入百分比数值，这样 Widget 会以父节点相应轴向的宽度或高度乘以输入的百分比，计算出实际的边距值。</p>
+<p>还是看看实际的例子，我们还是以一个直接放在 Canvas 下的子节点为例，我们希望这个节点面板保持在屏幕右侧，并且总是占据 60% 的屏幕总高度。那么按照下图所示设置 Widget 组件就可以实现这个效果：</p>
+<p class="img-container"><img src="widget-align/percentage.png" alt="percentage"></p>
+<p>Widget 在对齐方向开启时输入边距值时，可以按照需要混合像素单位和百分比单位的使用。比如在需要对齐屏幕中心线的 <code>Left</code> 方向输入 <code>50%</code>，在需要对齐屏幕边缘的 <code>Right</code> 方向输入 <code>20px</code>，最后计算子节点位置和尺寸时，所有的边距都会先根据父节点的尺寸换算成像素距离，然后再进行摆放。</p>
+<p>利用百分比对齐距离，我们可以制作出根据屏幕大小无限缩放的 UI 元素，发挥你的想象力，一套资源适配数千种安卓机型不是问题！</p>
+<hr>
+<p>继续前往 <a href="./label-layout.html">文字排版</a> 说明文档。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

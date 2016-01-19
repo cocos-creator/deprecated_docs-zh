@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>访问节点和组件</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="properties.html">声明属性</a></li>
+          <li class="active sidebar-header-3"><a href="access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-">访问节点和组件</h1>
+<p>你可以在 <strong>属性检查器</strong> 里修改节点和组件，也能在脚本中动态修改。动态修改的好处是能够在一段时间内连续地修改属性、过渡属性，实现渐变效果。脚本还能够响应玩家输入，能够修改、创建和销毁节点或组件，实现各种各样的游戏逻辑。要实现这些效果，你需要先在脚本中获得你要修改的节点或组件。</p>
+<p>在本篇教程，我们将介绍如何</p>
+<ul class="list">
+<li>获得组件所在的节点</li>
+<li>获得其它组件</li>
+<li>使用 <strong>属性检查器</strong> 设置节点和组件</li>
+<li>查找子节点</li>
+<li>全局节点查找</li>
+<li>访问已有变量里的值</li>
+</ul>
+<h2 id="--1">获得组件所在的节点</h2>
+<p>获得组件所在的节点很简单，只要在组件方法里访问 <code>this.node</code> 变量：</p>
+<pre class="hljs"><code>    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> node = <span class="hljs-keyword">this</span>.node;
+        node.x = <span class="hljs-number">100</span>;
+    }</code></pre><h2 id="--2">获得其它组件</h2>
+<p>你会经常需要获得同一个节点上的其它组件，这就要用到 <code>getComponent</code> 这个 API，它会帮你查找你要的组件。</p>
+<pre class="hljs"><code>    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> label = <span class="hljs-keyword">this</span>.getComponent(cc.Label);
+        <span class="hljs-keyword">var</span> text = <span class="hljs-keyword">this</span>.name + <span class="hljs-string">' started'</span>;
+
+        <span class="hljs-comment">// Change the text in Label Component</span>
+        label.string = text;
+    }</code></pre><p>你也可以为 <code>getComponent</code> 传入一个类名。</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> label = <span class="hljs-keyword">this</span>.getComponent(<span class="hljs-string">"cc.Label"</span>);</code></pre><p>在节点上也有一个 <code>getComponent</code> 方法，它们的作用是一样的：</p>
+<pre class="hljs"><code>    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        cc.log( <span class="hljs-keyword">this</span>.node.getComponent(cc.Label) === <span class="hljs-keyword">this</span>.getComponent(cc.Label) );  <span class="hljs-comment">// true</span>
+    }</code></pre><p>如果在节点上找不到你要的组件，<code>getComponent</code> 将返回 null，如果你尝试访问 null 的值，将会在运行时抛出 &quot;TypeError&quot; 这个错误。因此如果你不确定组件是否存在，请记得判断一下：</p>
+<pre class="hljs"><code>    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> label = <span class="hljs-keyword">this</span>.getComponent(cc.Label);
+        <span class="hljs-keyword">if</span> (label) {
+            label.string = <span class="hljs-string">"Hello"</span>;
+        }
+        <span class="hljs-keyword">else</span> {
+            cc.error(<span class="hljs-string">"Something wrong?"</span>);
+        }
+    }</code></pre><h2 id="--3">获得其它节点及其组件</h2>
+<p>仅仅能访问节点自己的组件通常是不够的，脚本通常还需要进行多个节点之间的交互。例如，一门自动瞄准玩家的大炮，就需要不断获取玩家的最新位置。Cocos Creator 提供了一些不同的方法来获得其它节点或组件。</p>
+<h3 id="--4">利用属性检查器设置节点</h3>
+<p>最直接的方式就是在 <strong>属性检查器</strong> 中设置你需要的对象。以节点为例，这只需要在脚本中声明一个 type 为 <code>cc.Node</code> 的属性：</p>
+<pre class="hljs"><code><span class="hljs-comment">// Cannon.js</span>
+
+cc.Class({
+    extends: cc.Component,
+    properties: {
+        <span class="hljs-comment">// 声明 player 属性</span>
+        player: {
+            <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>,
+            type: cc.Node
+        }
+    }
+});</code></pre><p>这段代码在 <code>properties</code> 里面声明了一个 <code>player</code> 属性，默认值为 null，并且指定它的对象类型为 <code>cc.Node</code>。这就相当于在其它语言里声明了 <code>public cc.Node player = null;</code>。脚本编译之后，这个组件在 <strong>属性检查器</strong> 中看起来是这样的：</p>
+<p class="img-container"><img src="access-node-component/player-in-inspector-null.png" alt="player-in-inspector-null"></p>
+<p>接着你就可以将层级管理器上的任意一个节点拖到这个 Player 控件：</p>
+<p class="img-container"><img src="access-node-component/player-in-inspector.png" alt="player-in-inspector"></p>
+<p>这样一来它的 player 属性就会被设置成功，你可以直接在脚本里访问 player：</p>
+<pre class="hljs"><code><span class="hljs-comment">// Cannon.js</span>
+
+<span class="hljs-keyword">var</span> Player = <span class="hljs-built_in">require</span>(<span class="hljs-string">"Player"</span>);
+
+cc.Class({
+    extends: cc.Component,
+    properties: {
+        <span class="hljs-comment">// 声明 player 属性</span>
+        player: {
+            <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>,
+            type: cc.Node
+        }
+    },
+
+    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> playerComp = <span class="hljs-keyword">this</span>.player.getComponent(Player);
+        <span class="hljs-keyword">this</span>.checkPlayer(playerComp);
+    },
+
+    <span class="hljs-comment">// ...</span>
+});</code></pre><h3 id="--5">利用属性检查器设置组件</h3>
+<p>在上面的例子中，如果你将属性的 type 声明为 Player 组件，当你拖动节点 &quot;Player Node&quot; 到 <strong>属性检查器</strong>，player 属性就会被设置为这个节点里面的 Player 组件。这样你就不需要再自己调用 <code>getComponent</code> 啦。</p>
+<pre class="hljs"><code><span class="hljs-comment">// Cannon.js</span>
+
+<span class="hljs-keyword">var</span> Player = <span class="hljs-built_in">require</span>(<span class="hljs-string">"Player"</span>);
+
+cc.Class({
+    extends: cc.Component,
+    properties: {
+        <span class="hljs-comment">// 声明 player 属性，这次直接是组件类型</span>
+        player: {
+            <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>,
+            type: Player
+        }
+    },
+
+    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> playerComp = <span class="hljs-keyword">this</span>.player;
+        <span class="hljs-keyword">this</span>.checkPlayer(playerComp);
+    },
+
+    <span class="hljs-comment">// ...</span>
+});</code></pre><p>你还可以将属性的默认值由 <code>null</code> 改为数组<code>[]</code>，这样你就能在 <strong>属性检查器</strong> 中同时设置多个对象。不过如果需要在运行时动态获取其它对象，还需要用到下面介绍的查找方法。</p>
+<h3 id="--6">查找子节点</h3>
+<p>有时候，游戏场景中会有很多个相同类型的对象，像是炮塔、敌人和特效，它们通常都有一个全局的脚本来统一管理。如果用 <strong>属性检查器</strong> 来一个一个将它们关联到这个脚本上，那工作就会很繁琐。为了更好地统一管理这些对象，我们可以把它们放到一个统一的父物体下，然后通过父物体来获得所有的子物体：</p>
+<pre class="hljs"><code><span class="hljs-comment">// CannonManager.js</span>
+
+cc.Class({
+    extends: cc.Component,
+
+    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.cannons = [];
+        <span class="hljs-keyword">this</span>.cannons = <span class="hljs-keyword">this</span>.node.getChildren();
+    }
+});</code></pre><p>这里的 <code>getChildren</code> 是 <code>cc.Node</code> 原有的一个 API，可以获得一个包含所有子节点的数组。</p>
+<p>你还可以使用 <code>getChildByName</code>：</p>
+<pre class="hljs"><code><span class="hljs-keyword">this</span>.node.getChildByName(<span class="hljs-string">"Cannon 01"</span>);</code></pre><p>如果子节点的层次很深，你还可以使用 Cocos Creator 中新增的 <code>cc.find</code> 进行递归查找：</p>
+<pre class="hljs"><code>cc.find(<span class="hljs-string">"Cannon 01/Barrel/SFX"</span>, <span class="hljs-keyword">this</span>.node);</code></pre><h3 id="--7">全局名字查找</h3>
+<p>当 <code>cc.find</code> 只传入第一个参数时，将在整个场景中查找指定节点：</p>
+<pre class="hljs"><code><span class="hljs-keyword">this</span>.backNode = cc.find(<span class="hljs-string">"Canvas/Menu/Back"</span>);</code></pre><p>路径最后面还可以加上用尖括号括起来的一个组件名，这样就能直接返回你需要的组件：</p>
+<pre class="hljs"><code><span class="hljs-keyword">this</span>.backLabel = cc.find(<span class="hljs-string">"Canvas/Menu/Back&lt;cc.Label&gt;"</span>);</code></pre><h2 id="--8">访问已有变量里的值</h2>
+<p>如果你已经在一个地方保存了节点或组件的引用，你也可以直接访问它们，一般有两种方式：</p>
+<h3 id="--9">通过全局变量访问</h3>
+<blockquote>
+<p>你应当很谨慎地使用全局变量，当你要用全局变量时，应该很清楚自己在做什么，我们并不推荐滥用全局变量。如果你用了全局变量，被老板发现了，很有可能丢掉饭碗。</p>
+</blockquote>
+<p>如果你声明变量时，省略了关键字 <code>var</code>，你的变量就将成为全局变量，可以在项目里的任一脚本中直接引用。让我们试着定义一个全局对象 <code>Global</code>，这个对象里面包含了 <code>backNode</code> 和 <code>backLabel</code> 两个属性。</p>
+<pre class="hljs"><code><span class="hljs-comment">// Global.js, this file can have any name</span>
+
+Global = {
+    backNode: <span class="hljs-literal">null</span>,
+    backLabel: <span class="hljs-literal">null</span>,
+};</code></pre><p>你可以在合适的地方直接访问并初始化 <code>Global</code>:</p>
+<pre class="hljs"><code><span class="hljs-comment">// Back.js</span>
+
+cc.Class({
+    extends: cc.Component,
+
+    onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        Global.backNode = <span class="hljs-keyword">this</span>.node;
+        Global.backLabel = <span class="hljs-keyword">this</span>.getComponent(cc.Label);
+    }
+});</code></pre><p>初始化后，你就能在任何地方访问到 <code>Global</code> 里的值：</p>
+<pre class="hljs"><code><span class="hljs-comment">// AnyScript.js</span>
+
+cc.Class({
+    extends: cc.Component,
+
+    <span class="hljs-comment">// start 会在 onLoad 之后执行，所以这时 Global 已经初始化过了</span>
+    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> text = <span class="hljs-string">'Back'</span>;
+        Global.backLabel.string = text;
+    }
+});</code></pre><h3 id="--10">通过模块访问</h3>
+<p>如果你不想用全局变量，你可以使用 <code>require</code> 来实现脚本的跨文件操作，让我们看个示例：</p>
+<pre class="hljs"><code><span class="hljs-comment">// Global.js, now the filename matters</span>
+
+<span class="hljs-built_in">module</span>.exports = {
+    backNode: <span class="hljs-literal">null</span>,
+    backLabel: <span class="hljs-literal">null</span>,
+};</code></pre><p>每个脚本都能用 <code>require</code> + 文件名(不含路径) 来获取到对方 export 的对象。</p>
+<pre class="hljs"><code><span class="hljs-comment">// Back.js</span>
+
+<span class="hljs-comment">// this feels more safe since you know where the object comes from</span>
+<span class="hljs-keyword">var</span> Global = <span class="hljs-built_in">require</span>(<span class="hljs-string">"Global"</span>);
+
+cc.Class({
+    extends: cc.Component,
+
+    onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        Global.backNode = <span class="hljs-keyword">this</span>.node;
+        Global.backLabel = <span class="hljs-keyword">this</span>.getComponent(cc.Label);
+    }
+});</code></pre><pre class="hljs"><code><span class="hljs-comment">// AnyScript.js</span>
+
+<span class="hljs-comment">// this feels more safe since you know where the object comes from</span>
+<span class="hljs-keyword">var</span> Global = <span class="hljs-built_in">require</span>(<span class="hljs-string">"Global"</span>);
+
+cc.Class({
+    extends: cc.Component,
+
+    <span class="hljs-comment">// start 会在 onLoad 之后执行，所以这时 Global 已经初始化过了</span>
+    start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> text = <span class="hljs-string">"Back"</span>;
+        Global.backLabel.string = text;
+    }
+});</code></pre><p>更详细内容，请参考 <a href="/manual/scripting/module">模块化</a>。</p>
+<hr>
+<p>继续前往 <a href="./life-cycle-callbacks.html">生命周期回调</a>。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

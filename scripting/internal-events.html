@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>系统内置事件</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="events.html">发射和监听事件</a></li>
+          <li class="active sidebar-header-3"><a href="internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-">系统内置事件</h1>
+<p>如上一篇文档所述，<code>cc.Node</code> 有一套完整的<a href="./events.html">事件监听和分发机制</a>。在这套机制之上，我们提供了一些基础的系统事件，这篇文档将介绍这些事件的使用方式。</p>
+<p>系统事件遵守通用的注册方式，开发者既可以使用枚举类型也可以直接使用事件名来注册事件的监听器，事件名的定义遵循 DOM 事件标准。</p>
+<pre class="hljs"><code><span class="hljs-comment">// 使用枚举类型来注册</span>
+node.on(cc.Node.EventType.MOUSE_DOWN, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Mouse down'</span>);
+}, <span class="hljs-keyword">this</span>);
+<span class="hljs-comment">// 使用事件名来注册</span>
+node.on(<span class="hljs-string">'mousedown'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Mouse down'</span>);
+}, <span class="hljs-keyword">this</span>);</code></pre><h2 id="--1">鼠标事件类型和事件对象</h2>
+<p>鼠标事件在桌面平台才会触发，系统提供的事件类型如下：</p>
+<table>
+<thead>
+<tr>
+<th>枚举对象定义</th>
+<th style="text-align:center">对应的事件名</th>
+<th style="text-align:center">事件触发的时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_DOWN</code></td>
+<td style="text-align:center">&#39;mousedown&#39;</td>
+<td style="text-align:center">当鼠标按下时触发一次</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_ENTER</code></td>
+<td style="text-align:center">&#39;mouseenter&#39;</td>
+<td style="text-align:center">当鼠标移入目标节点区域时，不论是否按下</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_MOVE</code></td>
+<td style="text-align:center">&#39;mousemove&#39;</td>
+<td style="text-align:center">当鼠标在目标节点在目标节点区域中移动时，不论是否按下</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_LEAVE</code></td>
+<td style="text-align:center">&#39;mouseleave&#39;</td>
+<td style="text-align:center">当鼠标移出目标节点区域时，不论是否按下</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_UP</code></td>
+<td style="text-align:center">&#39;mouseup&#39;</td>
+<td style="text-align:center">当鼠标从按下状态松开时触发一次</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.MOUSE_WHEEL</code></td>
+<td style="text-align:center">&#39;mousewheel&#39;</td>
+<td style="text-align:center">当鼠标滚轮滚动时</td>
+</tr>
+</tbody>
+</table>
+<p>鼠标事件（<code>cc.Event.EventMouse</code>）的重要 API 如下（<code>cc.Event</code> 标准事件 API 之外）：</p>
+<table>
+<thead>
+<tr>
+<th>函数名</th>
+<th style="text-align:center">返回值类型</th>
+<th style="text-align:center">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getScrollY</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">获取滚轮滚动的 Y 轴距离，只有滚动时才有效</td>
+</tr>
+<tr>
+<td><code>getLocation</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取鼠标位置对象，对象包含 x 和 y 属性</td>
+</tr>
+<tr>
+<td><code>getLocationX</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">获取鼠标的 X 轴位置</td>
+</tr>
+<tr>
+<td><code>getLocationY</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">获取鼠标的 Y 轴位置</td>
+</tr>
+<tr>
+<td><code>getDelta</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取鼠标距离上一次事件移动的距离对象，对象包含 x 和 y 属性</td>
+</tr>
+<tr>
+<td><code>getButton</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center"><code>cc.Event.EventMouse.BUTTON_LEFT</code> 或 <code>cc.Event.EventMouse.BUTTON_RIGHT</code> 或 <code>cc.Event.EventMouse.BUTTON_MIDDLE</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="--2">触摸事件类型和事件对象</h2>
+<p>触摸事件在移动平台和桌面平台都会触发，这样做的目的是为了更好得服务开发者在桌面平台调试，只需要监听触摸事件即可同时响应移动平台的触摸事件和桌面端的鼠标事件。系统提供的触摸事件类型如下：</p>
+<table>
+<thead>
+<tr>
+<th>枚举对象定义</th>
+<th style="text-align:center">对应的事件名</th>
+<th style="text-align:center">事件触发的时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_START</code></td>
+<td style="text-align:center">&#39;touchstart&#39;</td>
+<td style="text-align:center">当手指触摸到屏幕时</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_MOVE</code></td>
+<td style="text-align:center">&#39;touchmove&#39;</td>
+<td style="text-align:center">当手指在屏幕上目标节点区域内移动时</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_END</code></td>
+<td style="text-align:center">&#39;touchend&#39;</td>
+<td style="text-align:center">当手指在目标节点区域内离开屏幕时</td>
+</tr>
+<tr>
+<td><code>cc.Node.EventType.TOUCH_CANCEL</code></td>
+<td style="text-align:center">&#39;touchcancel&#39;</td>
+<td style="text-align:center">当手指在目标节点区域外离开屏幕时</td>
+</tr>
+</tbody>
+</table>
+<p>触摸事件（<code>cc.Event.EventTouch</code>）的重要 API 如下（<code>cc.Event</code> 标准事件 API 之外）：</p>
+<table>
+<thead>
+<tr>
+<th>API 名</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>touch</code></td>
+<td style="text-align:center"><code>cc.Touch</code></td>
+<td style="text-align:center">与当前事件关联的触点对象</td>
+</tr>
+</tbody>
+</table>
+<p>需要注意的是，触摸事件支持多点触摸，每个触点都会发送一次事件给事件监听器。通过 <code>cc.Touch</code> 的 API 可以获取到触点的所有信息：</p>
+<table>
+<thead>
+<tr>
+<th>函数名</th>
+<th style="text-align:center">返回值类型</th>
+<th style="text-align:center">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getID</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">触点的标识 ID，可以用来在多点触摸中跟踪触点</td>
+</tr>
+<tr>
+<td><code>getLocation</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取触点的位置对象，对象包含 x 和 y 属性</td>
+</tr>
+<tr>
+<td><code>getLocationX</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">获取触点的 X 轴位置</td>
+</tr>
+<tr>
+<td><code>getLocationY</code></td>
+<td style="text-align:center"><code>Number</code></td>
+<td style="text-align:center">获取触点的 Y 轴位置</td>
+</tr>
+<tr>
+<td><code>getDelta</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取触点距离上一次事件移动的距离对象，对象包含 x 和 y 属性</td>
+</tr>
+<tr>
+<td><code>getStartLocation</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取触点落下时的位置对象，对象包含 x 和 y 属性</td>
+</tr>
+<tr>
+<td><code>getPreviousLocation</code></td>
+<td style="text-align:center"><code>Object</code></td>
+<td style="text-align:center">获取触点在上一次事件时的位置对象，对象包含 x 和 y 属性</td>
+</tr>
+</tbody>
+</table>
+<h2 id="--3">鼠标和触摸事件冒泡</h2>
+<p>鼠标和触摸事件均支持节点树的事件冒泡，以下图为例：</p>
+<p class="img-container"><img src="./internal-events/propagation.png" alt="propagation"></p>
+<p>在图中的场景里，A节点拥有一个子节点B，B拥有一个子节点C。假设开发者对A、B、C都监听了触摸事件。当鼠标或手指在B节点区域内按下时，事件将首先在B节点触发，B节点监听器接收到事件。接着B节点会将事件向其父节点传递这个事件，A节点的监听器将会接收到事件。这就是最基本的事件冒泡过程。</p>
+<p>当鼠标或手指在C节点区域内按下时，事件将首先在C节点触发并通知C节点上注册的事件监听器。C节点会通知B节点这个事件，B节点内逻辑会负责检查触点是否发生在自身区域内，如果是则通知自己的监听器，否则什么都不做。紧接着A节点会收到事件，由于C节点完整处在A节点中，所以注册在A节点上的事件监听器都将收到触摸按下事件。以上的过程解释了事件冒泡的过程和根据节点区域来判断是否分发事件的逻辑。</p>
+<p>除了根据节点区域来判断是否分发事件外，鼠标和触摸事件的冒泡过程与普通事件的冒泡过程并没有区别。所以，调用 <code>event</code> 的 <code>stopPropagation</code> 函数可以主动停止冒泡过程。</p>
+<h2 id="-cc-node-"><code>cc.Node</code> 的其它事件</h2>
+<table>
+<thead>
+<tr>
+<th>枚举对象定义</th>
+<th style="text-align:center">对应的事件名</th>
+<th style="text-align:center">事件触发的时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;position-changed&#39;</td>
+<td style="text-align:center">当位置属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;rotation-changed&#39;</td>
+<td style="text-align:center">当旋转属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;scale-changed&#39;</td>
+<td style="text-align:center">当缩放属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;size-changed&#39;</td>
+<td style="text-align:center">当宽高属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;anchor-changed&#39;</td>
+<td style="text-align:center">当锚点属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;color-changed&#39;</td>
+<td style="text-align:center">当颜色属性修改时</td>
+</tr>
+<tr>
+<td>无</td>
+<td style="text-align:center">&#39;opacity-changed&#39;</td>
+<td style="text-align:center">当透明度属性修改时</td>
+</tr>
+</tbody>
+</table>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

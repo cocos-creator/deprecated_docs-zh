@@ -1,0 +1,94 @@
+@media (min-width: 43.75em) {
+  body {
+    padding: 0;
+  }
+}
+
+body {
+	margin-left: 0;
+}
+
+.full-wrap {
+	position: relative;
+	min-height: 640px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+	max-width: 1300px;
+}
+
+.main {
+	margin-left: 350px;
+	width: 65%;
+	padding-top: 50px;
+	padding-right: 20px;
+	float: left;
+}
+
+.main .markdown-body {
+	overflow-x: auto;
+	padding-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+	.main {
+	    margin-left: 300px;
+	}
+}
+
+
+/* sidebar */
+
+
+.sidebar {
+	width: 25%;
+	min-width: 280px;
+	max-width: 320px;
+	float: left;
+	background-color: #eee;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  -webkit-appearance: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  display: none;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #fdb92c;
+}
+
+.sidebar .inner {
+	margin-bottom:100px;
+}
+
+.sidebar-header-2 { margin-left: 10px; }
+.sidebar-header-3 { margin-left: 20px; }
+.sidebar-header-4 { margin-left: 40px; }
+.sidebar-header-5 { margin-left: 50px; }
+
+.logo img {
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.sidebar ol, .sidebar ul {
+	list-style: none;
+}
+
+.sidebar li {
+	line-height: 1.7em;
+}
+
+.sidebar li.active {
+	font-weight: 900;
+	font-size: 1.1em;
+}

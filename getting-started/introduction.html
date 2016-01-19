@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>关于 Cocos Creator</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="index.html">Cocos Creator 入门</a></h3></li>
+          <li class="active sidebar-header-3"><a href="introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../scripting/index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../scripting/use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../scripting/reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="-cocos-creator">关于 Cocos Creator</h1>
+<ul class="list">
+<li><strong>Q</strong>: Cocos Creator 是游戏引擎吗？</li>
+<li><strong>A</strong>: 它是一个完整的游戏开发解决方案，包括了 cocos2d-x  引擎的 JavaScript 实现（不需要学习一个新的引擎），以及能让你更快速开发游戏所需要的各种图形界面工具</li>
+</ul>
+<ul class="list">
+<li><strong>Q</strong>: Cocos Creator 的编辑器是什么样的？</li>
+<li><strong>A</strong>: 完全为引擎定制打造，包含从设计、开发、预览、调试到发布的整个工作流所需的全功能一体化编辑器</li>
+</ul>
+<ul class="list">
+<li><strong>Q</strong>: 我不会写程序，也能使用 Cocos Creator 吗？</li>
+<li><strong>A</strong>: 当然！Cocos Creator 编辑器提供面向设计和开发的两种工作流，提供简单顺畅的分工合作方式。</li>
+</ul>
+<ul class="list">
+<li><strong>Q</strong>: 我使用 Cocos Creator 能开发面向哪些平台的游戏？</li>
+<li><strong>A</strong>: Cocos Creator 目前支持发布游戏到 Web、Android 和 iOS，以及点开即玩原生性能的 Cocos Play 手机页游平台，真正实现一次开发，全平台运行。</li>
+</ul>
+<h2 id="-">产品定位</h2>
+<p>Cocos Creator 是以内容创作为核心的游戏开发工具，在 Cocos2d-x 基础上实现了彻底脚本化、组件化和数据驱动等特点。</p>
+<h2 id="--1">架构特色</h2>
+<p>Cocos Creator 包含游戏引擎、资源管理、场景编辑、游戏预览和发布等游戏开发所需的全套功能，并且将所有的功能和工具链都整合在了一个统一的应用程序里。</p>
+<p>它以数据驱动和组件化作为核心的游戏开发方式，并且在此基础上无缝融合了 Cocos 引擎成熟的 JavaScript API 体系，能够一方面适应 Cocos 系列引擎开发者用户习惯，另一方面为美术和策划人员提供前所未有的内容创作生产和即时预览测试环境。</p>
+<p>编辑器在提供强大完整工具链的同时，提供了开放式的插件架构，开发者能够用 Html + JavaScript 等前端通用技术轻松扩展编辑器功能，定制个性化的工作流程。</p>
+<p><a href="introduction/structure.png"><img src="introduction/structure.png" alt="Cocos Creator structure"></a></p>
+<p>引擎和编辑器的结合，带来的是数据驱动和组件化的功能开发方式，以及设计和程序两类人员的完美分工合作：</p>
+<ul class="list">
+<li>设计师在场景编辑器中搭建场景的图像表现</li>
+<li>程序员开发可以挂载到场景任意物体上的功能组件</li>
+<li>设计师负责为需要展现特定行为的物体挂载组件，并通过调试改善各项参数</li>
+<li>程序员开发游戏所需要的数据结构和资源</li>
+<li>设计师通过图形化的界面配置好各项数据和资源
+-（就这样从简单到复杂，各种你能想像到的工作流程都可以实现）</li>
+</ul>
+<p>以工作流为核心的开发理念，让不同职能的开发者能够快速找到最大化自己作用的工作切入点，并能够默契流畅的和团队其他成员配合。</p>
+<h2 id="--2">工作流程说明</h2>
+<p>在开发阶段，Cocos Creator 已经能够为用户带来巨大的效率和创造力提升，但我们所提供的工作流远不仅限于开发层面。对于成功的游戏来说，开发和调试、商业化 SDK 的集成、多平台发布、测试、上线这一整套工作流程不光缺一不可，而且要经过多次的迭代重复。</p>
+<p><a href="introduction/cocos-workflow-user.jpg"><img src="introduction/cocos-workflow-user.jpg" alt="Cocos Creator workflow"></a></p>
+<p>Cocos Creator 将 Cocos Play 的整套手机页游解决方案整合在了编辑器工具里，无需在多个软件之间穿梭，只要打开 Cocos Creator 编辑器，各种一键式的自动化流程就能花最少的时间精力，解决上述所有问题。开发者就能够专注于开发阶段，提高产品竞争力和创造力！</p>
+<h2 id="--3">功能特性</h2>
+<p>Cocos Creator 功能上的突出特色包括：</p>
+<ul class="list">
+<li>脚本中可以轻松声明可以在编辑器中随时调整的数据属性，对参数的调整可以由设计人员独立完成。</li>
+<li>支持智能画布适配和免编程元素对齐的 UI 系统可以完美适配任意分辨率的设备屏幕。</li>
+<li>专为 2D 游戏打造的动画系统，支持动画轨迹预览和复杂曲线编辑功能。</li>
+<li>动态语言支持的脚本化开发，使得动态调试和移动设备远程调试变得异常轻松。</li>
+<li>借助 Cocos2d-x 引擎，在享受脚本化开发的便捷同时，还能够一键发布到各类桌面和移动端平台，并保持原生级别的超高性能</li>
+<li>脚本组件化和开放式的插件系统为开发者在不同深度上提供了定制工作流的方法，编辑器可以大尺度调教来适应不同团队和项目的需要。</li>
+</ul>
+<h2 id="--4">使用说明</h2>
+<p>Cocos Creator 是一个支持 Windows 和 Mac 跨平台运行的应用程序，双击即可启动运行。相比传统的 Cocos2d-x 工作流程，将配置开发环境的要求完全免除，运行之后就可以立刻开始游戏内容创作或功能开发。</p>
+<p>在数据驱动的工作流基础上，场景的创建和编辑成为了游戏开发的中心，设计工作和功能开发可以同步进行，无缝协作，不管是美术、策划还是程序员，都可以在生产过程的任意时刻点击预览按钮，在浏览器、移动设备模拟器或移动设备真机上测试游戏的最新状态。</p>
+<p>程序员和设计人员现在可以实现各式各样的分工合作，不管是先搭建场景，再添加功能，还是先生产功能模块再由设计人员进行组合调试，Cocos Creator 都能满足开发团队的需要。脚本中定义的属性能够以最适合的视觉体验呈现在编辑器中，为内容生产者提供便利。</p>
+<p>场景之外的内容资源可以由外部导入，比如图片、声音、图集、骨骼动画等等，除此之外我们还在不断完善编辑器生产资源的能力，包括目前已经完成的动画编辑器，美术人员可以使用这个工具制作出非常细腻富有表现力的动画资源，并可以随时在场景中看到动画的预览。</p>
+<p>最后，开发完成的游戏可以通过图形工具一键发布到各个平台，从设计研发到测试发布，Cocos Creator 全部帮您搞定。</p>
+<hr>
+<p>继续前往 <a href="./install.html">安装和启动</a> 说明文档。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

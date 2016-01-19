@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Unity 用户上手指南</title>
+    <link type="text/css" rel="stylesheet" href="../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html"><img src="../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class="active sidebar-header-3"><a href="unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../scripting/index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../scripting/use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../scripting/javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../scripting/reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="unity-">Unity 用户上手指南</h1>
+<p>对于有过 Unity3D 使用经验的用户, 在上手 Cocos Creator 时会发现异常容易, 许多概念都是互通的. 但是
+Cocos Creator 和 Unity3D 在一些细节概念上仍然存在差异, 本文将罗列 Cocos Creator 和 Unity3D 之间的
+不同之处, 帮助 Unity3D 用户更快地上手 Cocos Creator.</p>
+<h2 id="-">摘要</h2>
+<table>
+<thead>
+<tr>
+<th>Cocos Creator</th>
+<th>Unity3D</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> cc.Node</td>
+<td>GameObject</td>
+<td>场景中的对象，每个对象可包含多个组件(Component)</td>
+</tr>
+<tr>
+<td> node.active</td>
+<td>gameObject.activeSelf</td>
+<td>设置 node 自己的激活状态</td>
+</tr>
+<tr>
+<td> node.activeInHierarchy</td>
+<td>gameObject.activeInHierarchy</td>
+<td>检查 node 在 hierarchy 中的激活状态</td>
+</tr>
+<tr>
+<td> node.parent</td>
+<td>transform.parent</td>
+<td></td>
+</tr>
+<tr>
+<td> node.position</td>
+<td>transform.position</td>
+<td>position 在 Cocos Creator 中为本地坐标系, 而在 Unity3D 中为世界坐标系</td>
+</tr>
+<tr>
+<td> node.rotation</td>
+<td>transform.rotation</td>
+<td>rotation 在 Cocos Creator 中为本地坐标系, 而在 Unity3D 中为世界坐标系</td>
+</tr>
+<tr>
+<td> node.scale</td>
+<td>transform.localScale</td>
+<td></td>
+</tr>
+<tr>
+<td> cc.find(path, refNode)</td>
+<td>transform.Find(path), GameObject.Find(path)</td>
+<td>若 refNode 为空, 则从场景根节点开始查找, 否则从 refNode 节点开始查找.</td>
+</tr>
+<tr>
+<td> cc.game.addPersistRootNode(node)</td>
+<td>Object.DontDestroyOnLoad(gameObject)</td>
+<td></td>
+</tr>
+<tr>
+<td> cc.Component</td>
+<td>Component</td>
+<td>组件</td>
+</tr>
+<tr>
+<td> comp.node</td>
+<td>comp.gameObject</td>
+<td></td>
+</tr>
+<tr>
+<td> comp.onLoad()</td>
+<td>comp.Awake()</td>
+<td></td>
+</tr>
+<tr>
+<td> comp.start()</td>
+<td>comp.Start()</td>
+<td></td>
+</tr>
+<tr>
+<td> comp.update(dt)</td>
+<td>comp.Update()</td>
+<td></td>
+</tr>
+<tr>
+<td> comp.lateUpdate(dt)</td>
+<td>comp.LateUpdate()</td>
+<td></td>
+</tr>
+<tr>
+<td> obj.destroy()</td>
+<td>Object.Destroy(obj)</td>
+<td>obj 为 cc.Object 的实例 (通常为: node, component 或者 asset)</td>
+</tr>
+<tr>
+<td> cc.isValid(obj)</td>
+<td>obj != null</td>
+<td>判断一个 cc.Object 是否有效 (通常为: node, component 或者 asset)</td>
+</tr>
+</tbody>
+</table>
+<ul class="list">
+<li>Firball 的 API 使用驼峰命名法 (camelCase), 方法和变量首字母小写, 类型定义首字母大写.</li>
+<li>Firball 的 回调函数 (callback) 遵循 Node.js 的风格, 即回调的第一个参数是错误信息.</li>
+</ul>
+<h2 id="cc-node-vs-gameobject">cc.Node vs GameObject</h2>
+<p>Cocos Creator 中的 Node 相当于 Unity3D 中的 GameObject + Transform. 在 Cocos Creator 中,
+父子节点的层级关系由 Node 来维护. 而 Unity3D 中是交给 Transform 来管理.</p>
+<pre class="hljs"><code><span class="hljs-comment">// 改变父子关系</span>
+<span class="hljs-keyword">this</span>.node.parent = anotherNode;
+
+<span class="hljs-comment">// 旋转 20 度</span>
+<span class="hljs-keyword">this</span>.node.rotation += <span class="hljs-number">20</span>;
+
+<span class="hljs-comment">// 位移 (10,10) 个像素</span>
+<span class="hljs-keyword">this</span>.node.position.x += <span class="hljs-number">10</span>;
+<span class="hljs-keyword">this</span>.node.position.y += <span class="hljs-number">10</span>;
+
+<span class="hljs-comment">// 缩放 1.5 倍</span>
+<span class="hljs-keyword">this</span>.node.scale.x *= <span class="hljs-number">1.5</span>;
+<span class="hljs-keyword">this</span>.node.scale.y *= <span class="hljs-number">1.5</span>;</code></pre><h2 id="--1">坐标系</h2>
+<p>cc.Node 中的 <code>position</code>, <code>rotation</code> 和 <code>scale</code> 均为本地坐标, 对比 Unity3D, 其 <code>Postion</code>,
+<code>Rotation</code> 为世界坐标系.</p>
+<p>在 Cocos Creator 中, 如果希望计算 cc.Node 的世界坐标, 可以通过如下方法:</p>
+<pre class="hljs"><code><span class="hljs-comment">// 将节点设置到世界坐标为 (100,100) 的位置</span>
+<span class="hljs-keyword">this</span>.node.position = <span class="hljs-keyword">this</span>.node.convertToNodeSpaceAR(cc.v2(<span class="hljs-number">100</span>,<span class="hljs-number">100</span>));
+<span class="hljs-comment">// this.node.rotation = TODO</span></code></pre><h2 id="cc-component-vs-monobehaviour">cc.Component vs MonoBehaviour</h2>
+<p>Cocos Creator 中, 用户定义的脚本是通过扩展 cc.Component 类来编写的, 而在 Unity3D 中, 则是通过
+扩展 MonoBehaviour. 让我们来对比一下一份相同功能的 Cocos Creator 脚本和 Unity3D 脚本:</p>
+<p><strong>Unity3D</strong>:</p>
+<pre class="hljs"><code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Foobar</span> : <span class="hljs-title">MonoBehaviour</span> {
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> text = <span class="hljs-string">'Foobar'</span>;
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Start</span> (<span class="hljs-params"></span>) </span>{
+    Debug.Log(<span class="hljs-string">'Hello '</span> + text );
+  }
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Update</span> (<span class="hljs-params"></span>) </span>{}
+}</code></pre><p><strong>Cocos Creator</strong>:</p>
+<pre class="hljs"><code><span class="hljs-comment">// Foobar.js</span>
+cc.Class({
+  extends: cc.Component,
+  properties: {
+    text: <span class="hljs-string">'Foobar'</span>,
+  },
+  onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello '</span> + <span class="hljs-keyword">this</span>.text);
+  },
+  update: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">dt</span>) </span>{},
+});</code></pre><h2 id="--2">属性定义</h2>
+<p>Cocos Creator 中属性定义在 <code>properties</code> 字段中, 而 Unity3D 中属性被定义为 MonoBehaviour 的
+成员变量. 除了定义位置的区别, Cocos Creator 在属性中还引入了属性参数的概念, 这些参数可用于控制属性
+在 Inspector 中的显示方法, 序列化与否等等. 具体参数请参考: <a href="/manual/scripting/attributes">属性参数定义</a></p>
+<p>下面是几种常用属性在 Cocos Creator 中定义方法:</p>
+<pre class="hljs"><code><span class="hljs-keyword">var</span> MyEnum = cc.Enum({
+  Foo: <span class="hljs-number">1</span>,
+  Bar: <span class="hljs-number">2</span>,
+});
+
+<span class="hljs-comment">// MyScript.js</span>
+<span class="hljs-keyword">var</span> Foobar = <span class="hljs-built_in">require</span>(<span class="hljs-string">'Foobar'</span>);
+cc.Class({
+  extends: cc.Component,
+  properties: {
+    <span class="hljs-comment">// 引用其他 cc.Node</span>
+    <span class="hljs-comment">// Unity3D 中定义为: public GameObject otherGameObject;</span>
+    otherNode: { <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>, type: cc.Node },
+
+    <span class="hljs-comment">// 引用一份 Foobar Component 实例</span>
+    <span class="hljs-comment">// Unity3D 中定义为: public Foobar foobar;</span>
+    foobar: { <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>, type: Foobar },
+
+    <span class="hljs-comment">// 不序列化该属性</span>
+    <span class="hljs-comment">// Unity3D 中定义为: [System.NonSerialized] public int index = 0;</span>
+    index: { <span class="hljs-keyword">default</span>: <span class="hljs-number">0</span>, type: cc.Integer, serializable: <span class="hljs-literal">false</span>  },
+
+    <span class="hljs-comment">// 定义一份数组</span>
+    <span class="hljs-comment">// Unity3D 中定义为: public float[] idList;</span>
+    idList: { <span class="hljs-keyword">default</span>: [],  type: cc.Float },
+
+    <span class="hljs-comment">// 定义一份枚举类型</span>
+    <span class="hljs-comment">// Unity3D 中定义为: public MyEnum myEnum = MyEnum.Foo;</span>
+    myEnum: { <span class="hljs-keyword">default</span>: MyEnum.Foo,  type: MyEnum },
+  }
+})</code></pre><h2 id="--3">生命周期</h2>
+<p>Cocos Creator 的生命周期和 Unity3D 基本一致, 仅仅在命名上稍微有一些出入:</p>
+<table>
+<thead>
+<tr>
+<th>Cocos Creator</th>
+<th>Unity3D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> onLoad</td>
+<td>Awake</td>
+</tr>
+<tr>
+<td> start</td>
+<td>Start</td>
+</tr>
+<tr>
+<td> update</td>
+<td>Update</td>
+</tr>
+<tr>
+<td> lateUpdate</td>
+<td>LateUpdate</td>
+</tr>
+<tr>
+<td> onEnable</td>
+<td>OnEnable</td>
+</tr>
+<tr>
+<td> onDisable</td>
+<td>OnDisable</td>
+</tr>
+<tr>
+<td> onDestroy</td>
+<td>OnDestroy</td>
+</tr>
+</tbody>
+</table>
+<ul class="list">
+<li>当你希望销毁一个 cc.Object 实例(如: node, component 或者 asset)时, 使用 obj.destroy() 函数.</li>
+<li>当你想判断一个 cc.Object 实例(如: node, component 或者 asset)是否已经被销毁时, 使用 cc.isValid(node).</li>
+</ul>
+<h2 id="--4">消息</h2>
+<p>Cocos Creator 的消息系统采用 dom 的消息收发方式, 可以向上传递消息, 需要在 Node 中进行消息注册.
+而 Unity3D 中, 消息通过 SendMessage 并直接响应脚本中定义的成员函数来完成.</p>
+<p>下面是 Cocos Creator 中收发消息的方法:</p>
+<pre class="hljs"><code>cc.Class({
+  extends: cc.Component,
+
+  onLoad: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.node.on(<span class="hljs-string">'hello-foobar'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> event </span>) </span>{
+      event.stopPropagation();
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello Foobar'</span>);
+    });
+  },
+
+  start: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.node.emit(<span class="hljs-string">'hello-foobar'</span>);
+  },
+})</code></pre><hr>
+<p>继续前往 <a href="./project-structure.html">项目结构</a> 介绍文档。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

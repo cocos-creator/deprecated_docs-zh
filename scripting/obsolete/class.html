@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>概述</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../../index.html"><img src="../../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../basics/index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../basics/editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/scene.html">场景编辑器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="../../basics/editor-panels/console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../../basics/toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../../basics/layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><blockquote>
+<p>所有“备注”都属于进阶内容，初学者不需要了解。</p>
+</blockquote>
+<p><code>cc.Class</code> 是一个很常用的 API，用于声明 Cocos Creator 中的类，为了方便区分，我们把使用 cc.Class 声明的类叫做 <strong>FireClass</strong>。相比其它 JavaScript 的类型系统，FireClass 的特别之处在于扩展性强，能够定义丰富的元数据。</p>
+<h2 id="-">概述</h2>
+<h3 id="-fire-class">创建Fire.Class</h3>
+<p>调用 <strong>cc.Class</strong> 方法，传入一个原型对象，在原型对象中以键值对的形式设定所需的类型参数，就能创建出所需要的类。</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        name: <span class="hljs-string">'Sprite'</span>
+    });</code></pre><p>这段代码将创建好的类赋值给了 Sprite 变量，另外还提供了 <code>name</code> 参数来作为类名，类名用于序列化，一般可以省略。
+为了论述方便，本文将这里传入的这个 <code>{ name: &#39;Sprite&#39; }</code> 对象统称为<strong>原型对象</strong>，本文重点介绍如何定义原型对象。</p>
+<h3 id="--1">创建对象</h3>
+<p>由于 FireClass 本身就是一个 JavaScript 构造函数，使用 new 就可以创建对象：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();</code></pre><h3 id="--2">构造函数</h3>
+<p>如果在原型对象中声明了 <code>constructor</code>，指定的构造函数就将在每个实例的创建过程中调用，FireClass 的构造函数<strong>不允许</strong>定义<strong>构造参数</strong>。</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span> <span class="hljs-keyword">instanceof</span> Sprite);    <span class="hljs-comment">// true</span>
+        }
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();</code></pre><p>注：Component 是特殊的 FireClass，不能定义构造函数，它的构造职能可由 <code>onLoad</code> 方法代替。</p>
+<h3 id="--3">判断类型</h3>
+<p><code>instanceof</code> 可以用来判断对象的类型：</p>
+<pre class="hljs"><code>    <span class="hljs-built_in">console</span>.log(obj <span class="hljs-keyword">instanceof</span> Sprite);     <span class="hljs-comment">// true</span></code></pre><p><strong>备注</strong></p>
+<ul class="list">
+<li>如果不需要序列化，类名可以省略。类名可以是任意字符串，但不允许重复。可以使用 cc.js.getClassName 来获得类名，使用 cc.js.getClassByName 来查找对应的类。</li>
+<li>专业开发者如果确实需要使用构造参数，可以在 constructor 的 arguments 里获取。但如果这个类需要序列化，必须保证构造参数都缺省的情况下仍然能 new 出对象。</li>
+</ul>
+<h2 id="--4">成员</h2>
+<h3 id="--5">实例变量</h3>
+<p>实例变量请统一在构造函数中声明：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// 声明实例变量并赋默认值</span>
+            <span class="hljs-keyword">this</span>.url = <span class="hljs-string">""</span>;
+            <span class="hljs-keyword">this</span>.id = <span class="hljs-number">0</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-comment">// 赋值</span>
+    obj.url = <span class="hljs-string">'img/fb.png'</span>;
+    obj.id = <span class="hljs-number">1</span>;</code></pre><h3 id="--6">实例方法</h3>
+<p>实例方法请在原型对象中声明：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// ...</span>
+        },
+        <span class="hljs-comment">// 声明一个名叫"load"的实例方法</span>
+        load: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// load this.url</span>
+        };
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-comment">// 调用实例方法</span>
+    obj.load();</code></pre><h3 id="--7">类变量和类方法</h3>
+<p>静态的类变量或类方法可以直接添加到定义好的 Class：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({ ... });
+
+    <span class="hljs-comment">// 声明类变量</span>
+    Sprite.count = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// 声明类方法</span>
+    Sprite.getBounds = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">spriteList</span>) </span>{
+        <span class="hljs-comment">// ...</span>
+    };</code></pre><p>也可以在原型对象的 <code>statics</code> 中声明：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        statics: {
+            <span class="hljs-comment">// 声明类变量</span>
+            count: <span class="hljs-number">0</span>,
+            <span class="hljs-comment">// 声明类方法</span>
+            getBounds: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">spriteList</span>) </span>{
+                <span class="hljs-comment">// ...</span>
+            }
+        }
+    });</code></pre><p><strong>完整代码如下：</strong></p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        name: <span class="hljs-string">'Sprite'</span>,
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// 声明实例变量并赋默认值</span>
+            <span class="hljs-keyword">this</span>.url = <span class="hljs-string">""</span>;
+            <span class="hljs-keyword">this</span>.id = <span class="hljs-number">0</span>;
+        },
+        <span class="hljs-comment">// 声明一个名叫"load"的实例方法</span>
+        load: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// load this.url</span>
+        };
+    });
+    <span class="hljs-comment">// 实例化</span>
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-comment">// 访问实例变量</span>
+    obj.url = <span class="hljs-string">'sprite.png'</span>;
+    <span class="hljs-comment">// 调用实例方法</span>
+    obj.load();
+
+    <span class="hljs-comment">// 声明类变量</span>
+    Sprite.count = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// 声明类方法</span>
+    Sprite.getBounds = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">spriteList</span>) </span>{
+        <span class="hljs-comment">// ...</span>
+    };
+
+    <span class="hljs-comment">// 调用类方法</span>
+    Sprite.getBounds([obj]);</code></pre><p><strong>备注</strong></p>
+<ul class="list">
+<li><p>如果是 <strong>私有</strong> 成员，建议在成员命名前面加上下划线 <code>_</code> 以示区分。</p>
+<pre class="hljs"><code>  <span class="hljs-keyword">var</span> Sprite = cc.Class({
+      name: <span class="hljs-string">'Sprite'</span>,
+      ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          <span class="hljs-comment">// 私有实例变量</span>
+          <span class="hljs-keyword">this</span>._myData = <span class="hljs-number">0</span>;
+      },
+      <span class="hljs-comment">// 私有实例方法</span>
+      _load: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          <span class="hljs-comment">// ...</span>
+      };
+  });
+  <span class="hljs-comment">// 私有类变量</span>
+  Sprite._list = [];</code></pre></li>
+<li><p>如果是 <strong>私有</strong> 静态成员，也可以用闭包(Closure)实现。</p>
+<pre class="hljs"><code>  <span class="hljs-comment">// 私有静态方法</span>
+  <span class="hljs-keyword">var</span> doLoad = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">sprite</span>) </span>{
+      <span class="hljs-comment">// do load ...</span>
+  };
+  <span class="hljs-comment">// 私有静态变量</span>
+  <span class="hljs-keyword">var</span> url = <span class="hljs-string">'foo.png'</span>;
+
+  <span class="hljs-keyword">var</span> Sprite = cc.Class({
+      load: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          <span class="hljs-comment">// 调用局部作用域内的方法</span>
+          doLoad(<span class="hljs-keyword">this</span>, url);
+      };
+  });</code></pre></li>
+<li><p>这里所说的“实例成员”(instance member)包含了“实例变量”(member variable)和“实例方法”(instance method)。</p>
+</li>
+<li>这里所说的“类成员”(static member)包含了“类变量”(static variable)和“类方法”(static method)。</li>
+<li>类变量的继承实现方式是将父类的静态变量<strong>浅拷贝</strong>给子类实现的。</li>
+</ul>
+<h2 id="--8">继承</h2>
+<h3 id="--9">声明方式</h3>
+<p>继承时请在原型对象里声明 <code>extends</code>：</p>
+<pre class="hljs"><code>    <span class="hljs-comment">// define base class</span>
+    <span class="hljs-keyword">var</span> Node = cc.Class();
+
+    <span class="hljs-comment">// define sub class</span>
+    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        extends: Node
+    });
+
+    <span class="hljs-comment">// test</span>
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();</code></pre><p><code>instanceof</code> 也可以用来判断对象所在的类型是否继承自某个父类：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> sub = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-built_in">console</span>.log(sub <span class="hljs-keyword">instanceof</span> Node);       <span class="hljs-comment">// true</span>
+    <span class="hljs-keyword">var</span> base = <span class="hljs-keyword">new</span> Node();
+    <span class="hljs-built_in">console</span>.log(base <span class="hljs-keyword">instanceof</span> Sprite);    <span class="hljs-comment">// false</span></code></pre><h3 id="--10">父构造函数</h3>
+<p>请注意，不论子类的构造函数是否提供，子类实例化前父类的构造函数都会先被自动调用。</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Node = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>.name = <span class="hljs-string">"node"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        extends: Node,
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// 子构造函数被调用前，父构造函数已经被调用过，所以 this.name 已经被初始化过了</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);    <span class="hljs-comment">// "node"</span>
+            <span class="hljs-comment">// 重新设置 this.name</span>
+            <span class="hljs-keyword">this</span>.name = <span class="hljs-string">"sprite"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-built_in">console</span>.log(obj.name);    <span class="hljs-comment">// "sprite"</span></code></pre><h3 id="--11">重载</h3>
+<p>所有实例方法都是虚方法，子类方法可以直接重载父类方法：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Node = cc.Class({
+        getName: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"node"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        getName: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"sprite"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-built_in">console</span>.log(obj.getName());    <span class="hljs-comment">// "sprite"</span></code></pre><p>如果想要调用父类方法，必须直接通过父类的 prototype，并且以 call 或 apply 的形式调用：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Node = cc.Class({
+        getName: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"node"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        getName: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">var</span> baseName = Node.prototype.getName.call(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">return</span> baseName + <span class="hljs-string">"&gt;sprite"</span>;
+        }
+    });
+    <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+    <span class="hljs-built_in">console</span>.log(obj.getName());    <span class="hljs-comment">// "node&gt;sprite"</span></code></pre><p>使用 <code>cc.isChildClassOf</code> 来判断两个类的继承关系：</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Texture = cc.Class();
+    <span class="hljs-keyword">var</span> Texture2D = cc.Class({
+        extends: Texture
+    });
+    <span class="hljs-built_in">console</span>.log(cc.isChildClassOf(Texture2D, Texture));   <span class="hljs-comment">// true</span></code></pre><p>请注意，两个传入参数都必须是类的构造函数，而不是类的对象实例。如果传入的两个类相等，<code>isChildClassOf</code> 也会返回 true。</p>
+<p><strong>备注</strong></p>
+<ul class="list">
+<li>可以通过子类的静态变量 <code>$super</code> 来访问父类。</li>
+<li>所有实例成员和类成员都将被子类继承。</li>
+<li>如果你想实现原生的 JavaScript 继承，也就是说你的父类和子类都不是 FireClass，那你可以通过 cc.js.extend 方法来继承。</li>
+</ul>
+<h2 id="--12">属性</h2>
+<h3 id="--13">属性定义和访问</h3>
+<p>属性(Property)是特殊的实例变量，能够显示在 Inspector 中，也能被序列化。属性不在构造函数里定义，而是声明在原型对象的 <code>properties</code> 字典里。</p>
+<p><strong>下面在 Player 类定义一个 playerName 属性：</strong></p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Player = cc.Class({
+        extends: cc.Component,
+
+        properties {
+            playerName: {
+                <span class="hljs-keyword">default</span>: <span class="hljs-string">'Jare'</span>
+            }
+        }
+    });</code></pre><p>这样一来 playerName 就能显示在 Inspector 面板里，并且当保存 Player 所在的场景时，playerName 也会被保存起来。</p>
+<p>这里的 <code>default</code> 用来声明属性的默认值，同时也定义了值类型是字符串。默认值的类型不限，但只有在第一次创建对象的时候才会用到。</p>
+<p><strong>属性本身也是实例变量，可以直接访问：</strong></p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.width);    <span class="hljs-comment">// 读取默认 width</span>
+        },
+
+        properties: {
+            width: {
+                <span class="hljs-keyword">default</span>: <span class="hljs-number">128</span>
+            },
+        },
+
+        getWidth: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.width;
+        }
+    });</code></pre><p>在构造函数被调用前，属性已经被定义好了，可以在构造函数内访问或者重新给属性赋值。</p>
+<h3 id="--14">属性参数</h3>
+<p>每个属性可附带任意多个参数(Attribute)，用于指定在 Inspector 中的显示方式、序列化方式等。</p>
+<pre class="hljs"><code>    properties {
+        score: {
+            <span class="hljs-keyword">default</span>: <span class="hljs-number">0</span>,
+            type: <span class="hljs-string">'Integer'</span>,
+            tooltip: <span class="hljs-string">'The score of player'</span>
+        }
+    }</code></pre><p>以上代码规定了 score 在 Inspector 里只能输入整数，并且当鼠标移到参数上时，显示对应 Tooltip。</p>
+<p>下面是常用参数，详细用法请参阅<a href="/manual/scripting/attributes">属性参数</a>。</p>
+<ul class="list">
+<li>type: 限定属性的数据类型</li>
+<li>url: 限定属性为指定类型的 url</li>
+<li>visible: 设为 false 则不在 Inspector 面板中显示该属性</li>
+<li>serializable: 设为 false 则不序列化该属性</li>
+<li>displayName: 在 Inspector 面板中显示成指定名字</li>
+<li>tooltip: 在 Inspector 面板中添加属性的 Tooltip</li>
+</ul>
+<h4 id="-a-name-visible-a-visible-"><a name="visible参数"></a>visible参数</h4>
+<p>默认情况下，是否显示在 Inspector 取决于属性名是否以下划线 <code>_</code> 开头。如果以下划线开头，则默认不显示在 Inspector，否则默认显示。</p>
+<p>如果要强制显示在 Inspector，可以设置<code>visible</code>参数为 true:</p>
+<pre class="hljs"><code>    properties {
+        _id: {      <span class="hljs-comment">// 下划线开头原本会隐藏</span>
+            <span class="hljs-keyword">default</span>: <span class="hljs-number">0</span>,
+            visible: <span class="hljs-literal">true</span>
+        }
+    }</code></pre><p>如果要强制隐藏，可以设置<code>visible</code>参数为 false:</p>
+<pre class="hljs"><code>    properties {
+        id: {       <span class="hljs-comment">// 非下划线开头原本会显示</span>
+            <span class="hljs-keyword">default</span>: <span class="hljs-number">0</span>,
+            visible: <span class="hljs-literal">false</span>
+        }
+    }</code></pre><h4 id="-a-name-serializable-a-serializable-"><a name="serializable"></a>serializable参数</h4>
+<p>属性默认情况下都会被序列化，如果不想序列化，可以设置<code>serializable: false</code>。</p>
+<pre class="hljs"><code>    temp_url: {
+        <span class="hljs-keyword">default</span>: <span class="hljs-string">''</span>,
+        serializable: <span class="hljs-literal">false</span>
+    }</code></pre><h4 id="-a-name-type-a-type-"><a name="type"></a>type参数</h4>
+<p>当<code>default</code>不能提供足够详细的类型信息时，为了能在 Inspector 里正确编辑属性，则需要用<code>type</code>显式声明具体的类型：</p>
+<ul class="list">
+<li>当默认值为 null 时，将 type 设置为指定类型的构造函数，这样才能在 Inspector 中给属性正确赋值。<pre class="hljs"><code>      enemy: {
+          <span class="hljs-keyword">default</span>: <span class="hljs-literal">null</span>,
+          type: cc.Node
+      }</code></pre></li>
+<li>当默认值为数值(Number)类型时，将 type 设置为 <code>&quot;Integer&quot;</code>，用来表示这是一个整数，这样属性在 Inspector 里就不能输入小数点。<pre class="hljs"><code>      score: {
+          <span class="hljs-keyword">default</span>: <span class="hljs-number">0</span>,
+          type: <span class="hljs-string">'Integer'</span>
+      }</code></pre></li>
+<li>将 type 设置为枚举类型，就能在 Inspector 中选择枚举值。<pre class="hljs"><code>      wrap: {
+          <span class="hljs-keyword">default</span>: cc.Texture2D.WrapMode.Clamp,
+          type: cc.Texture2D.WrapMode
+      }</code></pre></li>
+</ul>
+<h4 id="-a-name-url-a-url-"><a name="url"></a>url参数</h4>
+<p>如果属性是用来保存资源的 url，为了能在 Inspector 中设置资源，或者能正确序列化，你就需要提供 url 参数。</p>
+<pre class="hljs"><code>    texture: {
+        <span class="hljs-keyword">default</span>: <span class="hljs-string">""</span>,
+        url: cc.Texture2D
+    },</code></pre><h3 id="--15">数组定义</h3>
+<p>数组的 default 必须设置为 <code>[]</code>，如果要在 Inspector 中编辑，还需要设置 type 为构造函数、枚举，或者 <code>&quot;Integer&quot;</code>, <code>&quot;Float&quot;</code>, <code>&quot;Boolean&quot;</code>, <code>&quot;String&quot;</code>。</p>
+<pre class="hljs"><code>    nameList: {
+        <span class="hljs-keyword">default</span>: [],
+        type: [<span class="hljs-string">"String"</span>]     <span class="hljs-comment">// 声明数组的每个元素都是字符串类型</span>
+    },
+    enemyList: {
+        <span class="hljs-keyword">default</span>: [],
+        type: [cc.Node]
+    }</code></pre><p><strong>备注</strong></p>
+<ul class="list">
+<li>属性都能被子类继承，但子类和父类的属性不能重名。</li>
+<li><p>如果属性的默认值需要调用其它方法才能获得，可以在构造函数里重新赋值。</p>
+<pre class="hljs"><code>  <span class="hljs-keyword">var</span> Sprite = cc.Class({
+      ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.img = LoadImage();
+      },
+      properties: {
+          img: <span class="hljs-literal">null</span>
+      }
+  });</code></pre></li>
+</ul>
+<h2 id="getset-">GetSet方法</h2>
+<p>在属性中设置了 get 或 set 以后，访问属性的时候，就能触发预定义的 get 或 set 方法。</p>
+<h3 id="get">get</h3>
+<p>在属性中设置 get 方法：</p>
+<pre class="hljs"><code>    properties: {
+        width: {
+            get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__width;
+            }
+        }
+    }</code></pre><p>get 方法可以返回任意类型的值。
+这个属性同样能显示在 Inspector 中，并且可以在包括构造函数内的所有代码里直接访问。</p>
+<pre class="hljs"><code>    <span class="hljs-keyword">var</span> Sprite = cc.Class({
+        ctor: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>.__width = <span class="hljs-number">128</span>;
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.width);    <span class="hljs-comment">// 128</span>
+        },
+        properties: {
+            width: {
+                get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__width;
+                }
+            }
+        }
+    });</code></pre><p>请注意：</p>
+<ul class="list">
+<li><p>设定了 get 以后，这个属性就不能被序列化，也不能指定默认值，但仍然可附带除了 &quot;default&quot;, &quot;serializable&quot; 以外的任意参数。</p>
+<pre class="hljs"><code>      width: {
+          get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__width;
+          },
+          type: <span class="hljs-string">'Integer'</span>,
+          tooltip: <span class="hljs-string">"The width of sprite"</span>
+      }</code></pre></li>
+<li><p>get 属性本身是只读的，但返回的对象并不是只读的。用户使用代码依然可以修改对象内部的属性，例如：</p>
+<pre class="hljs"><code>  <span class="hljs-keyword">var</span> Sprite = cc.Class({
+      ...
+      position: {
+          get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__position;
+          },
+      }
+      ...
+  });
+  <span class="hljs-keyword">var</span> obj = <span class="hljs-keyword">new</span> Sprite();
+  obj.position = <span class="hljs-keyword">new</span> cc.Vec2(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>);   <span class="hljs-comment">// 错误！position 是只读的！</span>
+  obj.position.x = <span class="hljs-number">100</span>;                 <span class="hljs-comment">// 允许！position 对象本身可以修改！</span></code></pre></li>
+</ul>
+<h3 id="set">set</h3>
+<p>在属性中设置 set 方法：</p>
+<pre class="hljs"><code>    width: {
+        set: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+            <span class="hljs-keyword">this</span>.__width = value;
+        }
+    }</code></pre><p>set 方法接收一个传入参数，这个参数可以是任意类型。</p>
+<p>set 可以和 get 一起使用：</p>
+<pre class="hljs"><code>    width: {
+        get: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.__width;
+        },
+        set: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+            <span class="hljs-keyword">this</span>.__width = value;
+        },
+        type: <span class="hljs-string">'Integer'</span>,
+        tooltip: <span class="hljs-string">"The width of sprite"</span>
+    }</code></pre><p>请注意：</p>
+<ul class="list">
+<li>如果没有和 get 一起定义，则 set 自身不能附带任何参数。</li>
+<li>和 get 一样，设定了 set 以后，这个属性就不能被序列化，也不能指定默认值。</li>
+</ul>
+      </article>
+    </div>
+  </div>
+  <script src="../../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>

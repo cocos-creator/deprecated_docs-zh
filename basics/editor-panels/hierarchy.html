@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Hierarchy 层级管理器</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/hljs-github.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../../assets/css/style.css"/>
+    <link rel="shortcut icon" type="image/ico" href="../../assets/favicon.ico">
+  </head>
+  <body>
+  <div class="full-wrap">
+    <div class="sidebar markdown-body">
+      <div class="inner">
+        <div class="logo">
+          <a href="../../index.html"><img src="../../assets/img/logo.png"></a>
+        </div>
+        <ul class="nav nav-list">
+          <li class="sidebar-header-1 "><h3><a href="../../getting-started/index.html">Cocos Creator 入门</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/introduction.html">关于 Cocos Creator</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/install.html">安装和启动</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/dashboard.html">使用 Dashboard</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/hello-world.html">Hello World!</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/quick-start.html">快速上手: 制作第一个游戏</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/cocos2d-x-guide.html">Cocos2d-x 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/unity-guide.html">Unity 用户上手指南</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/project-structure.html">项目结构</a></li>
+          <li class=" sidebar-header-3"><a href="../../getting-started/support.html">获取帮助和支持</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../index.html">编辑器基础</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../editor-overview.html">编辑器界面介绍</a></li>
+          <li class=" sidebar-header-4"><a href="assets.html">资源管理器</a></li>
+          <li class=" sidebar-header-4"><a href="scene.html">场景编辑器</a></li>
+          <li class="active sidebar-header-4"><a href="hierarchy.html">层级管理器</a></li>
+          <li class=" sidebar-header-4"><a href="inspector.html">属性检查器</a></li>
+          <li class=" sidebar-header-4"><a href="console.html">控制台</a></li>
+          <li class=" sidebar-header-3"><a href="../toolbar.html">工具栏</a></li>
+          <li class=" sidebar-header-3"><a href="../layout.html">编辑器布局</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../asset-workflow/index.html">资源工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/scene-managing.html">创建和管理场景</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/sprite.html">图像资源（Texture）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/atlas.html">图集资源（Atlas）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/font.html">字体资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/particle.html">粒子资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/audio-asset.html">声音资源（AudioClip）</a></li>
+          <li class=" sidebar-header-3"><a href="../../asset-workflow/prefab.html">预制资源（Prefab）</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../content-workflow/index.html">内容创作工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-component.html">节点和组件</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/transform.html">坐标系和变换</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/node-tree.html">管理节点层级和显示顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../../content-workflow/scene-editing.html">使用场景编辑器搭建场景图像</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../ui/index.html">UI 系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../ui/sliced-sprite.html">使用 Sliced Sprite 制作 UI 图像</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/multi-resolution.html">多分辨率适配方案</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/widget-align.html">对齐策略</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/label-layout.html">文字排版</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/ui-components.html">常用 UI 控件</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/auto-layout.html">自动布局容器</a></li>
+          <li class=" sidebar-header-3"><a href="../../ui/list-with-data.html">制作动态生成内容的列表</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../animation/index.html">动画系统</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation.html">关于 Animation</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-clip.html">创建 Animation 组件和动画剪辑</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-curve.html">编辑动画曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/sprite-animation.html">编辑序列帧动画</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/time-curve.html">编辑时间曲线</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/animation-event.html">添加动画事件</a></li>
+          <li class=" sidebar-header-3"><a href="../../animation/scripting-animation.html">使用脚本控制动画</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../components/index.html">组件参考</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../components/sprite.html">Sprite 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/label.html">Label 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/animation.html">Animation 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/canvas.html">Canvas 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/widget.html">Widget 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/progress.html">ProgressBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/button.html">Button 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/mask.html">Mask 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollview.html">ScrollView 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/scrollbar.html">ScrollBar 组件参考</a></li>
+          <li class=" sidebar-header-3"><a href="../../components/layout.html">Layout 组件参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../scripting/index.html">脚本开发工作流程</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/use-component.html">创建和使用组件脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/properties.html">声明属性</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/access-node-component.html">访问节点和其他组件</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/life-cycle-callbacks.html">生命周期回调</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/create-destroy.html">创建和销毁节点</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/events.html">发射和监听事件</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/internal-events.html">系统内置事件</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/actions.html">使用动作系统</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/action-list.html">动作列表</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/scheduler.html">使用计时器</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/execution-order.html">脚本执行顺序</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/pooling.html">使用对象池</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/load-assets.html">获取资源</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/modular-script.html">模块化脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/web-debug-scripts.html">在浏览器中调试脚本</a></li>
+          <li class=" sidebar-header-3"><a href="../../scripting/javascript-primer.html">JavaScript 快速入门</a></li>
+          <li class=" sidebar-header-4"><a href="../../scripting/reference/attributes.html">属性参数参考</a></li>
+          <li class="sidebar-header-1 "><h3><a href="../../publish/index.html">跨平台发布游戏</a></h3></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-web.html">发布到 Web 平台</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/cocos-framework.html">安装配置 Cocos Framework</a></li>
+          <li class=" sidebar-header-3"><a href="../../publish/publish-native.html">打包发布原生平台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <article class="markdown-body"><h1 id="hierarchy-">Hierarchy 层级管理器</h1>
+<p class="img-container"><img src="../index/hierarchy.png" alt="hierarchy panel"></p>
+<p><strong>层级管理器</strong> 中包括当前打开场景中的所有节点，不管节点是否包括可见的图像。你可以在这里选择、创建和删除节点，也可以通过拖拽一个节点到另一个上面来建立节点父子关系。</p>
+<p>点击来选中节点，被选中的节点会以蓝底色高亮显示。当前选中的节点会在<strong>场景编辑器</strong>中显示蓝色边框，并更新<strong>属性检查器</strong>中的内容。</p>
+<h2 id="-">创建节点</h2>
+<p>在层级管理器中有两种方法可以创建节点：</p>
+<ul class="list">
+<li>点击左上角的 <code>+</code> 按钮，或右键点击鼠标并进入右键菜单中的<strong>创建节点</strong>子菜单。在这个子菜单中，你可以选择不同的节点类型，包括精灵（Sprite）、文字（Label）、按钮（Button）等有不同功能和表现节点。</li>
+<li>从<strong>资源管理器</strong>中拖拽图片、字体或粒子等资源到层级管理器中。就能够用选中的资源创建出相应的图像渲染节点。</li>
+</ul>
+<h2 id="--1">删除节点</h2>
+<p>选中节点后，通过右键菜单里<code>删除</code>选项，或按下<kbd>Delete</kbd>（Windows）或<kbd>Cmd + Backspace</kbd>热键即可删除选中的节点。如果选中节点包括子节点，子节点也会被一起删除。</p>
+<h2 id="--2">建立和编辑节点层级关系</h2>
+<p>将节点A拖拽到节点B上，就使节点A成为节点B的子节点。和<a href="./assets.html">资源管理器</a>类似，层级管理器中也通过树状视图表示节点的层级关系。点击节点左边的三角图标，即可展开或收起子节点列表。</p>
+<h2 id="--3">更改节点的显示顺序</h2>
+<p>除了将节点拖到另一个节点上，你还可以继续拖拽节点上下移动，来更改节点在列表中的排序。橙色的方框表示节点所属父节点的范围，绿色的线表示节点将会被插入的位置。</p>
+<p class="img-container"><img src="hierarchy/move.png" alt="move node"></p>
+<p>节点在列表中的排序决定了节点在场景中的显示次序。在层级管理器中位置越靠下的节点，在场景中的渲染就会更晚，也就会覆盖列表中位置较为靠上的节点。</p>
+<h2 id="--4">其他操作</h2>
+<p>右键点击节点弹出的菜单里还包括下列操作：</p>
+<ul class="list">
+<li><strong>拷贝/粘贴</strong>：将节点复制到剪贴板上，然后可以粘贴到另外的位置，或打开另一个场景来粘贴刚才拷贝的节点。</li>
+<li><strong>复制节点</strong>：生成和选中节点完全相同的节点副本，生成节点和选中节点在同一层级中。</li>
+<li><strong>重命名</strong>：将节点改名。</li>
+<li><strong>在控制台显示路径</strong>：在复杂场景中，我们有时候需要获取节点的完整层级路径，以便在脚本运行时访问该节点。点击这个选项，就可以在<strong>控制台</strong>中看到节点的路径。</li>
+</ul>
+<hr>
+<p>继续前往<a href="./inspector.html">属性检查器</a>说明文档。</p>
+      </article>
+    </div>
+  </div>
+  <script src="../../assets/js/anchor.min.js"></script>
+  <script>
+    anchors.add('article h2, article h3, article h4');
+  </script>
+  </body>
+</html>
